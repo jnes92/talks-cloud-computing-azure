@@ -38953,27 +38953,50 @@ var _default = __webpack_require__(1632);
 
 var _default2 = _interopRequireDefault(_default);
 
+var _def1Rg = __webpack_require__(1635);
+
+var _def1Rg2 = _interopRequireDefault(_def1Rg);
+
+var _def2AppService = __webpack_require__(1636);
+
+var _def2AppService2 = _interopRequireDefault(_def2AppService);
+
+var _def = __webpack_require__(1637);
+
+var _def2 = _interopRequireDefault(_def);
+
+var _def3 = __webpack_require__(1638);
+
+var _def4 = _interopRequireDefault(_def3);
+
+var _def5 = __webpack_require__(1639);
+
+var _def6 = _interopRequireDefault(_def5);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Require CSS
 
 
-// Import Spectacle Core tags
-__webpack_require__(1635);
-
 // Import theme
 // Import React
+__webpack_require__(1640);
+
+// Import Spectacle Core tags
 
 
 var theme = (0, _default2.default)({
   primary: "white",
-  secondary: "#1F2022",
-  tertiary: "#03A9FC",
+  secondary: "#009FDE",
+  tertiary: "#34495E",
   quaternary: "#CECECE"
 }, {
   primary: "Montserrat",
   secondary: "Helvetica"
 });
+
+// TODO: Add modules for slides:
+// https://hackernoon.com/presentations-with-spectacle-how-i-modularize-my-deck-775c082cef08
 
 var _ref = (0, _jsx3.default)(_spectacle.Heading, {
   size: 1,
@@ -38981,61 +39004,94 @@ var _ref = (0, _jsx3.default)(_spectacle.Heading, {
   caps: true,
   lineHeight: 1,
   textColor: "secondary"
-}, void 0, "Spectacle Boilerplate");
+}, void 0, "Cloud Computing: Azure");
 
 var _ref2 = (0, _jsx3.default)(_spectacle.Text, {
   margin: "10px 0 0",
   textColor: "tertiary",
-  size: 1,
+  size: 3,
   fit: true,
   bold: true
-}, void 0, "open the presentation/index.js file to get started");
+}, void 0, "Hochschule Koblenz - BRICKMAKERS GmbH");
 
 var _ref3 = (0, _jsx3.default)(_spectacle.Heading, {
   size: 6,
-  textColor: "primary",
-  caps: true
-}, void 0, "Typography");
-
-var _ref4 = (0, _jsx3.default)(_spectacle.Heading, {
-  size: 1,
+  caps: true,
+  lineHeight: 1,
   textColor: "secondary"
-}, void 0, "Heading 1");
+}, void 0, "\xDCbersicht");
+
+var _ref4 = (0, _jsx3.default)(_spectacle.List, {
+  ordered: true,
+  textColor: "tertiary"
+}, void 0, (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " Einf\xFChrung "), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " \xDCberblick in Azure "), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " Workshop ", "&", " Hands-On "), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " Workshop Ergebnis "));
 
 var _ref5 = (0, _jsx3.default)(_spectacle.Heading, {
-  size: 2,
+  size: 1,
+  fit: true,
+  caps: true,
+  lineHeight: 1,
   textColor: "secondary"
-}, void 0, "Heading 2");
+}, void 0, "Cloud Computing: Azure");
 
-var _ref6 = (0, _jsx3.default)(_spectacle.Heading, {
+var _ref6 = (0, _jsx3.default)(_spectacle.Text, {
+  margin: "10px 0 0",
+  textColor: "tertiary",
   size: 3,
-  textColor: "secondary"
-}, void 0, "Heading 3");
+  fit: true,
+  bold: true
+}, void 0, "Kapitel 1: Einf\xFChrung");
 
 var _ref7 = (0, _jsx3.default)(_spectacle.Heading, {
-  size: 4,
-  textColor: "secondary"
-}, void 0, "Heading 4");
-
-var _ref8 = (0, _jsx3.default)(_spectacle.Heading, {
-  size: 5,
-  textColor: "secondary"
-}, void 0, "Heading 5");
-
-var _ref9 = (0, _jsx3.default)(_spectacle.Text, {
   size: 6,
+  caps: true,
+  lineHeight: 1,
   textColor: "secondary"
-}, void 0, "Standard text");
+}, void 0, "Kapitel 1: Einf\xFChrung");
 
-var _ref10 = (0, _jsx3.default)(_spectacle.Heading, {
+var _ref8 = (0, _jsx3.default)(_spectacle.List, {
+  ordered: true,
+  textColor: "tertiary"
+}, void 0, (0, _jsx3.default)(_spectacle.ListItem, {
+  bold: true
+}, void 0, " \xDCber mich "), (0, _jsx3.default)(_spectacle.ListItem, {
+  bold: true
+}, void 0, " BRICKMAKERS GmbH "));
+
+var _ref9 = (0, _jsx3.default)(_spectacle.Heading, {
+  size: 1,
+  fit: true,
+  caps: true,
+  lineHeight: 1,
+  textColor: "secondary"
+}, void 0, "Cloud Computing: Azure");
+
+var _ref10 = (0, _jsx3.default)(_spectacle.Text, {
+  margin: "10px 0 0",
+  textColor: "tertiary",
+  size: 3,
+  fit: true,
+  bold: true
+}, void 0, "Kapitel 2: \xDCberblick in Azure");
+
+var _ref11 = (0, _jsx3.default)(_spectacle.Heading, {
   size: 6,
-  textColor: "secondary",
-  caps: true
-}, void 0, "Standard List");
+  caps: true,
+  lineHeight: 1,
+  textColor: "secondary"
+}, void 0, "Kapitel 2: \xDCberblick in Azure");
 
-var _ref11 = (0, _jsx3.default)(_spectacle.List, {}, void 0, (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, "Item 1"), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, "Item 2"), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, "Item 3"), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, "Item 4"));
+var _ref12 = (0, _jsx3.default)(_spectacle.List, {
+  ordered: true,
+  textColor: "tertiary"
+}, void 0, (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " Ressource Group "), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " App Service "), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " App Service Plan "), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " App Service Plan Tipps "), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " Zero-Downtime Deployment"));
 
-var _ref12 = (0, _jsx3.default)(_spectacle.BlockQuote, {}, void 0, (0, _jsx3.default)(_spectacle.Quote, {}, void 0, "Example Quote"), (0, _jsx3.default)(_spectacle.Cite, {}, void 0, "Author"));
+var _ref13 = (0, _jsx3.default)(_spectacle.Heading, {
+  size: 6,
+  caps: true,
+  lineHeight: 1,
+  textColor: "secondary"
+}, void 0, "2. \xDCberblick in Azure");
 
 var Presentation = function (_React$Component) {
   (0, _inherits3.default)(Presentation, _React$Component);
@@ -39046,6 +39102,9 @@ var Presentation = function (_React$Component) {
   }
 
   Presentation.prototype.render = function render() {
+
+    var definitionsMd = [_def1Rg2.default, _def2AppService2.default, _def2.default, _def4.default, _def6.default];
+
     return (0, _jsx3.default)(_spectacle.Deck, {
       transition: ["zoom", "slide"],
       transitionDuration: 500,
@@ -39054,17 +39113,32 @@ var Presentation = function (_React$Component) {
       transition: ["zoom"],
       bgColor: "primary"
     }, void 0, _ref, _ref2), (0, _jsx3.default)(_spectacle.Slide, {
-      transition: ["fade"],
-      bgColor: "tertiary"
-    }, void 0, _ref3, _ref4, _ref5, _ref6, _ref7, _ref8, _ref9), (0, _jsx3.default)(_spectacle.Slide, {
-      transition: ["fade"],
-      bgColor: "primary",
-      textColor: "tertiary"
-    }, void 0, _ref10, _ref11), (0, _jsx3.default)(_spectacle.Slide, {
-      transition: ["fade"],
-      bgColor: "secondary",
-      textColor: "primary"
-    }, void 0, _ref12));
+      transition: ["zoom"],
+      bgColor: "primary"
+    }, void 0, _ref3, _ref4), (0, _jsx3.default)(_spectacle.Slide, {
+      transition: ["zoom"],
+      bgColor: "primary"
+    }, void 0, _ref5, _ref6), (0, _jsx3.default)(_spectacle.Slide, {
+      transition: ["zoom"],
+      bgColor: "primary"
+    }, void 0, (0, _jsx3.default)(_spectacle.Notes, {}, void 0), _ref7, _ref8), (0, _jsx3.default)(_spectacle.Slide, {
+      transition: ["zoom"],
+      bgColor: "primary"
+    }, void 0, _ref9, _ref10), (0, _jsx3.default)(_spectacle.Slide, {
+      transition: ["zoom"],
+      bgColor: "primary"
+    }, void 0, _ref11, _ref12), definitionsMd.map(function (definition) {
+      return (0, _jsx3.default)(_spectacle.Slide, {
+        align: "center flex-start",
+        transition: ["zoom"],
+        bgColor: "primary",
+        maxWidth: "100%"
+      }, void 0, _ref13, (0, _jsx3.default)(_spectacle.Markdown, {
+        fit: true,
+        textColor: "tertiary",
+        source: definition
+      }));
+    }));
   };
 
   return Presentation;
@@ -87107,12 +87181,42 @@ exports.default = _default;
 
 /***/ }),
 /* 1635 */
+/***/ (function(module, exports) {
+
+module.exports = "<h5 id=\"-ressource-group-\"><strong>RESSOURCE GROUP</strong></h5>\n<ul>\n<li>Jeder Service gehört zu einer <em>Ressource group</em><ul>\n<li>dient als <em>logischer Ordner</em></li>\n<li>trennt Projekte oder Abteilungen</li>\n</ul>\n</li>\n<li>Erlaubt Gruppenfunktionen (bspw. löschen)</li>\n<li>Kostenüberblick pro Gruppe</li>\n</ul>\n";
+
+/***/ }),
+/* 1636 */
+/***/ (function(module, exports) {
+
+module.exports = "<h4 id=\"-app-service-\"><strong>App Service</strong></h4>\n<ul>\n<li>Container für alle typischen Webanwendungen<ul>\n<li>Statische Webseite mit HTML, CSS</li>\n<li>Webanwendungen (Frontend) </li>\n<li>Backend Server (API)</li>\n</ul>\n</li>\n<li>Betriebssystem Windows / Linux möglich</li>\n<li>gehört zu einem App Service Plan</li>\n</ul>\n<!-- - AppName -> used for public url -->\n<!-- - Subscription -> payment -->\n<!-- - Ressourcengruppe  -->\n";
+
+/***/ }),
+/* 1637 */
+/***/ (function(module, exports) {
+
+module.exports = "<h4 id=\"app-service-plan-\">App Service Plan:</h4>\n<ul>\n<li>PaaS — defines Hardware the whole App Services inside this plan are sharing</li>\n<li>Requests Ressources for a specific location (also useful if customers are near there) </li>\n<li>ALWAYS ABLE TO SCALE UP / DOWN !!</li>\n</ul>\n<hr>\n<ul>\n<li>PaaS: Plattform as a Service</li>\n<li>Lizenz Basic 1 (B1) ist kostenlos</li>\n<li>Application Insights ≈ Google Analytics</li>\n</ul>\n";
+
+/***/ }),
+/* 1638 */
+/***/ (function(module, exports) {
+
+module.exports = "<h4 id=\"app-service-plan-tipps\">App Service Plan Tipps</h4>\n<ul>\n<li>1 App Service Plan can have multiple Web Apps</li>\n<li>Its fine if you don’t bother Performance „thieves“ from other apps</li>\n<li>Place high demand apps into an App Service Plan which is configured to auto-scale based on CPU and memory utilisation.<ul>\n<li>You can also use Per-App Scaling (instead of „Per-Plan Scaling“),</li>\n<li>per app : controls maximum of servers allocated to app</li>\n<li>per plan: application will run on all available services</li>\n</ul>\n</li>\n</ul>\n";
+
+/***/ }),
+/* 1639 */
+/***/ (function(module, exports) {
+
+module.exports = "<h5 id=\"zero-downtime-deployment\">Zero-Downtime Deployment</h5>\n<ul>\n<li>App Service have deployment slots</li>\n<li>you can define multi slots to use for production / staging / development or more</li>\n<li>you can deploy to Slot B -&gt; Test B -&gt; Swap A-B after successful tests</li>\n<li>Zero - downtime deployments </li>\n<li>some applications need to do warmup (fill cache with data) -&gt; can be done in Slot B before swapping</li>\n<li>all slots share 1 VIP (virtual ip) -&gt; nslookup -&gt; waws-prod-ln1-013.vip.azurewebsites.windows.net -&gt; WAWS: Windows Azure Web Sites </li>\n<li>Azure was called Windows before, App Service was called Web Sites before :D </li>\n</ul>\n";
+
+/***/ }),
+/* 1640 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1636);
+var content = __webpack_require__(1641);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -87120,7 +87224,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(1638)(content, options);
+var update = __webpack_require__(1643)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -87137,10 +87241,10 @@ if(false) {
 }
 
 /***/ }),
-/* 1636 */
+/* 1641 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1637)(undefined);
+exports = module.exports = __webpack_require__(1642)(undefined);
 // imports
 
 
@@ -87151,7 +87255,7 @@ exports.push([module.i, "/*! normalize.css v7.0.0 | MIT License | github.com/nec
 
 
 /***/ }),
-/* 1637 */
+/* 1642 */
 /***/ (function(module, exports) {
 
 /*
@@ -87233,7 +87337,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 1638 */
+/* 1643 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -87289,7 +87393,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(1639);
+var	fixUrls = __webpack_require__(1644);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -87605,7 +87709,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 1639 */
+/* 1644 */
 /***/ (function(module, exports) {
 
 
