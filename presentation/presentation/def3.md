@@ -1,8 +1,10 @@
 #### App Service Plan:
-- PaaS — defines Hardware the whole App Services inside this plan are sharing
-- Requests Ressources for a specific location (also useful if customers are near there) 
-- ALWAYS ABLE TO SCALE UP / DOWN !!
---- 
 - PaaS: Plattform as a Service
+- bestimmt die Hardware, die für App Services zur Verfügung steht
+- kann an spezifische Orte "gebunden" werden
+    - verringert Latenzzeiten
+- ist jederzeit skalierbar (horizontal, vertikal)
+--- 
+##### Info:
 - Lizenz Basic 1 (B1) ist kostenlos
 - Application Insights ≈ Google Analytics
