@@ -1,4 +1,4 @@
-##### **RESSOURCE GROUP**
+##### 2.1 **RESSOURCE GROUP**
 - Jeder Service gehört zu einer *Ressource group*
     - dient als *logischer Ordner*
     - trennt Projekte oder Abteilungen

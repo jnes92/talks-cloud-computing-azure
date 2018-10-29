@@ -28,11 +28,17 @@ import chapter1Notes from "./chapter1Notes.md"
 // Chapter 2 Slide Markdown Files
 import def1 from "./def1-rg.md"
 import def2 from "./def2-appService.md"
-import def3 from "./def3.md"
-import def4 from "./def4.md"
-import def5 from "./def5.md"
+import def3 from "./def3-asp.md"
+import def4 from "./def3-asp-tipps.md"
+import def5 from "./def4-deployment.md"
+import def5zd from "./def4-deployment-zerodown.md"
+import def5env from "./def4-deployment-env.md"
 
 import teamIdeaLogo from '../assets/team-idea.png'
+import workshopWelcomeImage from '../assets/03_workshop_welcome.png'
+import workshopArchitectureImage from '../assets/03_workshop_Architecture.png'
+import workshopAppImage from '../assets/03_workshop_app.png'
+
 
 // Require CSS
 require("normalize.css");
@@ -54,10 +60,10 @@ export default class Presentation extends React.Component {
   render() {
 
     let introductionMd = [{ md: aboutBrickmakers, image: teamIdeaLogo }, { md: aboutMe }]
-    let definitionsMd = [def1, def2, def3, def4, def5]
+    let definitionsMd = [def1, def2, def3, def4, def5, def5env, def5zd]
 
     return (
-      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
+      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme} progress="number">
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Cloud Computing: Azure
@@ -108,7 +114,7 @@ export default class Presentation extends React.Component {
 
           <Markdown fit textColor="tertiary" source={aboutBrickmakers} />
           <Image src={teamIdeaLogo} />
-          <Text> Kommt gerne für einen Kaffee vorbei </Text>
+          <Text> Kommt gerne auf einen Kaffee vorbei </Text>
         </Slide>
 
         <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
@@ -148,13 +154,16 @@ export default class Presentation extends React.Component {
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Kapitel 2: Überblick in Azure
-            </Heading>
+          </Heading>
           <List ordered textColor="tertiary">
             <ListItem> Ressource Group </ListItem>
             <ListItem> App Service </ListItem>
             <ListItem> App Service Plan </ListItem>
-            <ListItem> App Service Plan Tipps </ListItem>
-            <ListItem> Zero-Downtime Deployment</ListItem>
+            <ListItem> Deployment</ListItem>
+            <ListItem> Datenbanken </ListItem>
+            {/* TODO: ADD Database (SQL, Cosmos DB) */}
+            <ListItem> weitere Services </ListItem> 
+          {/* TODO: ADD AI, Functions, Cosmos DB, IoT Hub  */}
           </List>
         </Slide>
         {definitionsMd.map(definition => (
@@ -165,6 +174,54 @@ export default class Presentation extends React.Component {
             <Markdown fit textColor="tertiary" source={definition} />
           </Slide>
         ))}
+
+
+        {/* Kapitel 3: Workshop App Innovation  */}
+        <Slide transition={["zoom"]} bgColor="tertiary" >
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Cloud Computing: Azure
+            </Heading>
+          <Text margin="10px 0 0" textColor="primary" size={3} fit bold>
+            Kapitel 3: Workshop - App Innovation
+          </Text>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Heading size={6} caps lineHeight={1} textColor="secondary">
+            Kapitel 3: Workshop
+          </Heading>
+          <List ordered textColor="tertiary">
+            <ListItem> Systemüberblick </ListItem>
+          </List>
+        </Slide>
+
+
+    <Slide align="center flex-start" >
+          <Heading size={6} caps lineHeight={1} textColor="secondary">
+            3. Workshop
+          </Heading>
+
+          <Heading size={6} caps lineHeight={1} textColor="tertiary">
+            3.1 Architektur {"&"} Anwendung
+          </Heading>
+
+          <Image src={workshopWelcomeImage} />
+          <Image src={workshopAppImage} />
+        </Slide>
+        <Slide align="center flex-start" >
+          <Heading size={6} caps lineHeight={1} textColor="secondary">
+            3. Workshop
+          </Heading>
+
+          <Heading size={6} caps lineHeight={1} textColor="tertiary">
+            3.1 Architektur {"&"} Anwendung
+          </Heading>
+
+          <Image src={workshopArchitectureImage} />
+        </Slide>
+
+
+    
+
 
 
       </Deck>

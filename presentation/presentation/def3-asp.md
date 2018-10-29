@@ -1,4 +1,5 @@
-#### App Service Plan:
+#### 2.3 App Service Plan 
+(ASP / ASE):
 - PaaS: Plattform as a Service
 - bestimmt die Hardware, die für App Services zur Verfügung steht
 - kann an spezifische Orte "gebunden" werden
