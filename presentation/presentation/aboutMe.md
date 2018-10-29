@@ -1,4 +1,4 @@
-#### Über mich
+#### 1.2 Über mich
 
 - Jonas Österle
 - B. Eng. Elektrotechnik

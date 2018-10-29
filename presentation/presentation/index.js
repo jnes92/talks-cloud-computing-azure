@@ -22,6 +22,7 @@ import createTheme from "spectacle/lib/themes/default";
 // Chapter 1 Slide Markdown Files
 import aboutBrickmakers from "./aboutBrickmakers.md"
 import aboutMe from "./aboutMe.md"
+import aboutAzure from "./aboutAzure.md"
 import chapter1Notes from "./chapter1Notes.md"
 
 // Chapter 2 Slide Markdown Files
@@ -93,11 +94,12 @@ export default class Presentation extends React.Component {
           <List ordered textColor="tertiary">
             <ListItem bold> BRICKMAKERS GmbH </ListItem>
             <ListItem bold> Über mich </ListItem>
+            <ListItem bold> Was ist Azure? </ListItem>
           </List>
         </Slide>
 
         <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
-        <Notes>
+          <Notes>
             <Markdown source={chapter1Notes} />
           </Notes>
           <Heading size={6} caps lineHeight={1} textColor="secondary">
@@ -116,8 +118,17 @@ export default class Presentation extends React.Component {
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Kapitel 1: Einführung
             </Heading>
-
           <Markdown fit textColor="tertiary" source={aboutMe} />
+        </Slide>
+
+        <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
+          <Notes>
+            {/* <Markdown source={chapter1Notes} /> */}
+          </Notes>
+          <Heading size={6} caps lineHeight={1} textColor="secondary">
+            Kapitel 1: Einführung
+            </Heading>
+          <Markdown fit textColor="tertiary" source={aboutAzure} />
         </Slide>
 
 
