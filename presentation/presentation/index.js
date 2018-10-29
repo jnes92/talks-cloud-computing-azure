@@ -12,16 +12,26 @@ import {
   Slide,
   Text,
   Markdown,
+  Image
 } from "spectacle";
 
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
+
+// Chapter 1 Slide Markdown Files
+import aboutBrickmakers from "./aboutBrickmakers.md"
+import aboutMe from "./aboutMe.md"
+import chapter1Notes from "./chapter1Notes.md"
+
+// Chapter 2 Slide Markdown Files
 import def1 from "./def1-rg.md"
 import def2 from "./def2-appService.md"
 import def3 from "./def3.md"
 import def4 from "./def4.md"
 import def5 from "./def5.md"
+
+import teamIdeaLogo from '../assets/team-idea.png'
 
 // Require CSS
 require("normalize.css");
@@ -42,6 +52,7 @@ const theme = createTheme({
 export default class Presentation extends React.Component {
   render() {
 
+    let introductionMd = [{ md: aboutBrickmakers, image: teamIdeaLogo }, { md: aboutMe }]
     let definitionsMd = [def1, def2, def3, def4, def5]
 
     return (
@@ -76,17 +87,43 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
         <Slide transition={["zoom"]} bgColor="primary">
-          <Notes>
-            {/* <Markdown source={def1} /> */}
-          </Notes>
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Kapitel 1: Einführung
             </Heading>
           <List ordered textColor="tertiary">
-            <ListItem bold> Über mich </ListItem>
             <ListItem bold> BRICKMAKERS GmbH </ListItem>
+            <ListItem bold> Über mich </ListItem>
           </List>
         </Slide>
+
+        <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
+        <Notes>
+            <Markdown source={chapter1Notes} />
+          </Notes>
+          <Heading size={6} caps lineHeight={1} textColor="secondary">
+            Kapitel 1: Einführung
+            </Heading>
+
+          <Markdown fit textColor="tertiary" source={aboutBrickmakers} />
+          <Image src={teamIdeaLogo} />
+          <Text> Kommt gerne für einen Kaffee vorbei </Text>
+        </Slide>
+
+        <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
+          <Notes>
+            <Markdown source={chapter1Notes} />
+          </Notes>
+          <Heading size={6} caps lineHeight={1} textColor="secondary">
+            Kapitel 1: Einführung
+            </Heading>
+
+          <Markdown fit textColor="tertiary" source={aboutMe} />
+        </Slide>
+
+
+
+
+
 
         {/* Kapitel 2: Überblick in Azure */}
         <Slide transition={["zoom"]} bgColor="primary" >
