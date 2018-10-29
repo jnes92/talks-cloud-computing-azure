@@ -38969,44 +38969,67 @@ var _chapter1Notes = __webpack_require__(1638);
 
 var _chapter1Notes2 = _interopRequireDefault(_chapter1Notes);
 
-var _def2AppService = __webpack_require__(1639);
+var _def1Rg = __webpack_require__(1639);
+
+var _def1Rg2 = _interopRequireDefault(_def1Rg);
+
+var _def2AppService = __webpack_require__(1640);
 
 var _def2AppService2 = _interopRequireDefault(_def2AppService);
 
-var _def = __webpack_require__(1640);
+var _def3Asp = __webpack_require__(1641);
 
-var _def2 = _interopRequireDefault(_def);
+var _def3Asp2 = _interopRequireDefault(_def3Asp);
 
-var _def3 = __webpack_require__(1641);
+var _def3AspTipps = __webpack_require__(1642);
 
-var _def4 = _interopRequireDefault(_def3);
+var _def3AspTipps2 = _interopRequireDefault(_def3AspTipps);
 
-var _def5 = __webpack_require__(1642);
+var _def4Deployment = __webpack_require__(1643);
 
-var _def6 = _interopRequireDefault(_def5);
+var _def4Deployment2 = _interopRequireDefault(_def4Deployment);
 
-var _teamIdea = __webpack_require__(1643);
+var _def4DeploymentZerodown = __webpack_require__(1644);
+
+var _def4DeploymentZerodown2 = _interopRequireDefault(_def4DeploymentZerodown);
+
+var _def4DeploymentEnv = __webpack_require__(1645);
+
+var _def4DeploymentEnv2 = _interopRequireDefault(_def4DeploymentEnv);
+
+var _teamIdea = __webpack_require__(1646);
 
 var _teamIdea2 = _interopRequireDefault(_teamIdea);
 
+var _workshop_welcome = __webpack_require__(1647);
+
+var _workshop_welcome2 = _interopRequireDefault(_workshop_welcome);
+
+var _workshop_Architecture = __webpack_require__(1648);
+
+var _workshop_Architecture2 = _interopRequireDefault(_workshop_Architecture);
+
+var _workshop_app = __webpack_require__(1649);
+
+var _workshop_app2 = _interopRequireDefault(_workshop_app);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// Require CSS
+
+
+// Import theme
+// Import React
+__webpack_require__(1650);
+
 // Chapter 2 Slide Markdown Files
-// import def1 from "./def1-rg.md"
 
 
 // Chapter 1 Slide Markdown Files
 
 
 // Import Spectacle Core tags
-var def1 = __webpack_require__(1644);
 
-// Import theme
-// Import React
-
-
-// Require CSS
-__webpack_require__(1645);
 
 var theme = (0, _default2.default)({
   primary: "white",
@@ -39059,7 +39082,7 @@ var _ref5 = (0, _jsx3.default)(_spectacle.Heading, {
 
 var _ref6 = (0, _jsx3.default)(_spectacle.Text, {
   margin: "10px 0 0",
-  textColor: "tertiary",
+  textColor: "primary",
   size: 3,
   fit: true,
   bold: true
@@ -39104,7 +39127,7 @@ var _ref12 = (0, _jsx3.default)(_spectacle.Image, {
   src: _teamIdea2.default
 });
 
-var _ref13 = (0, _jsx3.default)(_spectacle.Text, {}, void 0, " Kommt gerne f\xFCr einen Kaffee vorbei ");
+var _ref13 = (0, _jsx3.default)(_spectacle.Text, {}, void 0, " Kommt gerne auf einen Kaffee vorbei ");
 
 var _ref14 = (0, _jsx3.default)(_spectacle.Notes, {}, void 0, (0, _jsx3.default)(_spectacle.Markdown, {
   source: _chapter1Notes2.default
@@ -39146,7 +39169,7 @@ var _ref19 = (0, _jsx3.default)(_spectacle.Heading, {
 
 var _ref20 = (0, _jsx3.default)(_spectacle.Text, {
   margin: "10px 0 0",
-  textColor: "tertiary",
+  textColor: "primary",
   size: 3,
   fit: true,
   bold: true
@@ -39159,17 +39182,86 @@ var _ref21 = (0, _jsx3.default)(_spectacle.Heading, {
   textColor: "secondary"
 }, void 0, "Kapitel 2: \xDCberblick in Azure");
 
-var _ref22 = (0, _jsx3.default)(_spectacle.List, {
-  ordered: true,
-  textColor: "tertiary"
-}, void 0, (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " Ressource Group "), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " App Service "), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " App Service Plan "), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " App Service Plan Tipps "), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " Zero-Downtime Deployment"));
+var _ref22 = (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " Ressource Group ");
 
-var _ref23 = (0, _jsx3.default)(_spectacle.Heading, {
+var _ref23 = (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " App Service ");
+
+var _ref24 = (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " App Service Plan ");
+
+var _ref25 = (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " Deployment");
+
+var _ref26 = (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " Datenbanken ");
+
+var _ref27 = (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " weitere Services ");
+
+var _ref28 = (0, _jsx3.default)(_spectacle.Heading, {
   size: 6,
   caps: true,
   lineHeight: 1,
   textColor: "secondary"
 }, void 0, "2. \xDCberblick in Azure");
+
+var _ref29 = (0, _jsx3.default)(_spectacle.Heading, {
+  size: 1,
+  fit: true,
+  caps: true,
+  lineHeight: 1,
+  textColor: "secondary"
+}, void 0, "Cloud Computing: Azure");
+
+var _ref30 = (0, _jsx3.default)(_spectacle.Text, {
+  margin: "10px 0 0",
+  textColor: "primary",
+  size: 3,
+  fit: true,
+  bold: true
+}, void 0, "Kapitel 3: Workshop - App Innovation");
+
+var _ref31 = (0, _jsx3.default)(_spectacle.Heading, {
+  size: 6,
+  caps: true,
+  lineHeight: 1,
+  textColor: "secondary"
+}, void 0, "Kapitel 3: Workshop");
+
+var _ref32 = (0, _jsx3.default)(_spectacle.List, {
+  ordered: true,
+  textColor: "tertiary"
+}, void 0, (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " System\xFCberblick "));
+
+var _ref33 = (0, _jsx3.default)(_spectacle.Slide, {
+  align: "center flex-start"
+}, void 0, (0, _jsx3.default)(_spectacle.Heading, {
+  size: 6,
+  caps: true,
+  lineHeight: 1,
+  textColor: "secondary"
+}, void 0, "3. Workshop"), (0, _jsx3.default)(_spectacle.Heading, {
+  size: 6,
+  caps: true,
+  lineHeight: 1,
+  textColor: "tertiary"
+}, void 0, "3.1 Architektur ", "&", " Anwendung"), (0, _jsx3.default)(_spectacle.Image, {
+  src: _workshop_welcome2.default
+}), (0, _jsx3.default)(_spectacle.Image, {
+  src: _workshop_app2.default
+}));
+
+var _ref34 = (0, _jsx3.default)(_spectacle.Slide, {
+  align: "center flex-start"
+}, void 0, (0, _jsx3.default)(_spectacle.Heading, {
+  size: 6,
+  caps: true,
+  lineHeight: 1,
+  textColor: "secondary"
+}, void 0, "3. Workshop"), (0, _jsx3.default)(_spectacle.Heading, {
+  size: 6,
+  caps: true,
+  lineHeight: 1,
+  textColor: "tertiary"
+}, void 0, "3.1 Architektur ", "&", " Anwendung"), (0, _jsx3.default)(_spectacle.Image, {
+  src: _workshop_Architecture2.default
+}));
 
 var Presentation = function (_React$Component) {
   (0, _inherits3.default)(Presentation, _React$Component);
@@ -39182,12 +39274,13 @@ var Presentation = function (_React$Component) {
   Presentation.prototype.render = function render() {
 
     var introductionMd = [{ md: _aboutBrickmakers2.default, image: _teamIdea2.default }, { md: _aboutMe2.default }];
-    var definitionsMd = [def1, _def2AppService2.default, _def2.default, _def4.default, _def6.default];
+    var definitionsMd = [_def1Rg2.default, _def2AppService2.default, _def3Asp2.default, _def3AspTipps2.default, _def4Deployment2.default, _def4DeploymentEnv2.default, _def4DeploymentZerodown2.default];
 
     return (0, _jsx3.default)(_spectacle.Deck, {
       transition: ["zoom", "slide"],
       transitionDuration: 500,
-      theme: theme
+      theme: theme,
+      progress: "number"
     }, void 0, (0, _jsx3.default)(_spectacle.Slide, {
       transition: ["zoom"],
       bgColor: "primary"
@@ -39196,7 +39289,7 @@ var Presentation = function (_React$Component) {
       bgColor: "primary"
     }, void 0, _ref3, _ref4), (0, _jsx3.default)(_spectacle.Slide, {
       transition: ["zoom"],
-      bgColor: "primary"
+      bgColor: "tertiary"
     }, void 0, _ref5, _ref6), (0, _jsx3.default)(_spectacle.Slide, {
       transition: ["zoom"],
       bgColor: "primary"
@@ -39217,22 +39310,31 @@ var Presentation = function (_React$Component) {
       maxWidth: "100%"
     }, void 0, (0, _jsx3.default)(_spectacle.Notes, {}, void 0), _ref17, _ref18), (0, _jsx3.default)(_spectacle.Slide, {
       transition: ["zoom"],
-      bgColor: "primary"
+      bgColor: "tertiary"
     }, void 0, _ref19, _ref20), (0, _jsx3.default)(_spectacle.Slide, {
       transition: ["zoom"],
       bgColor: "primary"
-    }, void 0, _ref21, _ref22), definitionsMd.map(function (definition) {
+    }, void 0, _ref21, (0, _jsx3.default)(_spectacle.List, {
+      ordered: true,
+      textColor: "tertiary"
+    }, void 0, _ref22, _ref23, _ref24, _ref25, _ref26, _ref27)), definitionsMd.map(function (definition) {
       return (0, _jsx3.default)(_spectacle.Slide, {
         align: "center flex-start",
         transition: ["zoom"],
         bgColor: "primary",
         maxWidth: "100%"
-      }, void 0, _ref23, (0, _jsx3.default)(_spectacle.Markdown, {
+      }, void 0, _ref28, (0, _jsx3.default)(_spectacle.Markdown, {
         fit: true,
         textColor: "tertiary",
         source: definition
       }));
-    }));
+    }), (0, _jsx3.default)(_spectacle.Slide, {
+      transition: ["zoom"],
+      bgColor: "tertiary"
+    }, void 0, _ref29, _ref30), (0, _jsx3.default)(_spectacle.Slide, {
+      transition: ["zoom"],
+      bgColor: "primary"
+    }, void 0, _ref31, _ref32), _ref33, _ref34);
   };
 
   return Presentation;
@@ -87301,46 +87403,76 @@ module.exports = "#### Kapitel 1 Notizen\n\n##### BRICKMAKERS\n- Tools:\n    - T
 /* 1639 */
 /***/ (function(module, exports) {
 
-module.exports = "#### **App Service**\n* Container für alle typischen Webanwendungen\n\t* Statische Webseite mit HTML, CSS\n\t* Webanwendungen (Frontend) \n\t* Backend Server (API)\n* Betriebssystem Windows / Linux \n\n##### Info:\n\n- Name wird auch für URL verwendet\n- benötigt *App Service Plan*\n- Subscription -> payment\n- Ressourcengruppe angeben\n"
+module.exports = "##### 2.1 **RESSOURCE GROUP**\n- Jeder Service gehört zu einer *Ressource group*\n    - dient als *logischer Ordner*\n    - trennt Projekte oder Abteilungen\n- Erlaubt Gruppenfunktionen (bspw. löschen)\n- Kostenüberblick pro Gruppe"
 
 /***/ }),
 /* 1640 */
 /***/ (function(module, exports) {
 
-module.exports = "#### App Service Plan:\n- PaaS: Plattform as a Service\n- bestimmt die Hardware, die für App Services zur Verfügung steht\n- kann an spezifische Orte \"gebunden\" werden\n    - verringert Latenzzeiten\n- ist jederzeit skalierbar (horizontal, vertikal)\n--- \n##### Info:\n- Lizenz Basic 1 (B1) ist kostenlos\n- Application Insights ≈ Google Analytics\n"
+module.exports = "#### 2.2 **App Service**\n* Container für alle typischen Webanwendungen\n\t* Statische Webseite mit HTML, CSS\n\t* Webanwendungen (Frontend) \n\t* Backend Server (API)\n* Betriebssystem Windows / Linux \n\n--- \n##### Info:\n\n- Name wird auch für URL verwendet\n- benötigt *App Service Plan*\n- Subscription -> payment\n- Ressourcengruppe angeben\n"
 
 /***/ }),
 /* 1641 */
 /***/ (function(module, exports) {
 
-module.exports = "#### App Service Plan Tipps\n- 1 App Service Plan can have multiple Web Apps\n- Its fine if you don’t bother Performance „thieves“ from other apps\n- Place high demand apps into an App Service Plan which is configured to auto-scale based on CPU and memory utilisation.\n\t- You can also use Per-App Scaling (instead of „Per-Plan Scaling“),\n\t- per app : controls maximum of servers allocated to app\n\t- per plan: application will run on all available services\n"
+module.exports = "#### 2.3 App Service Plan \n(ASP / ASE):\n- PaaS: Plattform as a Service\n- bestimmt die Hardware, die für App Services zur Verfügung steht\n- kann an spezifische Orte \"gebunden\" werden\n    - verringert Latenzzeiten\n- ist jederzeit skalierbar (horizontal, vertikal)\n--- \n##### Info:\n- Lizenz Basic 1 (B1) ist kostenlos\n- Application Insights ≈ Google Analytics\n"
 
 /***/ }),
 /* 1642 */
 /***/ (function(module, exports) {
 
-module.exports = "##### Zero-Downtime Deployment\n- App Service have deployment slots\n- you can define multi slots to use for production / staging / development or more\n- you can deploy to Slot B -> Test B -> Swap A-B after successful tests\n- Zero - downtime deployments \n- some applications need to do warmup (fill cache with data) -> can be done in Slot B before swapping\n- all slots share 1 VIP (virtual ip) -> nslookup -> waws-prod-ln1-013.vip.azurewebsites.windows.net -> WAWS: Windows Azure Web Sites \n- Azure was called Windows before, App Service was called Web Sites before :D "
+module.exports = "#### 2.3 App Service Plan: Tipps\n\n- Plan kann mehrere App Services beinhalten\n\t- die Ressourcen werden dann geteilt\n\t- auf *Performance-Diebe* achten\n- Anspruchsvolle Apps sollten so konfiguriert sein\n\t- *auto-scale based on CPU and memory*\n\t- *Per-Plan Scaling* oder *Per-App-Scaling* \n\n--- \n- per plan: kontrolliert auf wievielen Servern die App gleichzeitig läuft\n- per app : kontrolliert **maximale** für die App zugewiesene Server\n"
 
 /***/ }),
 /* 1643 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAuCAMAAABpjHt/AAACFlBMVEUAAAD////M///////d7v/f7//S8P/V8f/j8f/X8v/Z8vLn8//o8//I6f/e9P/p9P/K6vTr9f/i6/XQ4/bI5Pbt9v/n///3///W7vPP5fbI5PPJ6PNYerdWeLjm9Pvg8fjr+P/V6/je7/jb7/zv/P/Z7/nY7fnb7fnP6vTk8vzq9//s+v/Y7frh8vru+P/u+P/J5PPY7fhad7ZZd7bL5/bh8/3c7/rJ5/Xu+P/Y7vjo9f3u+v/I5PTR6ffX7Pnm9v3r9/3t+f/u+f/a7/va7/tYd7bZ7flZd7XZ7vjZ7fjZ7fjZ7/rZ7/rY7/rp9vzt+P/u+v/R6fbU6/fs9/5Zd7VZd7bS6/ju+f/f8flZd7VZd7XL5/be8frU6/fv+f/S6vbl9fzp9v7r9/7G5PPv+f/O6PXa7vnd8Pvj8/3M6PTa7vnj8/zo9v3u+f9Zd7bg8vvu+f9Zd7Z0ksV3k8bG5PPI5vPJ5vPJ5vTK5vTL5vTM5vTM5/XN5/XO6PXP6PXP6PbP6fbQ6fbS6fbS6vbS6vfT6vfT6/fU6/fV6/fV7PfW7PfW7PjX7PjX7fjY7fjZ7fjZ7vjZ7vna7vnc7/nd7/ne7/ne8fnf8fnf8fvg8fvg8vvh8vvi8vvi8/vj8/vj8/zk8/zk9Pzm9Pzm9fzm9f3n9f3o9v3p9v3p9v7p9/7q9/7r9/7r+P7s+P7s+P/t+P/t+f/u+f9HFMIjAAAAsnRSTlMAAQUFDxAREhITFBUWFxcXGBkaGxwdICAsOkFCQ0RISUtOTk9PUVZWX19fYGNlZmdob3R2io+Qk5OWmZmeoqSlpqanqqyurq+wvL29vr/BwcHDw8bMztTU1dbX19na2tvb29vc3OLj4+Pk5OTk5OXl5ebm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubmHKW5PwAAAAFiS0dEAf8CLd4AAAH6SURBVDjLY2DAAlycGYgFEycOHaUebrhkmNVY8GtlVWOCslQnerLjU8npNVEZymTznejNCRPn13YKCA/3d9DigYlweU/0YcXkiFvnbty4ccPaNatW5FiJYRqEsEIhBahw4/q1q1ctX7Z0SYIcNudBHK5fgKRy0aIF2bq4PK1SALZ89aoVQCMXLZw/d3a+EnaPCsYhjFwMVDln9szpMXxYlVoAjVy3ZtVKmJGzZkybMtkMm0rRXLh/wCpnTp86ZfLkNCEsSvUQli8AWw5SOWmCDhaljqDAhFs+fRpI4cS+XjukFD8RCECpPhjDcpDK7iCEGg8QBUpJSdDAnAe3vL+vp6sjFpTSYGqgIBHT8u7O9rZ4LG71gwcm3PKO9tbmQCxK7UFGoloOVNlki0WpJsTyqUiWNzc11mtgUcqdgQhMqOVNjXWpwtiiyxQck3AjW5obG2prTLCmAY4IJMvBRtbWRAtgz2jy6WDLe2CW19ZkSmMkWGguUM+C+ae5sb62prrSHCMbwPOWJbLl1ZUVBuiZC8E2hAYmSGVVZUWZFHqWRdigiGR5RXlpiQh6QYBwt0R7cSECFCUzYhQviCIprBAZ2OArcyRRlPLiLclQlDJQS6k7kkpXBqqBKLihkYSUGudBVeYZMVATEOV9kpWGglWGEKNUFqQ2VAZDHAC1amO0T7fb7AAAAABJRU5ErkJggg=="
+module.exports = "##### 2.4 Deployment Methoden\n\n\n| **Manuell**        | **Tools**           | **CI**  | **CI & CD**\n----- | ------------- |:-------------:| -----:| ------ |\n**Build** | manuell      | manuell | auto | auto |\n**Upload** | manuell      | semi-auto      |   manuell | auto |\n\n--- \n\n- für den manuellen Upload sind extra Credentials notwendig\n- Tools: Einmaliger Login mit Azure Account üblich\n- CI / CD : Konfiguration notwendig (Anleitung)\n\n"
 
 /***/ }),
 /* 1644 */
 /***/ (function(module, exports) {
 
-module.exports = "##### **RESSOURCE GROUP**\n- Jeder Service gehört zu einer *Ressource group*\n    - dient als *logischer Ordner*\n    - trennt Projekte oder Abteilungen\n- Erlaubt Gruppenfunktionen (bspw. löschen)\n- Kostenüberblick pro Gruppe"
+module.exports = "##### 2.4 Deployment : Zero-Downtime\n\n\nProbleme beim Deployment:\n\n- Server kurzzeitig nicht verfügbar\n- Neuer Code könnte neue Bugs verursachen\n- Tests beim Buildvorgang helfen\n- manche Apps benötigen *Warmup*\n\n--- \n\n###### Vorgehen\n\n- App Services verfügen über Slots\n- Bspw. für Production, Staging, Develop\n- Deploy Slot B -> Test B -> Swap A & B\n- Falls notwendig: Warmup auf Slot B vor Swap\n\n\n<!-- warmup: (fill cache with data)  -->\n"
 
 /***/ }),
 /* 1645 */
+/***/ (function(module, exports) {
+
+module.exports = "##### 2.4 Deployment : Umgebungen\n\n- Production\n- Staging \n- Development\n- Lokale Umgebung"
+
+/***/ }),
+/* 1646 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAuCAMAAABpjHt/AAACFlBMVEUAAAD////M///////d7v/f7//S8P/V8f/j8f/X8v/Z8vLn8//o8//I6f/e9P/p9P/K6vTr9f/i6/XQ4/bI5Pbt9v/n///3///W7vPP5fbI5PPJ6PNYerdWeLjm9Pvg8fjr+P/V6/je7/jb7/zv/P/Z7/nY7fnb7fnP6vTk8vzq9//s+v/Y7frh8vru+P/u+P/J5PPY7fhad7ZZd7bL5/bh8/3c7/rJ5/Xu+P/Y7vjo9f3u+v/I5PTR6ffX7Pnm9v3r9/3t+f/u+f/a7/va7/tYd7bZ7flZd7XZ7vjZ7fjZ7fjZ7/rZ7/rY7/rp9vzt+P/u+v/R6fbU6/fs9/5Zd7VZd7bS6/ju+f/f8flZd7VZd7XL5/be8frU6/fv+f/S6vbl9fzp9v7r9/7G5PPv+f/O6PXa7vnd8Pvj8/3M6PTa7vnj8/zo9v3u+f9Zd7bg8vvu+f9Zd7Z0ksV3k8bG5PPI5vPJ5vPJ5vTK5vTL5vTM5vTM5/XN5/XO6PXP6PXP6PbP6fbQ6fbS6fbS6vbS6vfT6vfT6/fU6/fV6/fV7PfW7PfW7PjX7PjX7fjY7fjZ7fjZ7vjZ7vna7vnc7/nd7/ne7/ne8fnf8fnf8fvg8fvg8vvh8vvi8vvi8/vj8/vj8/zk8/zk9Pzm9Pzm9fzm9f3n9f3o9v3p9v3p9v7p9/7q9/7r9/7r+P7s+P7s+P/t+P/t+f/u+f9HFMIjAAAAsnRSTlMAAQUFDxAREhITFBUWFxcXGBkaGxwdICAsOkFCQ0RISUtOTk9PUVZWX19fYGNlZmdob3R2io+Qk5OWmZmeoqSlpqanqqyurq+wvL29vr/BwcHDw8bMztTU1dbX19na2tvb29vc3OLj4+Pk5OTk5OXl5ebm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubmHKW5PwAAAAFiS0dEAf8CLd4AAAH6SURBVDjLY2DAAlycGYgFEycOHaUebrhkmNVY8GtlVWOCslQnerLjU8npNVEZymTznejNCRPn13YKCA/3d9DigYlweU/0YcXkiFvnbty4ccPaNatW5FiJYRqEsEIhBahw4/q1q1ctX7Z0SYIcNudBHK5fgKRy0aIF2bq4PK1SALZ89aoVQCMXLZw/d3a+EnaPCsYhjFwMVDln9szpMXxYlVoAjVy3ZtVKmJGzZkybMtkMm0rRXLh/wCpnTp86ZfLkNCEsSvUQli8AWw5SOWmCDhaljqDAhFs+fRpI4cS+XjukFD8RCECpPhjDcpDK7iCEGg8QBUpJSdDAnAe3vL+vp6sjFpTSYGqgIBHT8u7O9rZ4LG71gwcm3PKO9tbmQCxK7UFGoloOVNlki0WpJsTyqUiWNzc11mtgUcqdgQhMqOVNjXWpwtiiyxQck3AjW5obG2prTLCmAY4IJMvBRtbWRAtgz2jy6WDLe2CW19ZkSmMkWGguUM+C+ae5sb62prrSHCMbwPOWJbLl1ZUVBuiZC8E2hAYmSGVVZUWZFHqWRdigiGR5RXlpiQh6QYBwt0R7cSECFCUzYhQviCIprBAZ2OArcyRRlPLiLclQlDJQS6k7kkpXBqqBKLihkYSUGudBVeYZMVATEOV9kpWGglWGEKNUFqQ2VAZDHAC1amO0T7fb7AAAAABJRU5ErkJggg=="
+
+/***/ }),
+/* 1647 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "39c387fed7e860d7528551be68d9dca9.png";
+
+/***/ }),
+/* 1648 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fb508727d250566c7119afdb63d3f91f.png";
+
+/***/ }),
+/* 1649 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "b50f7fb7daeed74a77cc50b4f19e9046.png";
+
+/***/ }),
+/* 1650 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1646);
+var content = __webpack_require__(1651);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -87348,7 +87480,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(1648)(content, options);
+var update = __webpack_require__(1653)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -87365,10 +87497,10 @@ if(false) {
 }
 
 /***/ }),
-/* 1646 */
+/* 1651 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1647)(undefined);
+exports = module.exports = __webpack_require__(1652)(undefined);
 // imports
 
 
@@ -87379,7 +87511,7 @@ exports.push([module.i, "/*! normalize.css v7.0.0 | MIT License | github.com/nec
 
 
 /***/ }),
-/* 1647 */
+/* 1652 */
 /***/ (function(module, exports) {
 
 /*
@@ -87461,7 +87593,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 1648 */
+/* 1653 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -87517,7 +87649,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(1649);
+var	fixUrls = __webpack_require__(1654);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -87833,7 +87965,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 1649 */
+/* 1654 */
 /***/ (function(module, exports) {
 
 

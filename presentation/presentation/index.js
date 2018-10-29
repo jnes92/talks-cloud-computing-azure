@@ -85,11 +85,11 @@ export default class Presentation extends React.Component {
         </Slide>
 
         {/* Kapitel 1: Einführung */}
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["zoom"]} bgColor="tertiary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Cloud Computing: Azure
             </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
+          <Text margin="10px 0 0" textColor="primary" size={3} fit bold>
             Kapitel 1: Einführung
           </Text>
         </Slide>
@@ -143,11 +143,11 @@ export default class Presentation extends React.Component {
 
 
         {/* Kapitel 2: Überblick in Azure */}
-        <Slide transition={["zoom"]} bgColor="primary" >
+        <Slide transition={["zoom"]} bgColor="tertiary" >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Cloud Computing: Azure
             </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
+          <Text margin="10px 0 0" textColor="primary" size={3} fit bold>
             Kapitel 2: Überblick in Azure
           </Text>
         </Slide>
