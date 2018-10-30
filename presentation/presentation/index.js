@@ -43,6 +43,18 @@ import def5 from "./def4-deployment.md"
 import def5zd from "./def4-deployment-zerodown.md"
 import def5env from "./def4-deployment-env.md"
 
+import azureDbSql from "./azure-services/database-sql.md"
+import azureDbCosmos from "./azure-services/database-cosmos.md"
+import azureBlob from "./azure-services/blobStorage.md"
+
+import azureAnalytics from "./azure-services/analytics.md"
+import azureAI from "./azure-services/artificialIntelligence.md"
+import azureAuth from "./azure-services/authentifizierung.md"
+import azureContainer from "./azure-services/azureContainer.md"
+import azureFunctions from "./azure-services/azureFunctions.md"
+import azureChatBots from "./azure-services/chatBots.md"
+import azureIoT from "./azure-services/IoTHub.md"
+
 import teamIdeaLogo from '../assets/team-idea.png'
 import workshopWelcomeImage from '../assets/03_workshop_welcome.png'
 import workshopArchitectureImage from '../assets/03_workshop_Architecture.png'
@@ -73,9 +85,25 @@ export default class Presentation extends React.Component {
       { md: [def1], title: "Ressource Group" },
       { md: [def2], title: "App Service" },
       { md: [def3, def4], title: "App Service Plan" },
+      {
+        md: [
+          azureDbSql, azureDbCosmos
+        ], title: "Datenbanken"
+      },
+      { md: [azureBlob], title: "Blob Storage" },
       { md: [def5, def5env, def5zd], title: "Deployment" },
-      { md: ["#datenbanken"], title: "Datenbanken" },
-      { md: ["#weitere Services"], title: "weitere Services" }
+      {
+        md: [
+          azureAnalytics,
+          azureAI,
+          azureAuth,
+          azureContainer,
+          azureFunctions,
+          azureChatBots,
+          azureIoT
+        ],
+        title: "weitere Services"
+      }
     ]
 
 
@@ -161,10 +189,6 @@ export default class Presentation extends React.Component {
         </Slide>
 
 
-
-
-
-
         {/* Kapitel 2: Überblick in Azure */}
         <Slide transition={["zoom"]} bgColor="tertiary" >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -179,7 +203,7 @@ export default class Presentation extends React.Component {
             Kapitel 2: Überblick in Azure
           </Heading>
           <List ordered textColor="tertiary">
-            {definitionsMd.map(def => 
+            {definitionsMd.map(def =>
               <ListItem> {def.title} </ListItem>
             )}
           </List>
