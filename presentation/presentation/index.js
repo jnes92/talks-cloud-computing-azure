@@ -12,7 +12,7 @@ import {
   Slide,
   Text,
   Markdown,
-  Image
+  Image,
 } from "spectacle";
 
 
@@ -21,9 +21,18 @@ import createTheme from "spectacle/lib/themes/default";
 
 // Chapter 1 Slide Markdown Files
 import aboutBrickmakers from "./aboutBrickmakers.md"
+import aboutBrickmakersNotes from "./aboutBrickmakers.notes.md"
 import aboutMe from "./aboutMe.md"
+import aboutMeNotes from "./aboutMe.notes.md"
 import aboutAzure from "./aboutAzure.md"
-import chapter1Notes from "./chapter1Notes.md"
+import aboutAzureNotes from "./aboutAzure.notes.md"
+
+// Chapter 1 Assets
+import bmKunde1 from "../assets/01_bm_kunden_cornelsen.svg"
+import bmKunde2 from "../assets/01_bm_kunden_allianz.svg"
+import bmKunde3 from "../assets/01_bm_kunden_telefonica.svg"
+import bmKunde4 from "../assets/01_bm_kunden_strato.svg"
+
 
 // Chapter 2 Slide Markdown Files
 import def1 from "./def1-rg.md"
@@ -106,7 +115,7 @@ export default class Presentation extends React.Component {
 
         <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
           <Notes>
-            <Markdown source={chapter1Notes} />
+            <Markdown source={aboutBrickmakersNotes} />
           </Notes>
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Kapitel 1: Einführung
@@ -115,11 +124,17 @@ export default class Presentation extends React.Component {
           <Markdown fit textColor="tertiary" source={aboutBrickmakers} />
           <Image src={teamIdeaLogo} />
           <Text> Kommt gerne auf einen Kaffee vorbei </Text>
+          <Text> Oder besucht uns auf der .NET User Group </Text>
+          {[bmKunde1, bmKunde2, bmKunde3, bmKunde4].map(kunde =>
+            <Image width="10%" display="inline" src={kunde} margin="30" />
+          )}
         </Slide>
+
+
 
         <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
           <Notes>
-            <Markdown source={chapter1Notes} />
+            <Markdown source={aboutMeNotes} />
           </Notes>
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Kapitel 1: Einführung
@@ -129,7 +144,7 @@ export default class Presentation extends React.Component {
 
         <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
           <Notes>
-            {/* <Markdown source={chapter1Notes} /> */}
+            <Markdown source={aboutAzureNotes} />
           </Notes>
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Kapitel 1: Einführung
@@ -161,9 +176,7 @@ export default class Presentation extends React.Component {
             <ListItem> App Service Plan </ListItem>
             <ListItem> Deployment</ListItem>
             <ListItem> Datenbanken </ListItem>
-            {/* TODO: ADD Database (SQL, Cosmos DB) */}
-            <ListItem> weitere Services </ListItem> 
-          {/* TODO: ADD AI, Functions, Cosmos DB, IoT Hub  */}
+            <ListItem> weitere Services </ListItem>
           </List>
         </Slide>
         {definitionsMd.map(definition => (
@@ -174,6 +187,7 @@ export default class Presentation extends React.Component {
             <Markdown fit textColor="tertiary" source={definition} />
           </Slide>
         ))}
+
 
 
         {/* Kapitel 3: Workshop App Innovation  */}
@@ -195,7 +209,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
 
-    <Slide align="center flex-start" >
+        <Slide align="center flex-start" >
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             3. Workshop
           </Heading>
@@ -220,7 +234,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
 
-    
+
 
 
 

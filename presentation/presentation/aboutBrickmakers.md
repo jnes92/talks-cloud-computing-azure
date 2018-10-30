@@ -3,9 +3,8 @@
 - Entwicklungsagentur aus Koblenz
 - ca. 50 Mitarbeiter
 - Services:
-    - Mobile Apps 
-    - Web Apps
+    - App-Entwicklung (mobile, Web, Windows)
     - UI / UX Design
-    - Online Marketing
     - Cloud Services
-    - Digitalisierung 
+    - Online Marketing
+ 

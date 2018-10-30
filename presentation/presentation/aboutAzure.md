@@ -3,6 +3,7 @@
 - hoch skalierbare Cloud-Computing Plattform
     - IaaS, PaaS, SaaS und weitere Services
     - seit 2010 verfügbar
+    - *Hybrid Cloud*
 
 
 - Über 70+ Angebote
