@@ -49,9 +49,9 @@ import azureDbCosmos from "./azure-services/database-cosmos.md"
 import azureBlob from "./azure-services/blobStorage.md"
 
 import azureSearch from "./azure-services/search.md"
-import azureAnalytics from "./azure-services/analytics.md"
 import azureAI from "./azure-services/artificialIntelligence.md"
 import azureAuth from "./azure-services/authentifizierung.md"
+import azureAuthB2c from "./azure-services/azure-adb2c.md"
 import azureContainer from "./azure-services/azureContainer.md"
 import azureFunctions from "./azure-services/azureFunctions.md"
 import azureChatBots from "./azure-services/chatBots.md"
@@ -107,19 +107,17 @@ export default class Presentation extends React.Component {
     ];
 
     let azureServicesExtendedMd = [
-
-      { md: [azureAnalytics], title: "Analytics" },
       {
-        md: [azureAuth], title: "Authentifizierung"
+        md: [azureAuth, azureAuthB2c], title: "Authentifizierung"
       },
       {
-        md: [azureSearch,], title: "azureSearch"
+        md: [azureSearch,], title: "Azure Search Engine"
       },
       {
-        md: [azureFunctions,], title: "azureFunctions"
+        md: [azureFunctions,], title: "Azure Functions"
       },
       {
-        md: [azureContainer,], title: "azureContainer"
+        md: [azureContainer,], title: "Azure Container Service"
       },
       {
         md: [azureAI,], title: "azureAI"
