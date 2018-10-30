@@ -35,7 +35,7 @@ import bmKunde4 from "../assets/01_bm_kunden_strato.svg"
 
 
 // Chapter 2 Slide Markdown Files
-import def1 from "./def1-rg.md"
+import azureRessourceGroup from "./azure-services/ressourceGroup.md"
 import def2 from "./def2-appService.md"
 import def3 from "./def3-asp.md"
 import def4 from "./def3-asp-tipps.md"
@@ -47,6 +47,7 @@ import azureDbSql from "./azure-services/database-sql.md"
 import azureDbCosmos from "./azure-services/database-cosmos.md"
 import azureBlob from "./azure-services/blobStorage.md"
 
+import azureSearch from "./azure-services/search.md"
 import azureAnalytics from "./azure-services/analytics.md"
 import azureAI from "./azure-services/artificialIntelligence.md"
 import azureAuth from "./azure-services/authentifizierung.md"
@@ -82,7 +83,7 @@ export default class Presentation extends React.Component {
 
 
     let definitionsMd = [
-      { md: [def1], title: "Ressource Group" },
+      { md: [azureRessourceGroup], title: "Ressource Group" },
       { md: [def2], title: "App Service" },
       { md: [def3, def4], title: "App Service Plan" },
       {
@@ -95,10 +96,11 @@ export default class Presentation extends React.Component {
       {
         md: [
           azureAnalytics,
-          azureAI,
           azureAuth,
-          azureContainer,
+          azureSearch,
           azureFunctions,
+          azureContainer,
+          azureAI,
           azureChatBots,
           azureIoT
         ],
@@ -156,7 +158,6 @@ export default class Presentation extends React.Component {
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Kapitel 1: Einführung
             </Heading>
-
           <Markdown fit textColor="tertiary" source={aboutBrickmakers} />
           <Image src={teamIdeaLogo} />
           <Text> Kommt gerne auf einen Kaffee vorbei </Text>
