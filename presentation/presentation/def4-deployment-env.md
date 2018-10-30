@@ -1,6 +1,7 @@
-##### 2.4 Deployment : Umgebungen
+##### 2.6 Deployment : Umgebungen
 
-- Production
-- Staging 
-- Development
-- Lokale Umgebung
+- Lokale Umgebung: zum Entwickeln
+- **Development**: CI & CD: _develop-Branch_
+- **Staging** CI & CD: _master-Branch_
+- **Production**:   nach Verifizieren von Stage
+

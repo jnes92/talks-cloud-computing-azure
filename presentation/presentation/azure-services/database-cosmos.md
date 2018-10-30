@@ -1,5 +1,5 @@
 ##### 2.4 Datenbanken: Cosmos DB
-
+>
 ![cosmos-db](https://azure.microsoft.com/svghandler/cosmos-db?width=120)
 - beste Option für NoSQL 
 - global verteilt

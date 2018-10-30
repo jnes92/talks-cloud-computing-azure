@@ -42,6 +42,7 @@ import def4 from "./def3-asp-tipps.md"
 import def5 from "./def4-deployment.md"
 import def5zd from "./def4-deployment-zerodown.md"
 import def5env from "./def4-deployment-env.md"
+import deploymentEnvImage from "../assets/02_deployment_stages.png"
 
 import azureDbSql from "./azure-services/database-sql.md"
 import azureDbCosmos from "./azure-services/database-cosmos.md"
@@ -82,7 +83,7 @@ export default class Presentation extends React.Component {
   render() {
 
 
-    let definitionsMd = [
+    let azureServicesBasicMd = [
       { md: [azureRessourceGroup], title: "Ressource Group" },
       { md: [def2], title: "App Service" },
       { md: [def3, def4], title: "App Service Plan" },
@@ -92,26 +93,62 @@ export default class Presentation extends React.Component {
         ], title: "Datenbanken"
       },
       { md: [azureBlob], title: "Blob Storage" },
-      { md: [def5, def5env, def5zd], title: "Deployment" },
       {
         md: [
-          azureAnalytics,
-          azureAuth,
-          azureSearch,
-          azureFunctions,
-          azureContainer,
-          azureAI,
-          azureChatBots,
-          azureIoT
+          def5,
+          def5env,
+          def5zd
         ],
-        title: "weitere Services"
+        images: {
+          1: deploymentEnvImage
+        },
+        title: "Deployment"
       }
+    ];
+
+    let azureServicesExtendedMd = [
+
+      { md: [azureAnalytics], title: "Analytics" },
+      {
+        md: [azureAuth], title: "Authentifizierung"
+      },
+      {
+        md: [azureSearch,], title: "azureSearch"
+      },
+      {
+        md: [azureFunctions,], title: "azureFunctions"
+      },
+      {
+        md: [azureContainer,], title: "azureContainer"
+      },
+      {
+        md: [azureAI,], title: "azureAI"
+      },
+      {
+        md: [azureChatBots,], title: "azureChatBots"
+      },
+      {
+        md: [azureIoT,], title: "azureIoT"
+      },
+    ]
+
+    const chapters = [
+      {
+        title: "Einführung", subslides: [
+          { title: "BRICKMAKERS GmbH" },
+          { title: "Über mich" },
+          { title: "Was ist Azure?" },
+        ]
+      },
+      { title: "Azure Services", subslides: [] },
+      { title: "Workshop & Hands-On", subslides: [] },
+      { title: "Azure Services - Ausblick", subslides: [] },
     ]
 
 
     return (
-      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme} progress="number">
-        <Slide transition={["zoom"]} bgColor="primary">
+      <Deck transition={[ "slide", "fade"]} transitionDuration={500} theme={theme} progress="pacman">
+        <Slide  bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Cloud Computing: Azure
             </Heading>
@@ -119,49 +156,44 @@ export default class Presentation extends React.Component {
             Hochschule Koblenz - BRICKMAKERS GmbH
           </Text>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide bgColor="primary">
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Übersicht
             </Heading>
           <List ordered textColor="tertiary">
-            <ListItem> Einführung </ListItem>
-            <ListItem> Überblick in Azure </ListItem>
-            <ListItem> Workshop {"&"} Hands-On </ListItem>
-            <ListItem> Workshop Ergebnis </ListItem>
+            {chapters.map(chapter => <ListItem> {chapter.title} </ListItem>)}
           </List>
         </Slide>
 
         {/* Kapitel 1: Einführung */}
-        <Slide transition={["zoom"]} bgColor="tertiary">
+        <Slide bgColor="tertiary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Cloud Computing: Azure
             </Heading>
           <Text margin="10px 0 0" textColor="primary" size={3} fit bold>
-            Kapitel 1: Einführung
+            Kapitel 1: {chapters[0].title}
           </Text>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide   bgColor="primary">
           <Heading size={6} caps lineHeight={1} textColor="secondary">
-            Kapitel 1: Einführung
-            </Heading>
+            Kapitel 1: {chapters[0].title}
+          </Heading>
           <List ordered textColor="tertiary">
-            <ListItem bold> BRICKMAKERS GmbH </ListItem>
-            <ListItem bold> Über mich </ListItem>
-            <ListItem bold> Was ist Azure? </ListItem>
+            {chapters[0].subslides.map(section => <ListItem bold>{section.title}</ListItem>)}
           </List>
         </Slide>
 
-        <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
+        <Slide align="center flex-start"   bgColor="primary" maxWidth={"100%"} >
           <Notes>
             <Markdown source={aboutBrickmakersNotes} />
           </Notes>
           <Heading size={6} caps lineHeight={1} textColor="secondary">
-            Kapitel 1: Einführung
-            </Heading>
+            Kapitel 1: {chapters[0].title}
+          </Heading>
           <Markdown fit textColor="tertiary" source={aboutBrickmakers} />
           <Image src={teamIdeaLogo} />
           <Text> Kommt gerne auf einen Kaffee vorbei </Text>
-          <Text> Oder besucht uns auf der .NET User Group </Text>
+          <Text> Oder besucht uns bei einem Meetup! </Text>
           {[bmKunde1, bmKunde2, bmKunde3, bmKunde4].map(kunde =>
             <Image width="10%" display="inline" src={kunde} margin="30" />
           )}
@@ -169,53 +201,54 @@ export default class Presentation extends React.Component {
 
 
 
-        <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
+        <Slide align="center flex-start"   bgColor="primary" maxWidth={"100%"} >
           <Notes>
             <Markdown source={aboutMeNotes} />
           </Notes>
           <Heading size={6} caps lineHeight={1} textColor="secondary">
-            Kapitel 1: Einführung
-            </Heading>
+            Kapitel 1: {chapters[0].title}
+          </Heading>
           <Markdown fit textColor="tertiary" source={aboutMe} />
         </Slide>
 
-        <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
+        <Slide align="center flex-start"   bgColor="primary" maxWidth={"100%"} >
           <Notes>
             <Markdown source={aboutAzureNotes} />
           </Notes>
           <Heading size={6} caps lineHeight={1} textColor="secondary">
-            Kapitel 1: Einführung
-            </Heading>
+            Kapitel 1: {chapters[0].title}
+          </Heading>
           <Markdown fit textColor="tertiary" source={aboutAzure} />
         </Slide>
 
 
         {/* Kapitel 2: Überblick in Azure */}
-        <Slide transition={["zoom"]} bgColor="tertiary" >
+        <Slide   bgColor="tertiary" >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Cloud Computing: Azure
             </Heading>
           <Text margin="10px 0 0" textColor="primary" size={3} fit bold>
-            Kapitel 2: Überblick in Azure
+            Kapitel 2: {chapters[1].title}
           </Text>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
-          <Heading size={6} caps lineHeight={1} textColor="secondary">
-            Kapitel 2: Überblick in Azure
+        <Slide   bgColor="primary">
+          <Heading size={6} caps lineHeight={1} textColor="secondary" margin="10">
+            Kapitel 2: {chapters[1].title}
           </Heading>
           <List ordered textColor="tertiary">
-            {definitionsMd.map(def =>
+            {azureServicesBasicMd.map(def =>
               <ListItem> {def.title} </ListItem>
             )}
           </List>
         </Slide>
-        {definitionsMd.map(definition =>
-          definition.md.map(subslide => (
-            <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
+        {azureServicesBasicMd.map(definition =>
+          definition.md.map((subslide, index) => (
+            <Slide align="center flex-start"   bgColor="primary" maxWidth={"100%"} >
               <Heading size={6} caps lineHeight={1} textColor="secondary">
-                2. Überblick in Azure
+                2. {chapters[1].title}
               </Heading>
-              <Markdown fit textColor="tertiary" source={subslide} />
+              <Markdown textColor="tertiary" source={subslide} />
+              {definition.images && definition.images[index] && <Image src={definition.images[index]} />}
             </Slide>
           ))
         )}
@@ -223,7 +256,7 @@ export default class Presentation extends React.Component {
 
 
         {/* Kapitel 3: Workshop App Innovation  */}
-        <Slide transition={["zoom"]} bgColor="tertiary" >
+        <Slide   bgColor="tertiary" >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Cloud Computing: Azure
             </Heading>
@@ -231,12 +264,13 @@ export default class Presentation extends React.Component {
             Kapitel 3: Workshop - App Innovation
           </Text>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide   bgColor="primary">
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Kapitel 3: Workshop
           </Heading>
           <List ordered textColor="tertiary">
             <ListItem> Systemüberblick </ListItem>
+            <ListItem> Hands-On </ListItem>
           </List>
         </Slide>
 
@@ -264,12 +298,63 @@ export default class Presentation extends React.Component {
 
           <Image src={workshopArchitectureImage} />
         </Slide>
+        <Slide bgColor="primary" >
+        <Notes>
+          <Markdown source={`
+- Zeit checken
+- Demo max. 60 min
+          `} />
+        </Notes>
+          <Heading size={6}  caps lineHeight={1} textColor="secondary">
+          3. Workshop
+            </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
+            Hands-On
+          </Text>
+        </Slide>
 
 
 
+        {/* Kapitel 4: Azure Services - Ausblick */}
+        <Slide   bgColor="tertiary" >
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Cloud Computing: Azure
+            </Heading>
+          <Text margin="10px 0 0" textColor="primary" size={3} fit bold>
+            Kapitel 4: {chapters[3].title}
+          </Text>
+        </Slide>
+        <Slide   bgColor="primary">
+          <Heading size={6} caps lineHeight={1} textColor="secondary" margin="10">
+            Kapitel 4: {chapters[3].title}
+          </Heading>
+          <List ordered textColor="tertiary">
+            {azureServicesExtendedMd.map(def =>
+              <ListItem> {def.title} </ListItem>
+            )}
+          </List>
+        </Slide>
+        {azureServicesExtendedMd.map(definition =>
+          definition.md.map((subslide, index) => (
+            <Slide align="center flex-start"   bgColor="primary" maxWidth={"100%"} >
+              <Heading size={6} caps lineHeight={1} textColor="secondary">
+                4. {chapters[3].title}
+              </Heading>
+              <Markdown textColor="tertiary" source={subslide} />
+              {definition.images && definition.images[index] && <Image src={definition.images[index]} />}
+            </Slide>
+          ))
+        )}
 
-
-
+        {/* Fragen & Ende  */}
+        <Slide   bgColor="primary" >
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Vielen Dank 
+            </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
+          für Ihre Aufmerksamkeit!
+          </Text>
+        </Slide>
       </Deck>
     );
   }

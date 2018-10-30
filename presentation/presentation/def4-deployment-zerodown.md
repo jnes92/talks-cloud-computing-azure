@@ -1,6 +1,6 @@
-##### 2.4 Deployment : Zero-Downtime
+##### 2.6 Deployment : Zero-Downtime
 
-
+> 
 Probleme beim Deployment:
 
 - Server kurzzeitig nicht verfügbar
@@ -8,9 +8,9 @@ Probleme beim Deployment:
 - Tests beim Buildvorgang helfen
 - manche Apps benötigen *Warmup*
 
---- 
+>
 
-###### Vorgehen
+Vorgehen
 
 - App Services verfügen über Slots
 - Bspw. für Production, Staging, Develop
