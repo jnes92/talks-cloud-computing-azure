@@ -68,8 +68,16 @@ const theme = createTheme({
 export default class Presentation extends React.Component {
   render() {
 
-    let introductionMd = [{ md: aboutBrickmakers, image: teamIdeaLogo }, { md: aboutMe }]
-    let definitionsMd = [def1, def2, def3, def4, def5, def5env, def5zd]
+
+    let definitionsMd = [
+      { md: [def1], title: "Ressource Group" },
+      { md: [def2], title: "App Service" },
+      { md: [def3, def4], title: "App Service Plan" },
+      { md: [def5, def5env, def5zd], title: "Deployment" },
+      { md: ["#datenbanken"], title: "Datenbanken" },
+      { md: ["#weitere Services"], title: "weitere Services" }
+    ]
+
 
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme} progress="number">
@@ -171,22 +179,21 @@ export default class Presentation extends React.Component {
             Kapitel 2: Überblick in Azure
           </Heading>
           <List ordered textColor="tertiary">
-            <ListItem> Ressource Group </ListItem>
-            <ListItem> App Service </ListItem>
-            <ListItem> App Service Plan </ListItem>
-            <ListItem> Deployment</ListItem>
-            <ListItem> Datenbanken </ListItem>
-            <ListItem> weitere Services </ListItem>
+            {definitionsMd.map(def => 
+              <ListItem> {def.title} </ListItem>
+            )}
           </List>
         </Slide>
-        {definitionsMd.map(definition => (
-          <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
-            <Heading size={6} caps lineHeight={1} textColor="secondary">
-              2. Überblick in Azure
-          </Heading>
-            <Markdown fit textColor="tertiary" source={definition} />
-          </Slide>
-        ))}
+        {definitionsMd.map(definition =>
+          definition.md.map(subslide => (
+            <Slide align="center flex-start" transition={["zoom"]} bgColor="primary" maxWidth={"100%"} >
+              <Heading size={6} caps lineHeight={1} textColor="secondary">
+                2. Überblick in Azure
+              </Heading>
+              <Markdown fit textColor="tertiary" source={subslide} />
+            </Slide>
+          ))
+        )}
 
 
 
