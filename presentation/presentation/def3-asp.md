@@ -1,13 +1,13 @@
-#### 2.3 App Service Plan 
-(ASP / ASE):
->
-![logo-asp](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAdVBMVEX///+goaJZtNlnuNubnJ2lpqf6+vre3t+ZmpuoqarQ0NH19fXb29zT1NVMsNfT6vTKysu9vb6xsbLo6Ojy+fxvvd15wN9Hrtbm8/nGx8f1+vy02+yDxOHt9/vK5vLf7/fM5vKQyuSo1uqbzuW94O+t1+q5urtX+lRvAAAFhElEQVR4nO3da3OiMBgF4BKxXmutCCrVWird//8TF90loZqQcIgdk7zn0860e8o+Ey4mKfv0ZCujOLKW+KVunVtsHT9b+8faC7FBITYoxAaF2KAQGxRig0JsUIgNCrFBabLFUHRsfVsfnm05RTLUsEGly6EzbEPs+CYaNqj0eeIO2wxq0I02qJTYoFJig0qJDSolNqiU2KBSYoNKiQ0qJTaolNigUmKDSokNKiU2qJTYoFJig0qJDSolNqiU2KBSYoNKiQ0qJTaoNFC2sVjthErDZEumo2T+stz9WU1iqDRMNpFnrDQctjhajawdViBsldkc++vyBMEWD3eJ3cMKgC2OdjYH2iX+s0Ur62ghsE0tH9El/rPdJeGxHcuvIq2S7YvvjyNYEhbbodwzxgZ1qj+zolwDRSGxvRYNMk63WOw/OleFw1Zmt2b/BhxbpGXHslDYjnsl2j+41051YbDlXxKzhtoZruhyjQuC7ZjKhtoPtcpt0GHAhcD2KR1qV2rnvBtXBsBWSoeaRI0tvkw7/Wf7NlY7X+AMS71nMx9rF7eTWavvbK+d1BjbmF3fPGfbyu8Gaja2Mbqfes6WdlWrkhv0+s3W5XbAszco9pptK1fTsG0MPtl7zbZH1Bgb6E9Tn9k+oMFWPYXo76Y+s4GDzWS4ecx2BAdbNdy0028usRkdX344/B8rJ7maARvLdD/FIbbo7ZLd8pJ5las9HfmxPO2zNM2y4vu4XuNqbLGtO5O5NC/uvJnh+pUd4+jHDoXDdyaWChhLFVc2MzY+FTIdO/8ekOs01fL3geJShrCJszTRvp/GMba4eYqW8vlbmI0d6mbP2OJd47tOxmiGaovPunqi+PmOsk3E0ebSVal+bPzi9qYbbk6xNU5R1S2zDxvj07wvXrGtxLdkFrV4Mt0BOMk2FndRk+taV7Tq+aX+fKW9lbrEJgabYq2gH1r1AFgvNjvKNpYeKr+yrbVqCBoTTyAzJ9mSP2+y8K9/6dhANcEWDdsTPSKbJod7qQ0O+h/ubk53UhPXNh+T30uNZQ6eesZRTXv3VjNavnI27edoDzXzTTQuRjWn1p+t2+ZKt9L+abSHWmPiyMOolo/7s2WHPDfZ1OBkVGtT/Qcb22zYoCidlUv+r7g0s6sfDhS7sGywXbL4sS11JDmU5tE8UkaSJRA+/XFvtgouEwNuJl+NecjPpLIZkLhmaztJraidIz4uvLnzUb6Vre2WYI0t5ceSyGdjnGGrp43aHkCssTW28w5vj8Ultvo3a/OW+XBrbI0l+qVs7s0dNr7Wd/oVtlPbwbjDJqbEW2bE7bGxtIaZyS5u7rDF9ZG2zFJaZNvws1R2cXOIjS8lFL/B1r5E7xAbX0tQP/DaZOO7BFeSo3l4tpUI/7pyuN2FbccPwB026W5K5ROvTbbbyTeHdlPK9+4qF+Utst1OvjnPptwCYo8tvf2h7rP12aNrFNm6gvtsPTbSG7JJJsg9YFP99qMtNdkilg9sT2vpm1EsuUmubJ6wKe6nVtTkuxo8YXvaFhK4/miLVL4K4wub/MVPfdGUbwbxh+38mrFTdv0qGTwblr0rtx35xFYlXx+2r3ZybNuq5Rnbb4XYoBAbFGKDQmxQiA0KsUHxn20qwn9Ra5aIQKX+sw3Flir+evG52HM1hkoDYOMF9D8PdQixQQ3EBjUQG9RAbFADsUENxAY1EBvUQGxQA7FBDcQGNRAb1EBsUAOxQQ3EBjUQG9RAbFADsUENxAY1EBvUQGxQA7FBDcQGNRAb1EBsUAOxQQ3EBjUQG9RAbFADsUENxAY1TEJnm4+QaEfbM5CZO2yR7KVz+kQaNs0rw1VvEneHrW/kbH1DbFCIDQqxQSE2KMQGhdigEBsUYoNCbFAssv0Fowmozo950G0AAAAASUVORK5CYII=)
+
 - PaaS: Plattform as a Service
 - bestimmt die Hardware, die für App Services zur Verfügung steht
-- kann an spezifische Orte "gebunden" werden
-    - verringert Latenzzeiten
+- Standort ist wählbar 
+    - Westeuropa, Nordamerika, etc.
+    - gute Wahl verringert Latenzzeiten
 - ist jederzeit skalierbar (horizontal, vertikal)
 --- 
 
-- Lizenz Basic 1 (B1) ist kostenlos
+- Bezahlung erfolgt per ASP
+    - Option Basic 1 (B1) ist kostenlos
+    - Option Standard 1 (S1) ab etwa 30 € / Monat
 - Application Insights ≈ Google Analytics

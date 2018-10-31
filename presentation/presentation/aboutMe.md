@@ -1,4 +1,3 @@
-#### 1.2 Über mich
 
 - Jonas Österle
 - B. Eng. Elektrotechnik, HS Koblenz

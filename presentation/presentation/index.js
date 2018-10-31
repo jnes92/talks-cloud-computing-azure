@@ -48,6 +48,20 @@ import azureDbSql from "./azure-services/database-sql.md"
 import azureDbCosmos from "./azure-services/database-cosmos.md"
 import azureBlob from "./azure-services/blobStorage.md"
 
+// Chapter 2 Logos
+
+const azureRessourceGroupLogo = "http://res.cloudinary.com/samcogan/image/upload/v1493930941/arm_ejo0aw.png";
+import appServiceLogo from '../assets/02_appService_logo.jpg'
+import appServicePlanLogo from '../assets/02_appServicePlan.jpg'
+import blobStorageLogo from '../assets/02_blobStorage.jpg'
+// const azureRessourceGroupLogo = "http://res.cloudinary.com/samcogan/image/upload/v1493930941/arm_ejo0aw.png";
+// const azureRessourceGroupLogo = "http://res.cloudinary.com/samcogan/image/upload/v1493930941/arm_ejo0aw.png";
+// const azureRessourceGroupLogo = "http://res.cloudinary.com/samcogan/image/upload/v1493930941/arm_ejo0aw.png";
+// const azureRessourceGroupLogo = "http://res.cloudinary.com/samcogan/image/upload/v1493930941/arm_ejo0aw.png";
+
+
+
+// Chapter 4 Slide Markdowns
 import azureSearch from "./azure-services/search.md"
 import azureAI from "./azure-services/artificialIntelligence.md"
 import azureAuth from "./azure-services/authentifizierung.md"
@@ -84,24 +98,29 @@ export default class Presentation extends React.Component {
 
 
     let azureServicesBasicMd = [
-      { md: [azureRessourceGroup], title: "Ressource Group" },
-      { md: [def2], title: "App Service" },
-      { md: [def3, def4], title: "App Service Plan" },
+      { md: [def2], title: "App Service", logo: appServiceLogo },
+      { md: [def3, def4], title: "App Service Plan", logo: appServicePlanLogo },
+      { md: [azureRessourceGroup], title: "Ressource Group", logo: azureRessourceGroupLogo },
       {
         md: [
-          azureDbSql, azureDbCosmos
-        ], title: "Datenbanken"
+          azureDbSql
+        ], title: "Datenbanken: SQL", 
+        logo: "https://azurecomcdn.azureedge.net/cvt-91f2ad75d65b94588ca876d6df21005ea3acc52dcbf2d67a7d490211b5f7d8f3/images/page/services/sql-database/sql-db.svg"
       },
-      { md: [azureBlob], title: "Blob Storage" },
       {
         md: [
-          def5,
+           azureDbCosmos
+        ], title: "Datenbanken: Cosmos DB", 
+        logo: "https://azure.microsoft.com/svghandler/cosmos-db?width=120"
+      },
+      { md: [azureBlob], title: "Blob Storage", logo: blobStorageLogo },
+      {
+        md: [
           def5env,
+          def5,
           def5zd
         ],
-        images: {
-          1: deploymentEnvImage
-        },
+        logo: deploymentEnvImage,
         title: "Deployment"
       }
     ];
@@ -145,8 +164,8 @@ export default class Presentation extends React.Component {
 
 
     return (
-      <Deck transition={[ "slide", "fade"]} transitionDuration={500} theme={theme} progress="pacman">
-        <Slide  bgColor="primary">
+      <Deck transition={["slide", "fade"]} transitionDuration={500} theme={theme} progress="pacman">
+        <Slide bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Cloud Computing: Azure
             </Heading>
@@ -172,7 +191,7 @@ export default class Presentation extends React.Component {
             Kapitel 1: {chapters[0].title}
           </Text>
         </Slide>
-        <Slide   bgColor="primary">
+        <Slide bgColor="primary">
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Kapitel 1: {chapters[0].title}
           </Heading>
@@ -181,17 +200,20 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide align="center flex-start"   bgColor="primary" maxWidth={"100%"} >
+        <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
           <Notes>
             <Markdown source={aboutBrickmakersNotes} />
           </Notes>
-          <Heading size={6} caps lineHeight={1} textColor="secondary">
+          <Heading size={5} caps lineHeight={1} textColor="secondary">
             Kapitel 1: {chapters[0].title}
           </Heading>
-          <Markdown fit textColor="tertiary" source={aboutBrickmakers} />
+          <Heading size={6} caps lineHeight={1} textColor="tertiary">
+            1.1 {chapters[0].subslides[0].title}
+          </Heading>
+          <Markdown textColor="tertiary" source={aboutBrickmakers} style={{ "text-align": "left" }} />
           <Image src={teamIdeaLogo} />
           <Text> Kommt gerne auf einen Kaffee vorbei </Text>
-          <Text> Oder besucht uns bei einem Meetup! </Text>
+          <Text> oder besucht uns bei einem Meetup! </Text>
           {[bmKunde1, bmKunde2, bmKunde3, bmKunde4].map(kunde =>
             <Image width="10%" display="inline" src={kunde} margin="30" />
           )}
@@ -199,29 +221,35 @@ export default class Presentation extends React.Component {
 
 
 
-        <Slide align="center flex-start"   bgColor="primary" maxWidth={"100%"} >
+        <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
           <Notes>
             <Markdown source={aboutMeNotes} />
           </Notes>
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Kapitel 1: {chapters[0].title}
           </Heading>
-          <Markdown fit textColor="tertiary" source={aboutMe} />
+          <Heading size={6} caps lineHeight={1} textColor="tertiary">
+            1.2 {chapters[0].subslides[1].title}
+          </Heading>
+          <Markdown fit textColor="tertiary" source={aboutMe} style={{ "text-align": "left" }} />
         </Slide>
 
-        <Slide align="center flex-start"   bgColor="primary" maxWidth={"100%"} >
+        <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
           <Notes>
             <Markdown source={aboutAzureNotes} />
           </Notes>
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Kapitel 1: {chapters[0].title}
           </Heading>
-          <Markdown fit textColor="tertiary" source={aboutAzure} />
+          <Heading size={6} caps lineHeight={1} textColor="tertiary">
+            1.3 {chapters[0].subslides[2].title}
+          </Heading>
+          <Markdown fit textColor="tertiary" source={aboutAzure} style={{ "text-align": "left" }} />
         </Slide>
 
 
         {/* Kapitel 2: Überblick in Azure */}
-        <Slide   bgColor="tertiary" >
+        <Slide bgColor="tertiary" >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Cloud Computing: Azure
             </Heading>
@@ -229,7 +257,7 @@ export default class Presentation extends React.Component {
             Kapitel 2: {chapters[1].title}
           </Text>
         </Slide>
-        <Slide   bgColor="primary">
+        <Slide bgColor="primary">
           <Heading size={6} caps lineHeight={1} textColor="secondary" margin="10">
             Kapitel 2: {chapters[1].title}
           </Heading>
@@ -239,14 +267,17 @@ export default class Presentation extends React.Component {
             )}
           </List>
         </Slide>
-        {azureServicesBasicMd.map(definition =>
+        {azureServicesBasicMd.map((definition, outIndex) =>
           definition.md.map((subslide, index) => (
-            <Slide align="center flex-start"   bgColor="primary" maxWidth={"100%"} >
-              <Heading size={6} caps lineHeight={1} textColor="secondary">
+            <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
+              <Heading size={5} caps lineHeight={1} textColor="secondary">
                 2. {chapters[1].title}
               </Heading>
-              <Markdown textColor="tertiary" source={subslide} />
-              {definition.images && definition.images[index] && <Image src={definition.images[index]} />}
+              <Heading size={6}  lineHeight={1} textColor="tertiary">
+                2.{outIndex + 1} {definition.title}
+              </Heading>
+              {definition.logo && <Image src={definition.logo} />}
+              <Markdown margin="20" textColor="tertiary" source={subslide} style={{ "text-align": "left" }} />
             </Slide>
           ))
         )}
@@ -254,7 +285,7 @@ export default class Presentation extends React.Component {
 
 
         {/* Kapitel 3: Workshop App Innovation  */}
-        <Slide   bgColor="tertiary" >
+        <Slide bgColor="tertiary" >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Cloud Computing: Azure
             </Heading>
@@ -262,7 +293,7 @@ export default class Presentation extends React.Component {
             Kapitel 3: Workshop - App Innovation
           </Text>
         </Slide>
-        <Slide   bgColor="primary">
+        <Slide bgColor="primary">
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Kapitel 3: Workshop
           </Heading>
@@ -297,14 +328,14 @@ export default class Presentation extends React.Component {
           <Image src={workshopArchitectureImage} />
         </Slide>
         <Slide bgColor="primary" >
-        <Notes>
-          <Markdown source={`
+          <Notes>
+            <Markdown source={`
 - Zeit checken
 - Demo max. 60 min
           `} />
-        </Notes>
-          <Heading size={6}  caps lineHeight={1} textColor="secondary">
-          3. Workshop
+          </Notes>
+          <Heading size={6} caps lineHeight={1} textColor="secondary">
+            3. Workshop
             </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
             Hands-On
@@ -314,7 +345,7 @@ export default class Presentation extends React.Component {
 
 
         {/* Kapitel 4: Azure Services - Ausblick */}
-        <Slide   bgColor="tertiary" >
+        <Slide bgColor="tertiary" >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Cloud Computing: Azure
             </Heading>
@@ -322,7 +353,7 @@ export default class Presentation extends React.Component {
             Kapitel 4: {chapters[3].title}
           </Text>
         </Slide>
-        <Slide   bgColor="primary">
+        <Slide bgColor="primary">
           <Heading size={6} caps lineHeight={1} textColor="secondary" margin="10">
             Kapitel 4: {chapters[3].title}
           </Heading>
@@ -334,7 +365,7 @@ export default class Presentation extends React.Component {
         </Slide>
         {azureServicesExtendedMd.map(definition =>
           definition.md.map((subslide, index) => (
-            <Slide align="center flex-start"   bgColor="primary" maxWidth={"100%"} >
+            <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
               <Heading size={6} caps lineHeight={1} textColor="secondary">
                 4. {chapters[3].title}
               </Heading>
@@ -345,12 +376,12 @@ export default class Presentation extends React.Component {
         )}
 
         {/* Fragen & Ende  */}
-        <Slide   bgColor="primary" >
+        <Slide bgColor="primary" >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Vielen Dank 
+            Vielen Dank
             </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
-          für Ihre Aufmerksamkeit!
+            für Ihre Aufmerksamkeit!
           </Text>
         </Slide>
       </Deck>

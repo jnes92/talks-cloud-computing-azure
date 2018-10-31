@@ -1,16 +1,11 @@
-##### 2.6 Deployment Methoden
+- Optionen des Deployments
+    - Manueller Build
+    - Build mit Tools vereinfacht Upload
+    - Continuous Integration automatisiert Build-Schritte
+    - Continuous Deployment automatisiert Upload
 
->
 
-| **Build**        | **Upload**           
-:-----:| ------------- |:-------------:|
-**Manuell** | manuell      | manuell |
-**Tools** | manuell      | semi-auto      |   
-**CI** | auto      | mannuell      |  
-**CI & CD** | auto      | auto      |   
-
---- 
-
-- für den manuellen Upload sind extra Credentials notwendig
+- CI & CD erlauben eine vollautomatisierten Ablauf
+- Manuellen Upload benötigt Credentials
 - Tools: Einmaliger Login mit Azure Account üblich
 - CI / CD : Konfiguration notwendig 

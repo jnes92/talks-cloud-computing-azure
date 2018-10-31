@@ -8,3 +8,7 @@
     - Flexibilität & Leistung der public Cloud
     - Sicherheit durch Firewall des Unternehmens
     - Kapitalaufwand verringern (Spitzen der Nachfrage)
+
+- IaaS: Infrastructure as a Service
+- PaaS: Platform as a Service
+- SaaS: Software as a Service
