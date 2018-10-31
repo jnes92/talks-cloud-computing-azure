@@ -8,7 +8,3 @@
     - Slack, MS Teams
     - Skype
     - Telegram
-
-
---- 
-- Beispiel timeout

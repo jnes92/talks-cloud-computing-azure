@@ -9,5 +9,3 @@
   - Zeichenerkennung in Scans
   - Entitätserkennung
   - Schlüsselbegriffserkennung
---- 
-- Beispiel DPDHL

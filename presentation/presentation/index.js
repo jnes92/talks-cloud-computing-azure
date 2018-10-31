@@ -57,6 +57,9 @@ import appServiceLogo from '../assets/02_appService_logo.jpg'
 import appServicePlanLogo from '../assets/02_appServicePlan.jpg'
 import blobStorageLogo from '../assets/02_blobStorage.jpg'
 
+
+import workshopMd from './workshop.md'
+
 // Chapter 4 Slide Markdowns
 import azureSearch from "./azure-services/search.md"
 import azureAI from "./azure-services/artificialIntelligence.md"
@@ -161,7 +164,21 @@ export default class Presentation extends React.Component {
       { title: "Azure Services", subslides: [] },
       { title: "Workshop & Hands-On", subslides: [] },
       { title: "Azure Services - Ausblick", subslides: [] },
+      {
+        title: "Azure Praxis Beispiele", subslides: [
+          { title: "Chat Bot - timeout", images: [require("../assets/05_timeout.png")]
+        },
+        { title: "IoT Hub - Temperatursensor Projekt", images: [
+          require("../assets/05_iot1.png"),
+          require("../assets/05_iot2.png"),
+          require("../assets/05_iot3a.png"),
+          require("../assets/05_iot3b.png")
+        ] },
+          // { title: "Azure Search - Immobiliensuche", images: [] },
+        ]
+      },
     ]
+
 
 
     return (
@@ -184,7 +201,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         {/* Kapitel 1: Einführung */}
-        <Slide   bgColor="primary" bgImage={background} >
+        <Slide bgColor="primary" bgImage={background} >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Cloud Computing: Azure
             </Heading>
@@ -192,7 +209,7 @@ export default class Presentation extends React.Component {
             Kapitel 1: {chapters[0].title}
           </Text>
         </Slide>
-        <Slide  bgColor="primary" >
+        <Slide bgColor="primary" >
           <Heading size={6} caps lineHeight={1} textColor="secondary" >
             Kapitel 1: {chapters[0].title}
           </Heading>
@@ -270,7 +287,7 @@ export default class Presentation extends React.Component {
           <Heading size={6} caps lineHeight={1} textColor="secondary" margin="10">
             Kapitel 2: {chapters[1].title}
           </Heading>
-          <List ordered textColor="tertiary">
+          <List ordered textColor="tertiary" >
             {azureServicesBasicMd.map(def =>
               <ListItem> {def.title} </ListItem>
             )}
@@ -299,27 +316,39 @@ export default class Presentation extends React.Component {
             Cloud Computing: Azure
             </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
-            Kapitel 3: Workshop - App Innovation
+            Kapitel 3: {chapters[2].title}
           </Text>
         </Slide>
         <Slide bgColor="primary">
           <Heading size={6} caps lineHeight={1} textColor="secondary">
-            Kapitel 3: Workshop
+            Kapitel 3: {chapters[2].title}
           </Heading>
           <List ordered textColor="tertiary">
+            <ListItem> Allgemeine Infos </ListItem>
             <ListItem> Systemüberblick </ListItem>
             <ListItem> Hands-On </ListItem>
           </List>
         </Slide>
 
-
         <Slide align="center flex-start" >
           <Heading size={6} caps lineHeight={1} textColor="secondary">
-            3. Workshop
+            Kapitel 3: {chapters[2].title}
           </Heading>
 
           <Heading size={6} caps lineHeight={1} textColor="tertiary">
-            3.1 Architektur {"&"} Anwendung
+            3.1 Allgemeine Infos
+          </Heading>
+          <Markdown textColor="tertiary" source={workshopMd} style={{ "text-align": "left" }} />
+
+        </Slide>
+
+        <Slide align="center flex-start" >
+          <Heading size={6} caps lineHeight={1} textColor="secondary">
+            Kapitel 3: {chapters[2].title}
+          </Heading>
+
+          <Heading size={6} caps lineHeight={1} textColor="tertiary">
+            3.2 Systemüberblick
           </Heading>
 
           <Image src={workshopWelcomeImage} />
@@ -327,11 +356,11 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide align="center flex-start" >
           <Heading size={6} caps lineHeight={1} textColor="secondary">
-            3. Workshop
+            Kapitel 3: {chapters[2].title}
           </Heading>
 
           <Heading size={6} caps lineHeight={1} textColor="tertiary">
-            3.1 Architektur {"&"} Anwendung
+            3.2 Systemüberblick
           </Heading>
 
           <Image src={workshopArchitectureImage} />
@@ -344,8 +373,8 @@ export default class Presentation extends React.Component {
           `} />
           </Notes>
           <Heading size={6} caps lineHeight={1} textColor="secondary">
-            3. Workshop
-            </Heading>
+            Kapitel 3: {chapters[2].title}
+          </Heading>
           <Text margin="10px 0 0" textColor="primary" size={3} fit bold>
             Hands-On
           </Text>
@@ -387,6 +416,39 @@ export default class Presentation extends React.Component {
           ))
         )}
 
+
+        {/* Kapitel 5: Azure Praxis Beispiele  */}
+        <Slide bgColor="primary" bgImage={background} >
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Cloud Computing: Azure
+            </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
+            Kapitel 5: {chapters[4].title}
+          </Text>
+        </Slide>
+        <Slide bgColor="primary">
+          <Heading size={6} caps lineHeight={1} textColor="secondary">
+            Kapitel 5: {chapters[4].title}
+          </Heading>
+          <List ordered textColor="tertiary">
+            {chapters[4].subslides.map(section => <ListItem >{section.title}</ListItem>)}
+          </List>
+        </Slide>
+   
+        {chapters[4].subslides.map((slide,index) => 
+        slide.images.map(imageItem => (
+          <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
+          <Heading size={5} caps lineHeight={1} textColor="secondary">
+            5. {chapters[4].title}
+          </Heading>
+          <Heading  size={6} lineHeight={1} textColor="tertiary">
+            5.{index + 1} {slide.title}
+          </Heading>
+          <Image src={imageItem}  />
+        </Slide>
+        ))
+  
+        )}
 
         {/* Fragen & Ende  */}
         <Slide bgColor="primary" >
