@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ContosoFieldService.Pages.JobsPage"
+    xmlns:converters="clr-namespace:ContosoFieldService.Converters;assembly=ContosoFieldService.Core"
+    xmlns:design="clr-namespace:ContosoFieldService;assembly=ContosoFieldService.Core"
+    BindingContext="{x:Static design:PageModelLocator.JobsPageModel}"
+    BackgroundColor="{StaticResource BackgroundColor}"
+    IsBusy="{Binding IsLoading, Mode=OneWay}"
+    Title="Jobs">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Converts a job status to an according color for the sidebar -->
+            <converters:JobStatusToColorConverter x:Key="JobStatusToColorConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+            x:Name="btnAddJob"
+            AutomationId="btnAddJob"
+            Icon="icon_add.png" 
+            Command="{Binding AddJobClicked}"/>
+    </ContentPage.ToolbarItems>
+      
+    <ListView 
+        AutomationId="jobsListView"
+        ItemsSource="{Binding Jobs}" 
+        BackgroundColor="Transparent" 
+        HasUnevenRows="true"
+        IsGroupingEnabled="true"
+        GroupDisplayBinding="{Binding Heading}"
+        SeparatorVisibility="None"
+        SelectedItem="{Binding SelectedJob, Mode=TwoWay}"
+        IsPullToRefreshEnabled="True"
+        IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
+        RefreshCommand="{Binding Refresh}">
+        
+        <ListView.Header>
+            <Grid BackgroundColor="{DynamicResource BackgroundColorDark}">
+                <SearchBar 
+                    x:Name="searchBar"
+                    AutomationId="searchBar"
+                    Style="{StaticResource SearchBarStyle}"
+                    SearchCommand="{Binding Search}"
+                    Text="{Binding SearchText}"
+                    Placeholder="Search" />
+            </Grid>
+        </ListView.Header>
+        
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid 
+                        BackgroundColor="{StaticResource BackgroundColorItem}"
+                        ColumnSpacing="0"
+                        AutomationId="jobItem">
+                        
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                    
+                        <BoxView 
+                            Grid.RowSpan="2"
+                            WidthRequest="6"
+                            Color="{Binding Status, Converter={StaticResource JobStatusToColorConverter}}" />
+
+                        <StackLayout 
+                            Grid.Column="1"
+                            Spacing="0"
+                            Padding="12,14">
+                            
+                            <Label 
+                                x:Name="lblName"
+                                AutomationId="lblName"
+                                FontFamily="{StaticResource FontFamilyRegular}" 
+                                FontSize="{StaticResource FontSizeRegular}"
+                                TextColor="{StaticResource TextColorItem}" 
+                                FormattedText="{Binding NameAsFormattedString}"
+                                LineBreakMode="TailTruncation" />
+                        
+                            <Label 
+                                x:Name="lblDetils"
+                                AutomationId="lblDetils"
+                                FontFamily="{StaticResource FontFamilyRegular}" 
+                                FontSize="{StaticResource FontSizeSmall}"  
+                                TextColor="{StaticResource TextColorItemSecondary}"
+                                Text="{Binding Details}" 
+                                LineBreakMode="TailTruncation">
+                            </Label>
+                        </StackLayout>
+
+                        <!-- Separator -->
+                        <BoxView 
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            HeightRequest="1"
+                            Margin="0"
+                            Color="{StaticResource ItemSeparatorColor}" />
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+        <ListView.GroupHeaderTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid
+                        Padding="{StaticResource DefaultThickness}"
+                        BackgroundColor="{StaticResource BackgroundColor}">
+
+                        <Label 
+                            VerticalOptions="Center"
+                            Text="{Binding Heading}"
+                            FontFamily="{StaticResource FontFamilyMedium}"
+                            FontSize="{StaticResource FontSizeRegular}"
+                            TextColor="{StaticResource AccentColorOrange}" />                        
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.GroupHeaderTemplate>
+    </ListView>
+</ContentPage>

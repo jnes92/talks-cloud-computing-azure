@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:design="clr-namespace:ContosoFieldService;assembly=ContosoFieldService.Core"
+    xmlns:themes="using:ContosoFieldService.Themes"
+    BindingContext="{x:Static design:PageModelLocator.PartDetailsPageModel}"    
+    x:Class="ContosoFieldService.Pages.PartDetailsPage"    
+    BackgroundColor="{StaticResource BackgroundColor}"
+    Title="Part Details">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Light theme for this page -->
+                <themes:Light />
+                <themes:Styles />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout CompressedLayout.IsHeadless="true">
+
+            <!-- Part Name Banner --> 
+            <Frame       
+                x:Name="JobName"
+                AutomationId="JobName"
+                CornerRadius="0"
+                HasShadow="false"
+                BackgroundColor="{StaticResource AccentColorRed}" >
+            
+                <Label                         
+                    Text="{Binding Name}" 
+                    HorizontalTextAlignment="Center"
+                    FontFamily="{StaticResource FontFamilyMedium}" 
+                    TextColor="#ffffff"
+                    FontSize="{StaticResource FontSizeLarge}" />
+            </Frame>
+
+            <!-- Image -->
+            <ffimageloading:CachedImage 
+                CacheType="Memory"
+                Aspect="AspectFit" 
+                HeightRequest="200" 
+                Source="{Binding ImageSource}"/>
+
+            <!-- Overview Stack -->
+            <StackLayout
+                Padding="{StaticResource DefaultThickness}"
+                Spacing="{StaticResource DefaultMargin}"
+                CompressedLayout.IsHeadless="true">
+
+                <!-- Header -->
+                <Label
+                    Style="{DynamicResource SectionHaderLabelStyle}" 
+                    Text="Overview" />
+
+                <!-- Part Name -->
+                <StackLayout 
+                    Spacing="0"
+                    CompressedLayout.IsHeadless="true">
+                    
+                    <Label 
+                        x:Name="lblName"
+                        AutomationId="lblName"
+                        Style="{DynamicResource PropertyLabelStyle}"
+                        Text="{Binding Name}"  />
+
+                    <Label 
+                        Style="{DynamicResource PropertyFooterLabelStyle}"
+                        Text="Name" >
+                    </Label>
+                </StackLayout>
+
+                <!-- Part Name -->
+                <StackLayout
+                    Spacing="0"
+                    CompressedLayout.IsHeadless="true">
+                    
+                    <Label 
+                        x:Name="lblManufacturer"
+                        AutomationId="lblManufacturer"
+                        Style="{DynamicResource PropertyLabelStyle}"
+                        Text="{Binding Manufacturer}"  />
+
+                    <Label 
+                        Style="{DynamicResource PropertyFooterLabelStyle}"
+                        Text="Manufacturer" >
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+
+            <!-- Divier -->
+            <BoxView HeightRequest="1" BackgroundColor="{StaticResource SeparatorColor}" />
+
+            <!-- Customer Info Stack -->
+            <StackLayout
+                Padding="{StaticResource DefaultThickness}"
+                Spacing="{StaticResource DefaultMargin}"
+                CompressedLayout.IsHeadless="true">
+
+                <!-- Header -->
+                <Label
+                    Style="{DynamicResource SectionHaderLabelStyle}" 
+                    Text="Details" />
+
+                <!-- Part Serial Number -->
+                <StackLayout Spacing="0">
+                    <Label 
+                        x:Name="lblSerialNumber"
+                        AutomationId="lblSerialNumber"
+                        Style="{DynamicResource PropertyLabelStyle}"
+                        Text="{Binding SerialNumber}"  />
+
+                    <Label 
+                        Style="{DynamicResource PropertyFooterLabelStyle}"
+                        Text="Serial Number" >
+                    </Label>
+                </StackLayout>
+
+                <!-- Part Model Number -->
+                <StackLayout
+                    Spacing="0"
+                    CompressedLayout.IsHeadless="true">
+                    
+                    <Label 
+                        x:Name="lblModelNumber"
+                        AutomationId="lblModelNumber"
+                        Style="{DynamicResource PropertyLabelStyle}"
+                        Text="{Binding ModelNumber}"  />
+
+                    <Label 
+                        Style="{StaticResource PropertyFooterLabelStyle}"
+                        Text="Model Number" >
+                    </Label>
+                </StackLayout>
+
+                <!-- Part Price -->
+                <StackLayout
+                    Spacing="0"
+                    CompressedLayout.IsHeadless="true">
+                    
+                    <Label 
+                        x:Name="lblPrice"
+                        AutomationId="lblPrice"
+                        Style="{DynamicResource PropertyLabelStyle}"
+                        Text="{Binding PriceInUSD, StringFormat='{0} USD'}"  />
+
+                    <Label 
+                        Style="{DynamicResource PropertyFooterLabelStyle}"
+                        Text="Price" >
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+
+            <Button 
+                Text="Place Order" 
+                TextColor="#ffffff"               
+                CornerRadius="0" 
+                BackgroundColor="{StaticResource AccentColor}" 
+                FontFamily="{StaticResource FontFamilyMedium}"
+                FontSize="{StaticResource FontSizeLarge}" 
+                Command="{Binding OrderPart}"
+                Margin="{OnPlatform Android={StaticResource DefaultThickness}}" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

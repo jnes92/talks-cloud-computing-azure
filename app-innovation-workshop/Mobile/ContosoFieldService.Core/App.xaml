@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:themes="using:ContosoFieldService.Themes"
+    x:Class="ContosoFieldService.App">
+	<Application.Resources>        
+		<ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- 
+                THEMES:
+                As some pages are styled with a light theme and others with a dark one,
+                we created themes than can be applied to pages and elements. These themes inherit
+                from a Base theme that has to be applied application wide.
+                Dark and Light themes can either be set application wide (as default) or per element. 
+                -->
+                
+                <!-- Base Theme -->
+                <themes:Base />
+
+                <!-- Set Default Theme -->
+                <themes:Dark />
+                
+                <!-- Whenever a page or control should to be themed differently, add the following to the Resources -->
+                <!--
+                <ResourceDictionary>
+                    <ResourceDictionary.MergedDictionaries>                    
+                        <themes:Light />
+                        <themes:Styles />
+                    </ResourceDictionary.MergedDictionaries>
+                </ResourceDictionary>
+                -->                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

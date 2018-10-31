@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ContosoFieldService.Pages.Android.MenuPage"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:behaviors="clr-namespace:Corcav.Behaviors;assembly=Corcav.Behaviors"
+    BackgroundColor="{StaticResource BackgroundColorDark}">
+    
+    <ListView 
+        x:Name="listView"
+        HasUnevenRows="true"
+        ItemsSource="{Binding MenuItems}" 
+        SelectedItem="{Binding SelectedItem}"
+        BackgroundColor="Transparent"
+        SeparatorVisibility="None">
+        
+        <behaviors:Interaction.Behaviors>
+            <behaviors:BehaviorCollection>
+                <behaviors:EventToCommand EventName="ItemSelected" Command="{Binding NavigateCommand}" />
+            </behaviors:BehaviorCollection>
+        </behaviors:Interaction.Behaviors>
+        
+        <ListView.Header>
+            <Grid
+                BackgroundColor="{StaticResource AccentColorDark}"
+                HeightRequest="160">
+                
+                <StackLayout
+                    VerticalOptions="Center"
+                    CompressedLayout.IsHeadless="true">
+
+                    <Label 
+                        Style="{StaticResource LargeLabelStyle}"
+                        HorizontalOptions="Start"
+                        HorizontalTextAlignment="Start"
+                        Margin="25,0,10,0"
+                        TextColor="White"
+                        Text="Contoso Maintenance"/>
+                    <Label 
+                        Style="{StaticResource SectionHaderLabelStyle}"
+                        HorizontalOptions="Start"
+                        HorizontalTextAlignment="Start"
+                        Margin="25,0,10,0"
+                        TextColor="White"
+                        Text="Workshop Demo App" />
+                </StackLayout>                
+            </Grid>
+        </ListView.Header>
+        
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout
+                        Padding="20"
+                        Orientation="Horizontal">
+                        
+                        <ffimageloading:CachedImage
+                            HeightRequest="20"
+                            WidthRequest="30"
+                            Source="{Binding Image}"
+                            VerticalOptions="Center" />
+                            
+                        <Label
+                            Margin="10,0,0,0"
+                            VerticalTextAlignment="Center"
+                            VerticalOptions="Center"
+                            Text="{Binding Label}"
+                            TextColor="#EEEEEE"
+                            FontSize="16" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

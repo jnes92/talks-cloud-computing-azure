@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:design="clr-namespace:ContosoFieldService;assembly=ContosoFieldService.Core"
+    BindingContext="{x:Static design:PageModelLocator.PartsPageModel}"    
+    x:Class="ContosoFieldService.Pages.PartsPage"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    BackgroundColor="{StaticResource BackgroundColor}"
+    Title="Parts">
+
+    <Grid>            
+        <ListView 
+            x:Name="PartsListView"
+            HasUnevenRows="true"
+            BackgroundColor="Transparent"
+            SeparatorVisibility="None"
+            ItemsSource="{Binding Parts}" 
+            SelectedItem="{Binding SelectedPart, Mode=TwoWay}"
+            IsPullToRefreshEnabled="True"
+            IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
+            RefreshCommand="{Binding Refresh}">
+            
+            <ListView.Header>
+                <Grid BackgroundColor="{DynamicResource BackgroundColorDark}">
+                    <SearchBar 
+                        x:Name="searchBar"
+                        AutomationId="searchBar"
+                        Style="{StaticResource SearchBarStyle}"
+                        SearchCommand="{Binding Search}"
+                        Text="{Binding SearchText}"
+                        Placeholder="Search" />
+                </Grid>
+            </ListView.Header>
+            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid 
+                            BackgroundColor="{StaticResource BackgroundColorItem}"
+                            ColumnSpacing="0">
+                            
+                            <Grid.RowDefinitions>                                
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <BoxView 
+                                Grid.RowSpan="2"
+                                WidthRequest="6"
+                                Color="{StaticResource AccentColorBlue}" />
+                            
+                            <ffimageloading:CachedImage 
+                                Grid.Column="1"
+                                Grid.RowSpan="2"
+                                Margin="{StaticResource DefaultThickness}"
+                                CacheType="Memory"
+                                Aspect="AspectFit" 
+                                HeightRequest="50" 
+                                WidthRequest="50" 
+                                Source="{Binding ImageSource}" />
+
+                            <StackLayout 
+                                Grid.Column="2"
+                                Spacing="0"
+                                VerticalOptions="Center"
+                                Padding="12,14">
+                                
+                                <Label 
+                                    x:Name="lblName"
+                                    AutomationId="lblName"
+                                    FontFamily="{StaticResource FontFamilyRegular}" 
+                                    FontSize="{StaticResource FontSizeRegular}"
+                                    TextColor="{StaticResource TextColorItem}" 
+                                    Text="{Binding Name}" 
+                                    LineBreakMode="TailTruncation" />
+                            
+                                <Label 
+                                    x:Name="lblDetils"
+                                    AutomationId="lblDetils"
+                                    FontFamily="{StaticResource FontFamilyRegular}" 
+                                    FontSize="{StaticResource FontSizeSmall}"  
+                                    TextColor="{StaticResource TextColorItemSecondary}"
+                                    Text="{Binding Manufacturer}" 
+                                    LineBreakMode="TailTruncation">
+                                </Label>
+                            </StackLayout>
+
+                            <!-- Separator -->
+                            <BoxView 
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Grid.ColumnSpan="2"
+                                HeightRequest="1"
+                                Margin="0"
+                                Color="{StaticResource ItemSeparatorColor}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+    xmlns:converters="clr-namespace:ContosoFieldService.Converters;assembly=ContosoFieldService.Core"
+    xmlns:themes="using:ContosoFieldService.Themes"
+    x:Class="ContosoFieldService.Pages.ProfilePage"
+    BackgroundColor="{StaticResource BackgroundColorDark}"
+    Title="Me">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>            
+            <converters:NegateBooleanConverter x:Key="NegateBooleanConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ScrollView>
+        <StackLayout 
+            Spacing="{StaticResource DefaultMargin}" 
+            CompressedLayout.IsHeadless="true">
+
+            <!-- Profile Header -->            
+            <Grid 
+                Padding="{StaticResource DefaultThickness}"
+                HorizontalOptions="FillAndExpand"
+                CompressedLayout.IsHeadless="true">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!-- ChatBot Button --> 
+                <Button 
+                    Grid.Column="0"
+                    x:Name="btnBot"
+                    AutomationId="btnBot"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    HeightRequest="50" 
+                    WidthRequest="50" 
+                    CornerRadius="25" 
+                    BackgroundColor="{StaticResource BackgroundColor}" 
+                    Image="icon_bot.png" 
+                    Command="{Binding ChatToBot}"  />
+
+                <!-- Profile Image -->
+                <ffimageloading:CachedImage 
+                    Grid.Column="1"
+                    x:Name="profileImage" 
+                    AutomationId="profileImage"
+                    VerticalOptions="Center" 
+                    DownsampleToViewSize="true"
+                    Aspect="AspectFill" 
+                    HeightRequest="110" 
+                    WidthRequest="110" 
+                    Source="{Binding GravatarSource}">
+                    <ffimageloading:CachedImage.Transformations>
+                        <fftransformations:CircleTransformation 
+                            BorderHexColor="#FFFFFF"
+                            BorderSize="{OnPlatform iOS=40, Android=30}" />
+                    </ffimageloading:CachedImage.Transformations>
+                </ffimageloading:CachedImage>
+
+                <!-- Settings Button -->
+                <Button 
+                    Grid.Column="2"
+                    x:Name="btnSettings"
+                    AutomationId="btnSettings"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    WidthRequest="50" 
+                    HeightRequest="50" 
+                    CornerRadius="25" 
+                    BackgroundColor="{StaticResource BackgroundColor}"
+                    Image="icon_usersettings.png" 
+                    Command="{Binding ShowSettings}" />
+
+                <!-- Full Name -->
+                <Label 
+                    Grid.Row="1"
+                    Grid.ColumnSpan="3"
+                    x:Name="lblFullName"
+                    AutomationId="lblFullName"
+                    Style="{DynamicResource RegularLabelStyle}"
+                    Text="{Binding Name}" 
+                    HorizontalTextAlignment="Center" />                
+            </Grid>
+
+            <StackLayout
+                BackgroundColor="{StaticResource BackgroundColor}">
+                <StackLayout.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.MergedDictionaries>
+                            <!-- Light theme for this page -->
+                            <themes:Light />
+                            <themes:Styles />
+                        </ResourceDictionary.MergedDictionaries>
+                    </ResourceDictionary>
+                </StackLayout.Resources>
+                
+                <!-- Login / Logout Button -->
+                <Button
+                    AutomationId="btnLogin"
+                    IsVisible="{Binding IsLoggedIn, Converter={StaticResource NegateBooleanConverter}}"
+                    Style="{StaticResource FullWidthButtonStyle}"
+                    BackgroundColor="{StaticResource AccentColor}" 
+                    Text="Login" 
+                    Command="{Binding Login}" />
+                <Button
+                    AutomationId="btnLogout"
+                    IsVisible="{Binding IsLoggedIn}"
+                    Style="{StaticResource FullWidthButtonStyle}"
+                    BackgroundColor="{StaticResource AccentColor}" 
+                    Text="Logout" 
+                    Command="{Binding Logout}" />
+
+                <!-- Motivational Banner -->                                 
+                <Label                         
+                    Text="You're crushing it!" 
+                    Margin="0,20"
+                    HorizontalTextAlignment="Center"
+                    FontFamily="{StaticResource FontFamilyMedium}" 
+                    TextColor="{StaticResource AccentColorRed}"
+                    FontSize="{StaticResource FontSizeLarge}" />
+
+                <!-- Stats Carousel -->
+                <controls:CarouselViewControl 
+                    x:Name="carouselViewControl"
+                    AutomationId="carouselViewControl"
+                    HeightRequest="150" 
+                    Orientation="Horizontal" 
+                    InterPageSpacing="10" 
+                    Position="0" 
+                    ItemsSource="{Binding Statistics}" 
+                    ShowIndicators="true" 
+                    IndicatorsTintColor="{StaticResource SeparatorColor}" 
+                    CurrentPageIndicatorTintColor="{StaticResource AccentColorOrange}" 
+                    VerticalOptions="FillAndExpand" 
+                    HorizontalOptions="FillAndExpand">
+                    
+                    <controls:CarouselViewControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Vertical" Padding="15,10,5,5" CompressedLayout.IsHeadless="true">
+                                <Label 
+                                    Style="{DynamicResource SectionHaderLabelStyle}" 
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="{Binding Title}"  />
+
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    Margin="0,10,0,0"
+                                    CompressedLayout.IsHeadless="true">
+                                    
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" CompressedLayout.IsHeadless="true">
+                                        <Label 
+                                            x:Name="lblValueOne"
+                                            AutomationId="lblValueOne"
+                                            Style="{DynamicResource SectionHaderLabelStyle}"
+                                            FontSize="{StaticResource FontSizeTitle}"
+                                            Text="{Binding Value1}" 
+                                            HorizontalTextAlignment="Center" />
+                                        <Label 
+                                            Text="{Binding Label1}" 
+                                            Style="{DynamicResource PropertyFooterLabelStyle}"
+                                            Margin="0,-5,0,0" 
+                                            HorizontalTextAlignment="Center" />
+                                    </StackLayout>
+                                    
+                                    <BoxView WidthRequest="1" BackgroundColor="{DynamicResource SeparatorColor}" />
+
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" CompressedLayout.IsHeadless="true">
+                                        <Label 
+                                            x:Name="lblValueTwo"
+                                            AutomationId="lblValueTwo"
+                                            Style="{DynamicResource SectionHaderLabelStyle}"
+                                            FontSize="{StaticResource FontSizeTitle}"
+                                            Text="{Binding Value2}" 
+                                            HorizontalTextAlignment="Center" />
+                                        <Label 
+                                            Text="{Binding Label2}" 
+                                            Style="{DynamicResource PropertyFooterLabelStyle}"
+                                            Margin="0,-5,0,0" 
+                                            HorizontalTextAlignment="Center" />
+                                    </StackLayout>                                    
+                                </StackLayout>
+                            </StackLayout>
+                        </DataTemplate>
+                    </controls:CarouselViewControl.ItemTemplate>
+                </controls:CarouselViewControl>
+                
+                <!-- Divier -->
+                <BoxView HeightRequest="1" BackgroundColor="{StaticResource SeparatorColor}" />
+
+                <!-- Stats -->
+                <StackLayout Padding="{StaticResource DefaultThickness}" CompressedLayout.IsHeadless="true">
+
+                    <!-- Stats Title -->
+                    <StackLayout Orientation="Horizontal" CompressedLayout.IsHeadless="true">
+                        <Label 
+                            Style="{DynamicResource SectionHaderLabelStyle}" 
+                            HorizontalOptions="StartAndExpand"
+                            Text="Details" />
+
+                        <Label 
+                            x:Name="lblAllTimeTotals"
+                            AutomationId="lblAllTimeTotals"
+                            Style="{DynamicResource PropertyFooterLabelStyle}"
+                            Text="All time totals"
+                            VerticalTextAlignment="Center" />
+                    </StackLayout>
+
+                    <!-- Jobs Completed -->
+                    <StackLayout Spacing="0" CompressedLayout.IsHeadless="true">
+                        <Label 
+                            x:Name="lblJobsCompletedTotal"
+                            AutomationId="lblJobsCompletedTotal"
+                            Style="{DynamicResource PropertyLabelStyle}"
+                            Text="4012"  />
+
+                        <Label 
+                            Style="{DynamicResource PropertyFooterLabelStyle}"
+                            Text="Jobs Completed" />
+                    </StackLayout>
+
+                    <!-- 747 Engines Services -->
+                    <StackLayout Spacing="0" CompressedLayout.IsHeadless="true">
+                        <Label 
+                            x:Name="lblEnginesServicedTotal"
+                            AutomationId="lblEnginesServicedTotal"
+                            Style="{DynamicResource PropertyLabelStyle}"
+                            Text="10"  />
+
+                        <Label 
+                            Style="{DynamicResource PropertyFooterLabelStyle}"
+                            Text="747 Engines Services" />
+                    </StackLayout>
+                </StackLayout>
+
+                <!-- Divier -->
+                <BoxView HeightRequest="1" BackgroundColor="{StaticResource SeparatorColor}" />
+
+                <!-- Insights -->
+                <StackLayout Padding="{StaticResource DefaultThickness}" CompressedLayout.IsHeadless="true">
+
+                    <!-- Insights Title -->
+                    <StackLayout Orientation="Horizontal">
+                        <Label 
+                            Style="{DynamicResource SectionHaderLabelStyle}" 
+                            HorizontalOptions="StartAndExpand"
+                            Text="Insights" />
+
+                        <Label 
+                            Style="{DynamicResource PropertyFooterLabelStyle}"
+                            Text="4.850 total kilometers" 
+                            VerticalTextAlignment="Center" />
+                    </StackLayout>
+
+                    <!-- Subline -->
+                    <StackLayout Spacing="0" CompressedLayout.IsHeadless="true">
+                        <Label 
+                            x:Name="lblProcess"
+                            AutomationId="lblProcess"
+                            Style="{DynamicResource PropertyLabelStyle}"
+                            Text="Are you progressing?"  />
+
+                        <Label 
+                            Style="{DynamicResource PropertyFooterLabelStyle}"
+                            Text="Learn more about those 198 activities" />
+                    </StackLayout>
+                </StackLayout>
+
+                <!-- Divier -->
+                <BoxView HeightRequest="1" BackgroundColor="{StaticResource SeparatorColor}" />
+
+                <!-- Sync -->
+                <StackLayout 
+                    Orientation="Horizontal" 
+                    Padding="{StaticResource DefaultThickness}"
+                    CompressedLayout.IsHeadless="true">
+                    
+                    <Label 
+                        Style="{DynamicResource PropertyFooterLabelStyle}"
+                        Text="Sync: " />
+
+                    <Label 
+                        Style="{DynamicResource PropertyFooterLabelStyle}"
+                        Text="10 minutes ago" />                   
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>            
+    </ScrollView>
+</ContentPage>
