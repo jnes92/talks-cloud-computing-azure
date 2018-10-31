@@ -38953,146 +38953,176 @@ var _default = __webpack_require__(1632);
 
 var _default2 = _interopRequireDefault(_default);
 
-var _aboutBrickmakers = __webpack_require__(1635);
+var _brickmakersHeroBackground = __webpack_require__(1635);
+
+var _brickmakersHeroBackground2 = _interopRequireDefault(_brickmakersHeroBackground);
+
+var _aboutBrickmakers = __webpack_require__(1636);
 
 var _aboutBrickmakers2 = _interopRequireDefault(_aboutBrickmakers);
 
-var _aboutBrickmakersNotes = __webpack_require__(1636);
+var _aboutBrickmakersNotes = __webpack_require__(1637);
 
 var _aboutBrickmakersNotes2 = _interopRequireDefault(_aboutBrickmakersNotes);
 
-var _aboutMe = __webpack_require__(1637);
+var _aboutMe = __webpack_require__(1638);
 
 var _aboutMe2 = _interopRequireDefault(_aboutMe);
 
-var _aboutMeNotes = __webpack_require__(1638);
+var _aboutMeNotes = __webpack_require__(1639);
 
 var _aboutMeNotes2 = _interopRequireDefault(_aboutMeNotes);
 
-var _aboutAzure = __webpack_require__(1639);
+var _aboutAzure = __webpack_require__(1640);
 
 var _aboutAzure2 = _interopRequireDefault(_aboutAzure);
 
-var _aboutAzureNotes = __webpack_require__(1640);
+var _aboutAzureNotes = __webpack_require__(1641);
 
 var _aboutAzureNotes2 = _interopRequireDefault(_aboutAzureNotes);
 
-var _bm_kunden_cornelsen = __webpack_require__(1641);
+var _bm_kunden_cornelsen = __webpack_require__(1642);
 
 var _bm_kunden_cornelsen2 = _interopRequireDefault(_bm_kunden_cornelsen);
 
-var _bm_kunden_allianz = __webpack_require__(1642);
+var _bm_kunden_allianz = __webpack_require__(1643);
 
 var _bm_kunden_allianz2 = _interopRequireDefault(_bm_kunden_allianz);
 
-var _bm_kunden_telefonica = __webpack_require__(1643);
+var _bm_kunden_telefonica = __webpack_require__(1644);
 
 var _bm_kunden_telefonica2 = _interopRequireDefault(_bm_kunden_telefonica);
 
-var _bm_kunden_strato = __webpack_require__(1644);
+var _bm_kunden_strato = __webpack_require__(1645);
 
 var _bm_kunden_strato2 = _interopRequireDefault(_bm_kunden_strato);
 
-var _ressourceGroup = __webpack_require__(1645);
+var _ressourceGroup = __webpack_require__(1646);
 
 var _ressourceGroup2 = _interopRequireDefault(_ressourceGroup);
 
-var _def2AppService = __webpack_require__(1646);
+var _def2AppService = __webpack_require__(1647);
 
 var _def2AppService2 = _interopRequireDefault(_def2AppService);
 
-var _def3Asp = __webpack_require__(1647);
+var _def3Asp = __webpack_require__(1648);
 
 var _def3Asp2 = _interopRequireDefault(_def3Asp);
 
-var _def3AspTipps = __webpack_require__(1648);
+var _def3AspTipps = __webpack_require__(1649);
 
 var _def3AspTipps2 = _interopRequireDefault(_def3AspTipps);
 
-var _def4Deployment = __webpack_require__(1649);
+var _def4Deployment = __webpack_require__(1650);
 
 var _def4Deployment2 = _interopRequireDefault(_def4Deployment);
 
-var _def4DeploymentZerodown = __webpack_require__(1650);
+var _def4DeploymentZerodown = __webpack_require__(1651);
 
 var _def4DeploymentZerodown2 = _interopRequireDefault(_def4DeploymentZerodown);
 
-var _def4DeploymentEnv = __webpack_require__(1651);
+var _def4DeploymentEnv = __webpack_require__(1652);
 
 var _def4DeploymentEnv2 = _interopRequireDefault(_def4DeploymentEnv);
 
-var _deployment_stages = __webpack_require__(1652);
+var _deployment_stages = __webpack_require__(1653);
 
 var _deployment_stages2 = _interopRequireDefault(_deployment_stages);
 
-var _databaseSql = __webpack_require__(1653);
+var _databaseSql = __webpack_require__(1654);
 
 var _databaseSql2 = _interopRequireDefault(_databaseSql);
 
-var _databaseCosmos = __webpack_require__(1654);
+var _databaseCosmos = __webpack_require__(1655);
 
 var _databaseCosmos2 = _interopRequireDefault(_databaseCosmos);
 
-var _blobStorage = __webpack_require__(1655);
+var _blobStorage = __webpack_require__(1656);
 
 var _blobStorage2 = _interopRequireDefault(_blobStorage);
 
-var _search = __webpack_require__(1656);
+var _appService_logo = __webpack_require__(1657);
+
+var _appService_logo2 = _interopRequireDefault(_appService_logo);
+
+var _appServicePlan = __webpack_require__(1658);
+
+var _appServicePlan2 = _interopRequireDefault(_appServicePlan);
+
+var _blobStorage3 = __webpack_require__(1659);
+
+var _blobStorage4 = _interopRequireDefault(_blobStorage3);
+
+var _search = __webpack_require__(1660);
 
 var _search2 = _interopRequireDefault(_search);
 
-var _artificialIntelligence = __webpack_require__(1657);
+var _artificialIntelligence = __webpack_require__(1661);
 
 var _artificialIntelligence2 = _interopRequireDefault(_artificialIntelligence);
 
-var _authentifizierung = __webpack_require__(1658);
+var _authentifizierung = __webpack_require__(1662);
 
 var _authentifizierung2 = _interopRequireDefault(_authentifizierung);
 
-var _azureAdb2c = __webpack_require__(1659);
-
-var _azureAdb2c2 = _interopRequireDefault(_azureAdb2c);
-
-var _azureContainer = __webpack_require__(1660);
+var _azureContainer = __webpack_require__(1663);
 
 var _azureContainer2 = _interopRequireDefault(_azureContainer);
 
-var _azureFunctions = __webpack_require__(1661);
+var _azureFunctions = __webpack_require__(1664);
 
 var _azureFunctions2 = _interopRequireDefault(_azureFunctions);
 
-var _chatBots = __webpack_require__(1662);
+var _chatBots = __webpack_require__(1665);
 
 var _chatBots2 = _interopRequireDefault(_chatBots);
 
-var _IoTHub = __webpack_require__(1663);
+var _IoTHub = __webpack_require__(1666);
 
 var _IoTHub2 = _interopRequireDefault(_IoTHub);
 
-var _teamIdea = __webpack_require__(1664);
+var _activedirectory = __webpack_require__(1667);
+
+var _activedirectory2 = _interopRequireDefault(_activedirectory);
+
+var _search3 = __webpack_require__(1668);
+
+var _search4 = _interopRequireDefault(_search3);
+
+var _functions = __webpack_require__(1669);
+
+var _functions2 = _interopRequireDefault(_functions);
+
+var _container = __webpack_require__(1670);
+
+var _container2 = _interopRequireDefault(_container);
+
+var _bots = __webpack_require__(1671);
+
+var _bots2 = _interopRequireDefault(_bots);
+
+var _teamIdea = __webpack_require__(1672);
 
 var _teamIdea2 = _interopRequireDefault(_teamIdea);
 
-var _workshop_welcome = __webpack_require__(1665);
+var _workshop_welcome = __webpack_require__(1673);
 
 var _workshop_welcome2 = _interopRequireDefault(_workshop_welcome);
 
-var _workshop_Architecture = __webpack_require__(1666);
+var _workshop_Architecture = __webpack_require__(1674);
 
 var _workshop_Architecture2 = _interopRequireDefault(_workshop_Architecture);
 
-var _workshop_app = __webpack_require__(1667);
+var _workshop_app = __webpack_require__(1675);
 
 var _workshop_app2 = _interopRequireDefault(_workshop_app);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// Require CSS
+// Chapter 2 Logos
 
-
-// Import theme
-// Import React
-__webpack_require__(1668);
+// Import Spectacle Core tags
+var azureRessourceGroupLogo = "http://res.cloudinary.com/samcogan/image/upload/v1493930941/arm_ejo0aw.png";
 
 // Chapter 2 Slide Markdown Files
 
@@ -39103,8 +39133,15 @@ __webpack_require__(1668);
 // Chapter 1 Slide Markdown Files
 
 
-// Import Spectacle Core tags
+// Import theme
+// Import React
 
+
+// Chapter 4 Slide Markdowns
+
+
+// Require CSS
+__webpack_require__(1676);
 
 var theme = (0, _default2.default)({
   primary: "white",
@@ -39120,7 +39157,8 @@ var theme = (0, _default2.default)({
 // https://hackernoon.com/presentations-with-spectacle-how-i-modularize-my-deck-775c082cef08
 
 var _ref = (0, _jsx3.default)(_spectacle.Slide, {
-  bgColor: "primary"
+  bgColor: "primary",
+  bgImage: _brickmakersHeroBackground2.default
 }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
   size: 1,
   fit: true,
@@ -39154,41 +39192,19 @@ var _ref4 = (0, _jsx3.default)(_spectacle.Notes, {}, void 0, (0, _jsx3.default)(
   source: _aboutBrickmakersNotes2.default
 }));
 
-var _ref5 = (0, _jsx3.default)(_spectacle.Markdown, {
-  fit: true,
-  textColor: "tertiary",
-  source: _aboutBrickmakers2.default
-});
-
-var _ref6 = (0, _jsx3.default)(_spectacle.Image, {
+var _ref5 = (0, _jsx3.default)(_spectacle.Appear, {}, void 0, (0, _jsx3.default)("div", {}, void 0, (0, _jsx3.default)(_spectacle.Image, {
   src: _teamIdea2.default
-});
+}), (0, _jsx3.default)(_spectacle.Text, {}, void 0, " Kommt gerne auf einen Kaffee vorbei "), (0, _jsx3.default)(_spectacle.Text, {}, void 0, " oder besucht uns bei einem Meetup! ")));
 
-var _ref7 = (0, _jsx3.default)(_spectacle.Text, {}, void 0, " Kommt gerne auf einen Kaffee vorbei ");
-
-var _ref8 = (0, _jsx3.default)(_spectacle.Text, {}, void 0, " Oder besucht uns bei einem Meetup! ");
-
-var _ref9 = (0, _jsx3.default)(_spectacle.Notes, {}, void 0, (0, _jsx3.default)(_spectacle.Markdown, {
+var _ref6 = (0, _jsx3.default)(_spectacle.Notes, {}, void 0, (0, _jsx3.default)(_spectacle.Markdown, {
   source: _aboutMeNotes2.default
 }));
 
-var _ref10 = (0, _jsx3.default)(_spectacle.Markdown, {
-  fit: true,
-  textColor: "tertiary",
-  source: _aboutMe2.default
-});
-
-var _ref11 = (0, _jsx3.default)(_spectacle.Notes, {}, void 0, (0, _jsx3.default)(_spectacle.Markdown, {
+var _ref7 = (0, _jsx3.default)(_spectacle.Notes, {}, void 0, (0, _jsx3.default)(_spectacle.Markdown, {
   source: _aboutAzureNotes2.default
 }));
 
-var _ref12 = (0, _jsx3.default)(_spectacle.Markdown, {
-  fit: true,
-  textColor: "tertiary",
-  source: _aboutAzure2.default
-});
-
-var _ref13 = (0, _jsx3.default)(_spectacle.Heading, {
+var _ref8 = (0, _jsx3.default)(_spectacle.Heading, {
   size: 1,
   fit: true,
   caps: true,
@@ -39196,8 +39212,9 @@ var _ref13 = (0, _jsx3.default)(_spectacle.Heading, {
   textColor: "secondary"
 }, void 0, "Cloud Computing: Azure");
 
-var _ref14 = (0, _jsx3.default)(_spectacle.Slide, {
-  bgColor: "tertiary"
+var _ref9 = (0, _jsx3.default)(_spectacle.Slide, {
+  bgColor: "primary",
+  bgImage: _brickmakersHeroBackground2.default
 }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
   size: 1,
   fit: true,
@@ -39206,13 +39223,13 @@ var _ref14 = (0, _jsx3.default)(_spectacle.Slide, {
   textColor: "secondary"
 }, void 0, "Cloud Computing: Azure"), (0, _jsx3.default)(_spectacle.Text, {
   margin: "10px 0 0",
-  textColor: "primary",
+  textColor: "tertiary",
   size: 3,
   fit: true,
   bold: true
 }, void 0, "Kapitel 3: Workshop - App Innovation"));
 
-var _ref15 = (0, _jsx3.default)(_spectacle.Slide, {
+var _ref10 = (0, _jsx3.default)(_spectacle.Slide, {
   bgColor: "primary"
 }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
   size: 6,
@@ -39224,7 +39241,7 @@ var _ref15 = (0, _jsx3.default)(_spectacle.Slide, {
   textColor: "tertiary"
 }, void 0, (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " System\xFCberblick "), (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " Hands-On ")));
 
-var _ref16 = (0, _jsx3.default)(_spectacle.Slide, {
+var _ref11 = (0, _jsx3.default)(_spectacle.Slide, {
   align: "center flex-start"
 }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
   size: 6,
@@ -39242,7 +39259,7 @@ var _ref16 = (0, _jsx3.default)(_spectacle.Slide, {
   src: _workshop_app2.default
 }));
 
-var _ref17 = (0, _jsx3.default)(_spectacle.Slide, {
+var _ref12 = (0, _jsx3.default)(_spectacle.Slide, {
   align: "center flex-start"
 }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
   size: 6,
@@ -39258,22 +39275,22 @@ var _ref17 = (0, _jsx3.default)(_spectacle.Slide, {
   src: _workshop_Architecture2.default
 }));
 
-var _ref18 = (0, _jsx3.default)(_spectacle.Heading, {
+var _ref13 = (0, _jsx3.default)(_spectacle.Heading, {
   size: 6,
   caps: true,
   lineHeight: 1,
   textColor: "secondary"
 }, void 0, "3. Workshop");
 
-var _ref19 = (0, _jsx3.default)(_spectacle.Text, {
+var _ref14 = (0, _jsx3.default)(_spectacle.Text, {
   margin: "10px 0 0",
-  textColor: "tertiary",
+  textColor: "primary",
   size: 3,
   fit: true,
   bold: true
 }, void 0, "Hands-On");
 
-var _ref20 = (0, _jsx3.default)(_spectacle.Heading, {
+var _ref15 = (0, _jsx3.default)(_spectacle.Heading, {
   size: 1,
   fit: true,
   caps: true,
@@ -39281,7 +39298,7 @@ var _ref20 = (0, _jsx3.default)(_spectacle.Heading, {
   textColor: "secondary"
 }, void 0, "Cloud Computing: Azure");
 
-var _ref21 = (0, _jsx3.default)(_spectacle.Slide, {
+var _ref16 = (0, _jsx3.default)(_spectacle.Slide, {
   bgColor: "primary"
 }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
   size: 1,
@@ -39307,30 +39324,32 @@ var Presentation = function (_React$Component) {
 
   Presentation.prototype.render = function render() {
 
-    var azureServicesBasicMd = [{ md: [_ressourceGroup2.default], title: "Ressource Group" }, { md: [_def2AppService2.default], title: "App Service" }, { md: [_def3Asp2.default, _def3AspTipps2.default], title: "App Service Plan" }, {
-      md: [_databaseSql2.default, _databaseCosmos2.default], title: "Datenbanken"
-    }, { md: [_blobStorage2.default], title: "Blob Storage" }, {
-      md: [_def4Deployment2.default, _def4DeploymentEnv2.default, _def4DeploymentZerodown2.default],
-      images: {
-        1: _deployment_stages2.default
-      },
+    var azureServicesBasicMd = [{ md: [_def2AppService2.default], title: "App Service", logo: _appService_logo2.default }, { md: [_def3Asp2.default, _def3AspTipps2.default], title: "App Service Plan", logo: _appServicePlan2.default }, { md: [_ressourceGroup2.default], title: "Ressource Group", logo: azureRessourceGroupLogo }, {
+      md: [_databaseSql2.default], title: "Datenbanken: SQL",
+      logo: "https://azurecomcdn.azureedge.net/cvt-91f2ad75d65b94588ca876d6df21005ea3acc52dcbf2d67a7d490211b5f7d8f3/images/page/services/sql-database/sql-db.svg"
+    }, {
+      md: [_databaseCosmos2.default], title: "Datenbanken: Cosmos DB",
+      logo: "https://azure.microsoft.com/svghandler/cosmos-db?width=120"
+    }, { md: [_blobStorage2.default], title: "Blob Storage", logo: _blobStorage4.default }, {
+      md: [_def4DeploymentEnv2.default, _def4Deployment2.default, _def4DeploymentZerodown2.default],
+      logo: _deployment_stages2.default,
       title: "Deployment"
     }];
 
     var azureServicesExtendedMd = [{
-      md: [_authentifizierung2.default, _azureAdb2c2.default], title: "Authentifizierung"
+      md: [_authentifizierung2.default], title: "Authentifizierung", logo: _activedirectory2.default
     }, {
-      md: [_search2.default], title: "Azure Search Engine"
+      md: [_search2.default], title: "Azure Search Engine", logo: _search4.default
     }, {
-      md: [_azureFunctions2.default], title: "Azure Functions"
+      md: [_azureFunctions2.default], title: "Azure Functions", logo: _functions2.default
     }, {
-      md: [_azureContainer2.default], title: "Azure Container Service"
+      md: [_azureContainer2.default], title: "Azure Container Service", logo: _container2.default
     }, {
-      md: [_artificialIntelligence2.default], title: "azureAI"
+      md: [_artificialIntelligence2.default], title: "Artificial Intelligence"
     }, {
-      md: [_chatBots2.default], title: "azureChatBots"
+      md: [_chatBots2.default], title: "Azure Bot Service", logo: _bots2.default
     }, {
-      md: [_IoTHub2.default], title: "azureIoT"
+      md: [_IoTHub2.default], title: "Internet of Things - IoT Suite"
     }];
 
     var chapters = [{
@@ -39341,7 +39360,7 @@ var Presentation = function (_React$Component) {
       transition: ["slide", "fade"],
       transitionDuration: 500,
       theme: theme,
-      progress: "pacman"
+      progress: "number"
     }, void 0, _ref, (0, _jsx3.default)(_spectacle.Slide, {
       bgColor: "primary"
     }, void 0, _ref2, (0, _jsx3.default)(_spectacle.List, {
@@ -39350,10 +39369,11 @@ var Presentation = function (_React$Component) {
     }, void 0, chapters.map(function (chapter) {
       return (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " ", chapter.title, " ");
     }))), (0, _jsx3.default)(_spectacle.Slide, {
-      bgColor: "tertiary"
+      bgColor: "primary",
+      bgImage: _brickmakersHeroBackground2.default
     }, void 0, _ref3, (0, _jsx3.default)(_spectacle.Text, {
       margin: "10px 0 0",
-      textColor: "primary",
+      textColor: "tertiary",
       size: 3,
       fit: true,
       bold: true
@@ -39376,40 +39396,70 @@ var Presentation = function (_React$Component) {
       bgColor: "primary",
       maxWidth: "100%"
     }, void 0, _ref4, (0, _jsx3.default)(_spectacle.Heading, {
-      size: 6,
+      size: 5,
       caps: true,
       lineHeight: 1,
       textColor: "secondary"
-    }, void 0, "Kapitel 1: ", chapters[0].title), _ref5, _ref6, _ref7, _ref8, [_bm_kunden_cornelsen2.default, _bm_kunden_allianz2.default, _bm_kunden_telefonica2.default, _bm_kunden_strato2.default].map(function (kunde) {
+    }, void 0, "Kapitel 1: ", chapters[0].title), (0, _jsx3.default)(_spectacle.Heading, {
+      size: 6,
+      caps: true,
+      lineHeight: 1,
+      textColor: "tertiary"
+    }, void 0, "1.1 ", chapters[0].subslides[0].title), (0, _jsx3.default)(_spectacle.Markdown, {
+      textColor: "tertiary",
+      source: _aboutBrickmakers2.default,
+      style: { "text-align": "left" }
+    }), _ref5, (0, _jsx3.default)(_spectacle.Appear, {}, void 0, (0, _jsx3.default)("div", {}, void 0, [_bm_kunden_cornelsen2.default, _bm_kunden_allianz2.default, _bm_kunden_telefonica2.default, _bm_kunden_strato2.default].map(function (kunde) {
       return (0, _jsx3.default)(_spectacle.Image, {
         width: "10%",
         display: "inline",
         src: kunde,
         margin: "30"
       });
+    })))), (0, _jsx3.default)(_spectacle.Slide, {
+      align: "center flex-start",
+      bgColor: "primary",
+      maxWidth: "100%"
+    }, void 0, _ref6, (0, _jsx3.default)(_spectacle.Heading, {
+      size: 6,
+      caps: true,
+      lineHeight: 1,
+      textColor: "secondary"
+    }, void 0, "Kapitel 1: ", chapters[0].title), (0, _jsx3.default)(_spectacle.Heading, {
+      size: 6,
+      caps: true,
+      lineHeight: 1,
+      textColor: "tertiary"
+    }, void 0, "1.2 ", chapters[0].subslides[1].title), (0, _jsx3.default)(_spectacle.Markdown, {
+      fit: true,
+      textColor: "tertiary",
+      source: _aboutMe2.default,
+      style: { "text-align": "left" }
     })), (0, _jsx3.default)(_spectacle.Slide, {
       align: "center flex-start",
       bgColor: "primary",
       maxWidth: "100%"
-    }, void 0, _ref9, (0, _jsx3.default)(_spectacle.Heading, {
+    }, void 0, _ref7, (0, _jsx3.default)(_spectacle.Heading, {
       size: 6,
       caps: true,
       lineHeight: 1,
       textColor: "secondary"
-    }, void 0, "Kapitel 1: ", chapters[0].title), _ref10), (0, _jsx3.default)(_spectacle.Slide, {
-      align: "center flex-start",
+    }, void 0, "Kapitel 1: ", chapters[0].title), (0, _jsx3.default)(_spectacle.Heading, {
+      size: 6,
+      caps: true,
+      lineHeight: 1,
+      textColor: "tertiary"
+    }, void 0, "1.3 ", chapters[0].subslides[2].title), (0, _jsx3.default)(_spectacle.Markdown, {
+      fit: true,
+      textColor: "tertiary",
+      source: _aboutAzure2.default,
+      style: { "text-align": "left" }
+    })), (0, _jsx3.default)(_spectacle.Slide, {
       bgColor: "primary",
-      maxWidth: "100%"
-    }, void 0, _ref11, (0, _jsx3.default)(_spectacle.Heading, {
-      size: 6,
-      caps: true,
-      lineHeight: 1,
-      textColor: "secondary"
-    }, void 0, "Kapitel 1: ", chapters[0].title), _ref12), (0, _jsx3.default)(_spectacle.Slide, {
-      bgColor: "tertiary"
-    }, void 0, _ref13, (0, _jsx3.default)(_spectacle.Text, {
+      bgImage: _brickmakersHeroBackground2.default
+    }, void 0, _ref8, (0, _jsx3.default)(_spectacle.Text, {
       margin: "10px 0 0",
-      textColor: "primary",
+      textColor: "tertiary",
       size: 3,
       fit: true,
       bold: true
@@ -39426,33 +39476,40 @@ var Presentation = function (_React$Component) {
       textColor: "tertiary"
     }, void 0, azureServicesBasicMd.map(function (def) {
       return (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " ", def.title, " ");
-    }))), azureServicesBasicMd.map(function (definition) {
+    }))), azureServicesBasicMd.map(function (definition, outIndex) {
       return definition.md.map(function (subslide, index) {
         return (0, _jsx3.default)(_spectacle.Slide, {
           align: "center flex-start",
           bgColor: "primary",
           maxWidth: "100%"
         }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
-          size: 6,
+          size: 5,
           caps: true,
           lineHeight: 1,
           textColor: "secondary"
-        }, void 0, "2. ", chapters[1].title), (0, _jsx3.default)(_spectacle.Markdown, {
+        }, void 0, "2. ", chapters[1].title), (0, _jsx3.default)(_spectacle.Heading, {
+          size: 6,
+          lineHeight: 1,
+          textColor: "tertiary"
+        }, void 0, "2.", outIndex + 1, " ", definition.title), definition.logo && (0, _jsx3.default)(_spectacle.Image, {
+          src: definition.logo
+        }), (0, _jsx3.default)(_spectacle.Markdown, {
+          margin: "20",
           textColor: "tertiary",
-          source: subslide
-        }), definition.images && definition.images[index] && (0, _jsx3.default)(_spectacle.Image, {
-          src: definition.images[index]
+          source: subslide,
+          style: { "text-align": "left" }
         }));
       });
-    }), _ref14, _ref15, _ref16, _ref17, (0, _jsx3.default)(_spectacle.Slide, {
-      bgColor: "primary"
+    }), _ref9, _ref10, _ref11, _ref12, (0, _jsx3.default)(_spectacle.Slide, {
+      bgColor: "tertiary"
     }, void 0, (0, _jsx3.default)(_spectacle.Notes, {}, void 0, (0, _jsx3.default)(_spectacle.Markdown, {
       source: "\n- Zeit checken\n- Demo max. 60 min\n          "
-    })), _ref18, _ref19), (0, _jsx3.default)(_spectacle.Slide, {
-      bgColor: "tertiary"
-    }, void 0, _ref20, (0, _jsx3.default)(_spectacle.Text, {
+    })), _ref13, _ref14), (0, _jsx3.default)(_spectacle.Slide, {
+      bgColor: "primary",
+      bgImage: _brickmakersHeroBackground2.default
+    }, void 0, _ref15, (0, _jsx3.default)(_spectacle.Text, {
       margin: "10px 0 0",
-      textColor: "primary",
+      textColor: "tertiary",
       size: 3,
       fit: true,
       bold: true
@@ -39469,25 +39526,31 @@ var Presentation = function (_React$Component) {
       textColor: "tertiary"
     }, void 0, azureServicesExtendedMd.map(function (def) {
       return (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " ", def.title, " ");
-    }))), azureServicesExtendedMd.map(function (definition) {
+    }))), azureServicesExtendedMd.map(function (definition, outIndex) {
       return definition.md.map(function (subslide, index) {
         return (0, _jsx3.default)(_spectacle.Slide, {
           align: "center flex-start",
           bgColor: "primary",
           maxWidth: "100%"
         }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
-          size: 6,
+          size: 5,
           caps: true,
           lineHeight: 1,
           textColor: "secondary"
-        }, void 0, "4. ", chapters[3].title), (0, _jsx3.default)(_spectacle.Markdown, {
+        }, void 0, "4. ", chapters[3].title), (0, _jsx3.default)(_spectacle.Heading, {
+          size: 6,
+          lineHeight: 1,
+          textColor: "tertiary"
+        }, void 0, "4.", outIndex + 1, " ", definition.title), definition.logo && (0, _jsx3.default)(_spectacle.Image, {
+          src: definition.logo
+        }), (0, _jsx3.default)(_spectacle.Markdown, {
+          margin: "20",
           textColor: "tertiary",
-          source: subslide
-        }), definition.images && definition.images[index] && (0, _jsx3.default)(_spectacle.Image, {
-          src: definition.images[index]
+          source: subslide,
+          style: { "text-align": "left" }
         }));
       });
-    }), _ref21);
+    }), _ref16);
   };
 
   return Presentation;
@@ -87530,210 +87593,258 @@ exports.default = _default;
 
 /***/ }),
 /* 1635 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "#### 1.1 BRICKMAKERS GmbH\n\n- Entwicklungsagentur aus Koblenz\n- ca. 50 Mitarbeiter\n- Services:\n    - App-Entwicklung (mobile, Web, Windows)\n    - UI / UX Design\n    - Cloud Services\n    - Online Marketing\n "
+module.exports = __webpack_require__.p + "fdba6cf12a263623c453368512c659d8.png";
 
 /***/ }),
 /* 1636 */
 /***/ (function(module, exports) {
 
-module.exports = "BRICKMAKERS\n---\n\n- Tools:\n    - TDD\n    - Agil mit SCRUM\n- flache Hierarchien\n- Teamevents\n- Kunden\n    - siehe Bilder\n    + Porsche\n    + Edeka"
+module.exports = "<ul>\n<li>Entwicklungsagentur aus Koblenz</li>\n<li>ca. 50 Mitarbeiter</li>\n<li>Services:<ul>\n<li>App-Entwicklung (mobile, Web, Windows)</li>\n<li>UI / UX Design</li>\n<li>Cloud Services</li>\n<li>Online Marketing</li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1637 */
 /***/ (function(module, exports) {
 
-module.exports = "#### 1.2 Über mich\n\n- Jonas Österle\n- B. Eng. Elektrotechnik, HS Koblenz\n\n\n- 2 Jahre bei BRICKMAKERS\n- Mitglied im Team Mobile\n\n\n- Tätigkeiten: \n    - Full-Stack Developer\n    - Azure Verwaltung\n    - Weiterbildung\n    - Mentoring\n    - *Hochschule*"
+module.exports = "<h2 id=\"brickmakers\">BRICKMAKERS</h2>\n<ul>\n<li>Tools:<ul>\n<li>TDD</li>\n<li>Agil mit SCRUM</li>\n</ul>\n</li>\n<li>flache Hierarchien</li>\n<li>Teamevents</li>\n<li>Kunden<ul>\n<li>siehe Bilder</li>\n<li>Porsche</li>\n<li>Edeka</li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1638 */
 /***/ (function(module, exports) {
 
-module.exports = "Über mich\n--- \n- Hochschule Koblenz: 2013-2016\n- Bachelorarbeit (02.2017): [timeout](http://www.timeoutapp.de/de)\n- Technologien (Frontend, Backend, Apps)\n    - React Native\n    - Xamarin\n    - nativ mit Swift\n    - React\n    - .net Core & .net Web API\n    - node js\n- Weiterbildung\n    - Konferenzen\n    - Pers. Wünsche/Ideen\n    - Kurse, etc.\n- Hochschule: \n    - Komplette WPF angedacht (evtl. nächstes Jahr? )\n    - Agile Entwicklung mit Scrum, Entwicklung v. WebApp im Team"
+module.exports = "<ul>\n<li>Jonas Österle</li>\n<li>B. Eng. Elektrotechnik, HS Koblenz</li>\n</ul>\n<ul>\n<li>2 Jahre bei BRICKMAKERS</li>\n<li>Mitglied im Team Mobile</li>\n</ul>\n<ul>\n<li>Tätigkeiten: <ul>\n<li>Full-Stack Developer</li>\n<li>Azure Verwaltung</li>\n<li>Weiterbildung</li>\n<li>Mentoring</li>\n<li><em>Hochschule</em></li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1639 */
 /***/ (function(module, exports) {
 
-module.exports = "#### 1.3 Was ist Azure\n\n- hoch skalierbare Cloud-Computing Plattform\n    - IaaS, PaaS, SaaS und weitere Services\n    - seit 2010 verfügbar\n    - *Hybrid Cloud*\n\n\n- Über 70+ Angebote\n- 54 globale Regionen\n- 90% der Fortune-500 Unternehmen\n\n---\n- IaaS: Infrastructure as a Service\n- PaaS: Platform as a Service\n- SaaS: Software as a Service"
+module.exports = "<h2 id=\"-ber-mich\">Über mich</h2>\n<ul>\n<li>Hochschule Koblenz: 2013-2016</li>\n<li>Bachelorarbeit (02.2017): <a href=\"http://www.timeoutapp.de/de\">timeout</a></li>\n<li>Technologien (Frontend, Backend, Apps)<ul>\n<li>React Native</li>\n<li>Xamarin</li>\n<li>nativ mit Swift</li>\n<li>React</li>\n<li>.net Core &amp; .net Web API</li>\n<li>node js</li>\n</ul>\n</li>\n<li>Weiterbildung<ul>\n<li>Konferenzen</li>\n<li>Pers. Wünsche/Ideen</li>\n<li>Kurse, etc.</li>\n</ul>\n</li>\n<li>Hochschule: <ul>\n<li>Komplette WPF angedacht (evtl. nächstes Jahr? )</li>\n<li>Agile Entwicklung mit Scrum, Entwicklung v. WebApp im Team</li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1640 */
 /***/ (function(module, exports) {
 
-module.exports = "1.3 Was ist Azure\n---\n- Hybrid Cloud\n    - kombiniert öffentliche & private Cloud\n    - ermöglicht Freigabe zwischen beiden\n    - lokale Infrastruktur kann nahtlos bis zur öffentlichen Cloud skaliert werden\n    - ohne Zugriff auf lokale Daten\n    - Flexibilität & Leistung der public Cloud\n    - Sicherheit durch Firewall des Unternehmens\n    - Kapitalaufwand verringern (Spitzen der Nachfrage)\n"
+module.exports = "<ul>\n<li>hoch skalierbare Cloud-Computing Plattform<ul>\n<li>seit 2010 verfügbar</li>\n<li><em>Hybrid Cloud</em></li>\n</ul>\n</li>\n</ul>\n<ul>\n<li>Über 70+ Angebote<ul>\n<li>IaaS, PaaS, SaaS und weitere Services</li>\n</ul>\n</li>\n<li>54 globale Server Standorte</li>\n<li>90% der Fortune-500 Unternehmen nutzen Azure <sup><a href=\"https://azure.microsoft.com/de-de/overview/what-is-azure/\">1</a></sup></li>\n</ul>\n";
 
 /***/ }),
 /* 1641 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHdpZHRoPSIxMDYiIHZpZXdCb3g9IjAgMCAxMDYgMjQiPjxwYXRoIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI0FCQjZDNSIgZD0iTTEwLjcuOWMzLjUgMCA0LjguOCA2IDEuNXY1LjljLTEuMy0yLjEtMy4xLTMuMi01LjItMy4yLTMuOSAwLTYgMi43LTYgNy4zczIuMSA3LjQgNS44IDcuNGMyLjIgMCA0LjItMSA1LjUtMy4ydjUuOWMwIC4xLTEuMyAxLjMtNS44IDEuMy02LjUgMC0xMC41LTQuNS0xMC41LTExQy41IDYgNC4xLjkgMTAuNy45YzMuNSAwLTYuNiAwIDAgMHptNTQgMTcuOWgzLjdWMS40aC0zLjd2MTcuNHptLTQyLTEzLjJjLTQuMSAwLTYuNCAyLjgtNi40IDYuOCAwIDQuNiAyLjYgNi44IDcgNi44IDQuMiAwIDYuNi0yLjUgNi42LTcgMC00LjMtMi40LTYuNi03LjItNi42em0zNC44IDBjLTMuMSAwLTYuMiAyLjgtNi4yIDYuOCAwIDQuMSAzIDYuOSA2LjcgNi45czUuNi0yLjggNi4xLTQuMWgtNGMtLjkgMS0xLjYgMS4yLTIuMiAxLjItMS4zIDAtMi41LTEtMi44LTIuOWg5di0uN2MwLTQuNC0yLjItNy4yLTYuNi03LjJ6bTE2LjguMWMtMyAwLTUgMS42LTUgNC4zIDAgMi40IDEuOSAzLjMgNS43IDQgMi45LjQgMi4xIDIuOC0uNSAyLjUtMS4xLS4xLTEuOC0uNC0yLjEtMS40SDY5di41YzAgMS45IDIuNiAzLjYgNS44IDMuNi42IDAgMi0uMSAzLjMtLjcgMS4zLS41IDIuNC0xLjUgMi40LTMuOSAwLTItMS4yLTMuNC01LjYtMy45LTMuNC0uNC0yLjItMi41LS4yLTIuNC43IDAgMS43LjQgMiAxLjNoMy40di0uMmMwLTIuMS0yLjItMy43LTUuOC0zLjd6bS0zNyAuMmMtMS42LjMtMi40LjctMy4yIDIuM3YtMmgtMy41djEyLjZoMy43bC4yLTYuNWMwLS41IDAtMSAuMi0xLjQuNC0xLjEgMS42LTIgNC0xLjgtLjItLjMgMC0uNi0uOC0yLjQtLjMtLjUtLjQtLjgtLjctLjh6bTktLjJjLTEuNiAwLTMuMyAxLjItMy42IDEuOFY2LjJoLTMuNXYxMi42aDMuNXYtNy43YzAtMS4xIDEtMi4yIDIuNC0yLjIgMS4xIDAgMiAuOSAyIDIuM3Y3LjZoMy41di04LjVjMC0zLTEuNy00LjYtNC40LTQuNnpNNTggOC40YzEuMSAwIDIuNCAxLjEgMi40IDIuNGgtNS4yYy4xLTEuOCAxLjUtMi40IDIuOC0yLjR6TTIzIDguNWMyIDAgMyAxLjEgMyA0LjEgMCAyLjQtMSAzLjYtMi44IDMuNi0yLjEgMC0zLjMtMS0zLjMtMy45IDAtMi4zLjgtMy44IDMuMS0zLjh6bS01IDE0LjVoODcuNnYtM0gxOHYzek04Ni44IDUuNmMtMy4xIDAtNi4yIDIuOC02LjIgNi44IDAgNC4xIDMgNi45IDYuNyA2LjlzNS42LTIuOCA2LjItNC4xaC00Yy0xIDEtMS43IDEuMi0yLjMgMS4yLTEuMyAwLTIuNS0xLTIuOS0yLjloOS4ydi0uN2MwLTQuNC0yLjMtNy4yLTYuNy03LjJ6bS41IDIuOGMxLjIgMCAyLjMgMS4xIDIuMyAyLjRoLTUuMWMwLTEuOCAxLjUtMi40IDIuOC0yLjR6bTEzLjgtMi43Yy0xLjUgMC0zLjIgMS4yLTMuNSAxLjhsLS4xLTEuM0g5NHYxMi42aDMuNnYtNy43YzAtMS4xIDEtMi4yIDIuMy0yLjIgMS4yIDAgMi4yLjkgMi4yIDIuM3Y3LjZoMy41di04LjVjMC0zLTEuOC00LjYtNC41LTQuNnoiLz48L3N2Zz4="
+module.exports = "<h2 id=\"1-3-was-ist-azure\">1.3 Was ist Azure</h2>\n<ul>\n<li><p>Hybrid Cloud</p>\n<ul>\n<li>kombiniert öffentliche &amp; private Cloud</li>\n<li>ermöglicht Freigabe zwischen beiden</li>\n<li>lokale Infrastruktur kann nahtlos bis zur öffentlichen Cloud skaliert werden</li>\n<li>ohne Zugriff auf lokale Daten</li>\n<li>Flexibilität &amp; Leistung der public Cloud</li>\n<li>Sicherheit durch Firewall des Unternehmens</li>\n<li>Kapitalaufwand verringern (Spitzen der Nachfrage)</li>\n</ul>\n</li>\n<li><p>IaaS: Infrastructure as a Service</p>\n</li>\n<li>PaaS: Platform as a Service</li>\n<li>SaaS: Software as a Service</li>\n</ul>\n";
 
 /***/ }),
 /* 1642 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjYiIHdpZHRoPSIxMDEiIHZpZXdCb3g9IjAgMCAxMDEgMjYiPjxwYXRoIGZpbGw9IiNBQkI2QzUiIGQ9Ik05LjIgMTMuNEg1LjdsMS45LTYgMS42IDZ6TTQgMjAuMWwxLjEtNGg0LjdsMSA0aDQuM0wxMSA0LjljLS4zLS45LS44LTEuMy0xLjctMS4zSDNWNWguNWMuNyAwIDEgLjMgMSAuOCAwIC4zIDAgLjYtLjMgMS4zTDAgMjAuMWg0em0xNiAwVjQuOWMwLS44LS40LTEuMy0xLjEtMS4zSDE1VjVoLjNjLjYgMCAuOS4zLjkgMXYxNC4xSDIwem02LjYgMFY0LjljMC0uOC0uNS0xLjMtMS4yLTEuM2gtMy44VjVoLjNjLjYgMCAuOS4zLjkgMXYxNC4xaDMuOHptNi43LTE1YzAtMS4xLS44LTEuOC0yLjItMS44LTEuNCAwLTIuMi43LTIuMiAxLjhzLjggMS44IDIuMiAxLjhjMS40IDAgMi4yLS43IDIuMi0xLjh6bS0uMSAxNVY5YzAtLjgtLjUtMS4zLTEuMi0xLjNoLTMuN3YxLjVoLjJjLjYgMCAuOS4yLjkuOXYxMGgzLjh6bTguNC01Ljl2Mi40Yy0uNy43LTEuNCAxLjEtMi4xIDEuMS0uNyAwLTEtLjQtMS0xLjNzLjMtMS4zIDEtMS42bDItLjZ6bS01LjItMi45YzEuMy0uNiAyLjctMSAzLjgtMSAxIDAgMS40LjQgMS40IDEuNXYuM2EyNS4yIDI1LjIgMCAwIDAtNC40IDFjLTEuNS42LTIuMyAxLjgtMi4zIDMuNyAwIDIuMyAxIDMuNSAzLjEgMy41LjggMCAxLjQtLjIgMi0uNGwxLjctMS4xdi4yYzAgLjcuNCAxLjEgMS4xIDEuMWgzLjV2LTEuM2gtLjJjLS42IDAtLjgtLjMtLjgtMS4xdi01LjljMC0zLjEtMS4xLTQuMi00LjItNC4ybC0zIC4zYTggOCAwIDAgMC0yLjUgMWwuOCAyLjR6TTUyIDIwLjF2LTguM2MuNi0uOCAxLjMtMS4xIDItMS4xLjggMCAxIC4zIDEgMS42djcuOGgzLjh2LTguNGMwLTItLjEtMi42LS43LTMuMi0uNS0uNi0xLjMtLjktMi4zLS45LTEuNSAwLTIuNi41LTQgMS44di0uNWMwLS44LS40LTEuMi0xLjEtMS4yaC0zLjd2MS41aC4zYy42IDAgLjkuMi45Ljl2MTBoMy44ek03MCAxNy41djIuNmgtOS42di0yLjVsNS4xLTcuM2gtMi43Yy0uNiAwLS45LjItLjkuOHYuMmgtMS40VjkuMWMwLS45LjQtMS40IDEuMy0xLjRoOHYyLjZsLTUuMSA3LjJINzB6bTMwLjYtNC44YzAgNy4zLTUuMyAxMi43LTEyLjQgMTIuN1M3NS43IDIwIDc1LjcgMTIuNyA4MSAwIDg4IDBjNy4yIDAgMTIuNSA1LjQgMTIuNSAxMi43em0tMiAwQzk4LjUgNi42IDk0IDIgODguMSAyYy02IDAtMTAuNCA0LjUtMTAuNCAxMC43czQuNCAxMC43IDEwLjQgMTAuNyAxMC4zLTQuNSAxMC4zLTEwLjd6bS03IDcuMVY3LjRoMmMxLjEgMCAxLjUuNCAxLjUgMS41djEwLjloLTMuNnptLTEuNiAwaC0zLjdWN2MwLTEtLjEtMS4xLS44LTEuMWgtLjJWNC4zaDMuMmMxIDAgMS41LjQgMS41IDEuNXYxNHptLTUuMiAwaC0zLjZWOC45YzAtMS4xLjQtMS41IDEuNC0xLjVoMi4ydjEyLjR6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHdpZHRoPSIxMDYiIHZpZXdCb3g9IjAgMCAxMDYgMjQiPjxwYXRoIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI0FCQjZDNSIgZD0iTTEwLjcuOWMzLjUgMCA0LjguOCA2IDEuNXY1LjljLTEuMy0yLjEtMy4xLTMuMi01LjItMy4yLTMuOSAwLTYgMi43LTYgNy4zczIuMSA3LjQgNS44IDcuNGMyLjIgMCA0LjItMSA1LjUtMy4ydjUuOWMwIC4xLTEuMyAxLjMtNS44IDEuMy02LjUgMC0xMC41LTQuNS0xMC41LTExQy41IDYgNC4xLjkgMTAuNy45YzMuNSAwLTYuNiAwIDAgMHptNTQgMTcuOWgzLjdWMS40aC0zLjd2MTcuNHptLTQyLTEzLjJjLTQuMSAwLTYuNCAyLjgtNi40IDYuOCAwIDQuNiAyLjYgNi44IDcgNi44IDQuMiAwIDYuNi0yLjUgNi42LTcgMC00LjMtMi40LTYuNi03LjItNi42em0zNC44IDBjLTMuMSAwLTYuMiAyLjgtNi4yIDYuOCAwIDQuMSAzIDYuOSA2LjcgNi45czUuNi0yLjggNi4xLTQuMWgtNGMtLjkgMS0xLjYgMS4yLTIuMiAxLjItMS4zIDAtMi41LTEtMi44LTIuOWg5di0uN2MwLTQuNC0yLjItNy4yLTYuNi03LjJ6bTE2LjguMWMtMyAwLTUgMS42LTUgNC4zIDAgMi40IDEuOSAzLjMgNS43IDQgMi45LjQgMi4xIDIuOC0uNSAyLjUtMS4xLS4xLTEuOC0uNC0yLjEtMS40SDY5di41YzAgMS45IDIuNiAzLjYgNS44IDMuNi42IDAgMi0uMSAzLjMtLjcgMS4zLS41IDIuNC0xLjUgMi40LTMuOSAwLTItMS4yLTMuNC01LjYtMy45LTMuNC0uNC0yLjItMi41LS4yLTIuNC43IDAgMS43LjQgMiAxLjNoMy40di0uMmMwLTIuMS0yLjItMy43LTUuOC0zLjd6bS0zNyAuMmMtMS42LjMtMi40LjctMy4yIDIuM3YtMmgtMy41djEyLjZoMy43bC4yLTYuNWMwLS41IDAtMSAuMi0xLjQuNC0xLjEgMS42LTIgNC0xLjgtLjItLjMgMC0uNi0uOC0yLjQtLjMtLjUtLjQtLjgtLjctLjh6bTktLjJjLTEuNiAwLTMuMyAxLjItMy42IDEuOFY2LjJoLTMuNXYxMi42aDMuNXYtNy43YzAtMS4xIDEtMi4yIDIuNC0yLjIgMS4xIDAgMiAuOSAyIDIuM3Y3LjZoMy41di04LjVjMC0zLTEuNy00LjYtNC40LTQuNnpNNTggOC40YzEuMSAwIDIuNCAxLjEgMi40IDIuNGgtNS4yYy4xLTEuOCAxLjUtMi40IDIuOC0yLjR6TTIzIDguNWMyIDAgMyAxLjEgMyA0LjEgMCAyLjQtMSAzLjYtMi44IDMuNi0yLjEgMC0zLjMtMS0zLjMtMy45IDAtMi4zLjgtMy44IDMuMS0zLjh6bS01IDE0LjVoODcuNnYtM0gxOHYzek04Ni44IDUuNmMtMy4xIDAtNi4yIDIuOC02LjIgNi44IDAgNC4xIDMgNi45IDYuNyA2LjlzNS42LTIuOCA2LjItNC4xaC00Yy0xIDEtMS43IDEuMi0yLjMgMS4yLTEuMyAwLTIuNS0xLTIuOS0yLjloOS4ydi0uN2MwLTQuNC0yLjMtNy4yLTYuNy03LjJ6bS41IDIuOGMxLjIgMCAyLjMgMS4xIDIuMyAyLjRoLTUuMWMwLTEuOCAxLjUtMi40IDIuOC0yLjR6bTEzLjgtMi43Yy0xLjUgMC0zLjIgMS4yLTMuNSAxLjhsLS4xLTEuM0g5NHYxMi42aDMuNnYtNy43YzAtMS4xIDEtMi4yIDIuMy0yLjIgMS4yIDAgMi4yLjkgMi4yIDIuM3Y3LjZoMy41di04LjVjMC0zLTEuOC00LjYtNC41LTQuNnoiLz48L3N2Zz4="
 
 /***/ }),
 /* 1643 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzAiIHdpZHRoPSIxMDQiIHZpZXdCb3g9IjAgMCAxMDQgMzAiPjxwYXRoIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI0FCQjZDNSIgZD0iTTEwLjQgMjkuNUE4MSA4MSAwIDAgMSAwIDI5YzAtLjUgNDAuMy0uOSA3Mi41LS42IDE2LjcuMSAzMC41LjMgMzAuNi40cy4xLjMgMCAuNGMtLjIuMi03Ni43LjUtOTIuNy4zem0tMS4zLTYuNmwuNy0xYy40LS40IDItNCAzLjUtNy45IDMuMS04LjEgNC05LjcgNS45LTExLjNsMS4zLTEuMi0zLjQuMmMtNCAuMy02LjMgMS03LjcgMi40LTEuMSAxLTEuOCAyLjktMS41IDQuMS4yIDEtLjUuOS0xLjYtLjItMS4zLTEuNC0xLTMuMiAxLTVDOS41LjcgMTEuMi40IDIyIC4ybDkuNi0uMi0xIC43Yy0uNy41LTEuOC43LTQuNC44LTMuMi4xLTMuNi4yLTQuNSAxLjEtMSAxLTMgNS42LTUuNyAxMi45LTEuNSA0LjEtMi43IDYuMi00IDYuOS0uOS40LTMgLjgtMyAuNXpNNDAgMjNsLjYtMS4zIDEtMS41LjktMi40LjctMS45LTEuNiAxLjJjLTIuOCAyLjEtNS44IDIuNi03LjMgMS4xcy0xLTUgMS41LTguM2MyLjgtMy44IDcuOC01LjIgNy44LTIuMiAwIDEuNC0yIDMuOC00LjcgNS40LTIuMiAxLjQtMi45IDIuNi0yLjIgMy45LjUuOCAxLjMuOCAzIDBhMTIgMTIgMCAwIDAgNS41LTYuNGwxLTIuNi0uOS0uM2MtLjctLjEtLjctLjIuNC0uNi42LS4zIDEuNC0xIDEuNy0xLjZDNDkuNCAyIDUyIC40IDU2LjIuMmMyLjgtLjEgMy0uMSA0IC44LjQuNS44IDEuMS44IDEuMyAwIC42LTIgMi42LTIuNSAyLjYtLjQgMC0uNC0uMSAwLS41LjItLjIuNC0uOS40LTEuNEM1OC45LjggNTUuNS4yIDUzIDJhMTIgMTIgMCAwIDAtMy4yIDQuNGgzLjZjMy45LS4yIDQuNi4yIDIuNiAxLjItMyAxLjUtNS43IDkuNy0zLjQgMTAgMS43LjIgNC44LTUuMyA0LjgtOC43IDAtMSAuMS0xIDMuMy0xLjggNC0uOSA0LjUtLjggNC4yIDFhOCA4IDAgMCAxLS40IDJjLS4yLjQuNS0uMSAxLjQtMS4xIDItMi4xIDMuNC0yLjkgNC43LTIuNSAxLjguNCAxLjcgMS40LTEuMyA4LjFDNjguNCAxNi40IDY4IDE4IDY4IDE5YzAgMS44LS40IDItMS43LjYtMS4zLTEuMi0xLTIuOS45LTcuM2EyOCAyOCAwIDAgMCAxLjUtMy43YzAtMS43LTMuNyAyLjYtNiA2LjktMS43IDMuMi0yIDMuNC0zIDMuNi0uNyAwLTEuMi0uMS0xLjItLjJsMS44LTVjMi4yLTUuNSAyLjMtNi4yLjgtNS45LTEuNC40LTEuNS41LTEuNSAxLjQgMCAxLTEuOSA1LTMuMSA2LjYtMiAyLjYtNS4yIDMuOC03IDIuNi0xLjgtMS4zLS41LTYuOCAyLjQtOS42bDEuNC0xLjQtMiAuMS0yLjIuMi0xLjUgNC4yYTMwIDMwIDAgMCAxLTQuOCAxMC4xYy0xIC42LTIuOCAxLjEtMi44Ljh6bTAtMTIuMmMxLjQtMS40IDItMyAxLjItMy4yLTEtLjQtMy4xIDIuMi00IDQuOWwtLjIuOSAxLS44Yy42LS40IDEuNS0xLjIgMi0xLjh6bS0xMSA5Yy0uOC0uNi0xLTEuMS0xLTIuMnYtMS41bC0xLjMgMWMtMi45IDIuMi01LjQgMi42LTcgMS4xLS44LS45LS45LTEuMS0uNy0yLjguNi00LjQgNC04LjQgNy44LTkuMi45LS4yIDEuMy0uMSAxLjkuNS42LjYuNi45LjMgMS44LS40IDEuMy0zLjMgNC4xLTUuMyA1LjEtMS40LjctMS41LjktMS41IDIuMiAwIC44LjEgMS41LjMgMS43LjkuNSAyLjgtLjQgNC42LTIuMiAxLjUtMS41IDIuMy0yLjkgNC4zLTcuNSAyLjQtNS4zIDIuNy01LjYgMy44LTUuOS43LS4yIDEuMy0uMyAxLjUtLjIuMiAwLS45IDIuOC0yLjMgNi4yLTMuMiA3LjItNCA5LjQtNCAxMS4zIDAgMS42LS4xIDEuNy0xLjUuNnpNMjUgMTEuM2MxLjctMS42IDIuNC0zIDEuOC0zLjYtLjMtLjMtLjYtLjMtMSAwLTEuNC45LTQuMSA2LTIuOCA1LjNsMi0xLjd6bTY4LjEgOC41Yy0uOC0uNy0xLTEtLjgtMi4yIDAtLjggMC0xLjQtLjItMS40LS4xIDAtLjMuMi0uMy40IDAgLjctMyAyLjUtNC4xIDIuNS0xLjMgMC0yLjQtLjktMi40LTIgMC0uNiAwLS42LS44LjEtMi4zIDIuMS01LjIgMi41LTYuNyAxbC0uOS0uOS0xLjMuOWMtMS41IDEuMS0zLjQgMS4yLTQuMy4zLS45LS45LS41LTIuNCAxLjctNy4yIDEuOC00LjIgMS44LTQuMiAzLjMtNC41LjktLjIgMS42LS4zIDEuNy0uMiAwIDAtLjggMi4xLTIgNC42LTIgNC43LTIuNCA2LjEtMS40IDYuMS45IDAgMi43LTEuNSAyLjctMi4yYTE0IDE0IDAgMCAxIDIuNy01LjdBOC4zIDguMyAwIDAgMSA4NiA2LjNjMi40IDAgMy4xIDEuNiAxLjMgMi45LTEuMSAxLTEuNyAxLTEuNC4yLjktMi0uNC0yLjYtMi0xLTMuMSAzLTQuNiA5LjgtMiA5LjFhOC41IDguNSAwIDAgMCA0LjYtNC4zYzIuNS00LjcgNS4xLTYuNiA5LjEtNi42IDEuNC0uMSAyLjYgMCAyLjcuMi4yLjEtLjEgMS4yLS43IDIuNGEzNC44IDM0LjggMCAwIDAtMy4yIDExLjRsLTEuMi0uOHpNOTEgMTZjMS4yLTEuMiA0LjgtOC4xIDQuNC04LjUtLjQtLjQtMi4yLjQtMy4zIDEuNS0xLjQgMS42LTMgNC40LTMuNCA2LjQtLjUgMi40LjMgMi42IDIuMy42ek03Ny45IDQuM2MtLjctLjMtLjYtMS44IDAtMi4zLjktLjcgMS45LS4zIDEuOS43IDAgLjktMS4yIDEuOC0yIDEuNnoiLz48L3N2Zz4="
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjYiIHdpZHRoPSIxMDEiIHZpZXdCb3g9IjAgMCAxMDEgMjYiPjxwYXRoIGZpbGw9IiNBQkI2QzUiIGQ9Ik05LjIgMTMuNEg1LjdsMS45LTYgMS42IDZ6TTQgMjAuMWwxLjEtNGg0LjdsMSA0aDQuM0wxMSA0LjljLS4zLS45LS44LTEuMy0xLjctMS4zSDNWNWguNWMuNyAwIDEgLjMgMSAuOCAwIC4zIDAgLjYtLjMgMS4zTDAgMjAuMWg0em0xNiAwVjQuOWMwLS44LS40LTEuMy0xLjEtMS4zSDE1VjVoLjNjLjYgMCAuOS4zLjkgMXYxNC4xSDIwem02LjYgMFY0LjljMC0uOC0uNS0xLjMtMS4yLTEuM2gtMy44VjVoLjNjLjYgMCAuOS4zLjkgMXYxNC4xaDMuOHptNi43LTE1YzAtMS4xLS44LTEuOC0yLjItMS44LTEuNCAwLTIuMi43LTIuMiAxLjhzLjggMS44IDIuMiAxLjhjMS40IDAgMi4yLS43IDIuMi0xLjh6bS0uMSAxNVY5YzAtLjgtLjUtMS4zLTEuMi0xLjNoLTMuN3YxLjVoLjJjLjYgMCAuOS4yLjkuOXYxMGgzLjh6bTguNC01Ljl2Mi40Yy0uNy43LTEuNCAxLjEtMi4xIDEuMS0uNyAwLTEtLjQtMS0xLjNzLjMtMS4zIDEtMS42bDItLjZ6bS01LjItMi45YzEuMy0uNiAyLjctMSAzLjgtMSAxIDAgMS40LjQgMS40IDEuNXYuM2EyNS4yIDI1LjIgMCAwIDAtNC40IDFjLTEuNS42LTIuMyAxLjgtMi4zIDMuNyAwIDIuMyAxIDMuNSAzLjEgMy41LjggMCAxLjQtLjIgMi0uNGwxLjctMS4xdi4yYzAgLjcuNCAxLjEgMS4xIDEuMWgzLjV2LTEuM2gtLjJjLS42IDAtLjgtLjMtLjgtMS4xdi01LjljMC0zLjEtMS4xLTQuMi00LjItNC4ybC0zIC4zYTggOCAwIDAgMC0yLjUgMWwuOCAyLjR6TTUyIDIwLjF2LTguM2MuNi0uOCAxLjMtMS4xIDItMS4xLjggMCAxIC4zIDEgMS42djcuOGgzLjh2LTguNGMwLTItLjEtMi42LS43LTMuMi0uNS0uNi0xLjMtLjktMi4zLS45LTEuNSAwLTIuNi41LTQgMS44di0uNWMwLS44LS40LTEuMi0xLjEtMS4yaC0zLjd2MS41aC4zYy42IDAgLjkuMi45Ljl2MTBoMy44ek03MCAxNy41djIuNmgtOS42di0yLjVsNS4xLTcuM2gtMi43Yy0uNiAwLS45LjItLjkuOHYuMmgtMS40VjkuMWMwLS45LjQtMS40IDEuMy0xLjRoOHYyLjZsLTUuMSA3LjJINzB6bTMwLjYtNC44YzAgNy4zLTUuMyAxMi43LTEyLjQgMTIuN1M3NS43IDIwIDc1LjcgMTIuNyA4MSAwIDg4IDBjNy4yIDAgMTIuNSA1LjQgMTIuNSAxMi43em0tMiAwQzk4LjUgNi42IDk0IDIgODguMSAyYy02IDAtMTAuNCA0LjUtMTAuNCAxMC43czQuNCAxMC43IDEwLjQgMTAuNyAxMC4zLTQuNSAxMC4zLTEwLjd6bS03IDcuMVY3LjRoMmMxLjEgMCAxLjUuNCAxLjUgMS41djEwLjloLTMuNnptLTEuNiAwaC0zLjdWN2MwLTEtLjEtMS4xLS44LTEuMWgtLjJWNC4zaDMuMmMxIDAgMS41LjQgMS41IDEuNXYxNHptLTUuMiAwaC0zLjZWOC45YzAtMS4xLjQtMS41IDEuNC0xLjVoMi4ydjEyLjR6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="
 
 /***/ }),
 /* 1644 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjUiIHdpZHRoPSIxMTIiIHZpZXdCb3g9IjAgMCAxMTIgMjUiPjxwYXRoIGZpbGw9IiNBQkI2QzUiIGQ9Ik05LjYuMmgxMS45YzEgMCAyIC41IDIuNSAxLjMuNC42LjcgMS4zLjcgMi4xdjExLjljLS44IDAtMS42LS4yLTIuMi0uN2EzLjIgMy4yIDAgMCAxLTEuNC0yLjV2LTdjMC0uNy0uMy0xLjMtLjktMS42bC0uOC0uMWgtNS45bC0xLjEtLjFBMy40IDMuNCAwIDAgMSA5LjcuMnptMTAxLjcgMTEuNmExOSAxOSAwIDAgMS0uMyA4LjRjLS40IDEuMi0xLjEgMi4zLTIgM2E2LjQgNi40IDAgMCAxLTQuNCAxLjNjLTEuNC4xLTIuOC0uMS00LS44LS45LS42LTEuNi0xLjQtMi4xLTIuNC0uNi0xLS45LTIuMS0xLTMuMmwtLjItMi41YzAtMS40LjEtMi44LjUtNC4xLjMtMS4yLjktMi40IDEuOC0zLjMuOS0xIDIuMS0xLjUgMy40LTEuNiAxLjMtLjIgMi41LS4yIDMuOC4xIDEgLjMgMi4xLjkgMyAxLjguNyAxIDEuMiAyLjEgMS41IDMuM3ptLTMuNSA2LjhjLjItMS4zLjItMi42LjItMy45di0uMWwtLjItMi4zYy0uMS0uNi0uMy0xLjItLjYtMS42LS40LS42LTEuMS0xLTEuOC0xLjEtMS0uMi0xLjktLjItMi43LjMtLjYuMi0xIC44LTEuMiAxLjQtLjMuNy0uNCAxLjQtLjQgMi4yYTI4LjEgMjguMSAwIDAgMCAuMyA2LjFjLjIuNS41IDEgMSAxLjMuMy4zLjcuNCAxIC41LjkuMiAxLjcuMiAyLjQtLjFhMiAyIDAgMCAwIDEuMy0uOWMuNC0uNS42LTEuMi43LTEuOHpNMS40IDYuM2gxNS40Yy42IDAgMS4xLjUgMS4xIDEuMXYxNC45YzAgLjYtLjUgMS4xLTEgMS4xSDEuM2MtLjYgMC0xLjEtLjUtMS4xLTEuMVY3LjRjMC0uNi41LTEuMSAxLTEuMXptMzggLjZjLjUgMCAxIDAgMS40LjIuMi4xLjQuMy40LjV2MWwtLjEuOWMtLjEuMi0uNC4zLS42LjRsLTItLjEtMi42LS4xYy0uNCAwLTEgMC0xLjIuNC0uMy40LS4yLjktLjIgMS40djFjLjIuMy41LjQuOC42bDMuOSAxLjdjLjcuNCAxLjQuNyAxLjggMS40LjUuNy41IDEuNS41IDIuMyAwIDEuMSAwIDIuMi0uMiAzLjMtLjIuOC0uOCAxLjUtMS42IDEuOC0xLjIuNi0yLjUuNi0zLjguN2wtNC0uM2MtLjMgMC0uNy0uMS0xLS4zVjIzdi0xLjFjMC0uMyAwLS42LjMtLjcuMy0uMi43LS4xIDEtLjFsMy4xLjFjLjUuMSAxIC4xIDEuNiAwIC4zIDAgLjcgMCAxLS40LjItLjMuMi0uOC4yLTEuMmwtLjEtMS41YzAtLjItLjItLjQtLjQtLjVsLTEtLjUtMy4zLTEuNGMtLjYtLjMtMS4zLS43LTEuNy0xLjMtLjUtLjctLjUtMS42LS42LTIuNCAwLTEuMiAwLTIuNC41LTMuNEMzMiA3LjcgMzMgNy4zIDM0IDdsMS40LS4yYzEuNC0uMSAyLjggMCA0LjIuMXpNODUuNiAyM2MuMS4yIDAgLjYtLjEuOC0uMi4yLS41LjItLjguMmgtMS40Yy0uMyAwLS43IDAtLjktLjJsLS40LS43YTkyIDkyIDAgMCAxLTEtMy4ybC01LjYuMS0uNyAyLjItLjYgMS40Yy0uMi40LS43LjQtMS4xLjRoLTEuN2wtLjUtLjQuMi0xTDc2IDcuOWMuMS0uMy4zLS43LjctLjkuNC0uMiAxLS4xIDEuNC0uMS41IDAgMS0uMSAxLjQuMS4zLjIuNS42LjYgMWw1LjQgMTV6bS05LjMtNS43aDMuN0w3OCAxMS42bC0xLjggNS43em0tMzMtMTAuMmMuMi0uMi42LS4yIDEtLjFoMTAuNGMuMyAwIC43IDAgLjkuMy4yLjQuMS44LjEgMS4yIDAgLjQgMCAuOC0uMiAxLjEtLjMuMy0uNy4zLTEgLjNINTFWMjNjMCAuMy0uMi43LS41LjktLjQuMi0uOC4xLTEuMy4xLS40IDAtLjkuMS0xLjMtLjEtLjMtLjEtLjUtLjUtLjUtLjlWOS45aC0zLjZjLS4zIDAtLjYgMC0uOC0uMy0uMy0uMi0uMy0uNi0uMy0uOXYtLjljMC0uMy4yLS42LjQtLjd6TTY5LjQgMjNjMCAuMyAwIC42LS4yLjgtLjIuMi0uNS4yLS44LjJoLTEuOWMtLjQgMC0uOS0uMy0xLjEtLjZsLTQuMy01LjZoLS41djUuNWMwIC4yLS4yLjUtLjQuNmwtMSAuMWgtMWMtLjMgMC0uNiAwLS44LS4yLS4yLS4xLS4yLS4zLS4zLS40VjguMWMwLS4zIDAtLjYuMi0uOS4yLS4yLjUtLjIuOC0uMmg1LjZjMSAwIDIgMCAyLjguNS42LjQgMS4yIDEgMS41IDEuNy41IDEuMy42IDIuOC41IDQuMiAwIC44LS4xIDEuNy0uNSAyLjQtLjMuNi0uNyAxLTEuMiAxLjMtLjQuMy0xIC41LTEuNS42bDMuMyA0LjIuOCAxLjF6TTY1IDEzLjJsLS4xLTIuNGMtLjEtLjMtLjMtLjYtLjYtLjctLjQtLjItLjgtLjItMS4yLS4yaC0yLjV2NWgyLjhjLjQgMCAxLS4xIDEuMy0uNC4zLS4zLjMtLjguMy0xLjN6bTE5LTUuOWMuMi0uMi41LS4zLjctLjNoMTFjLjQgMCAuNyAwIDEgLjN2Mi4yYy0uMi4zLS42LjQtMSAuNGgtMy42VjIzYzAgLjMtLjEuNy0uNC45LS40LjItLjkuMS0xLjMuMS0uNSAwLTEgLjEtMS40LS4xLS4zLS4yLS40LS42LS40LS45VjkuOUg4NWMtLjMgMC0uNy0uMS0uOS0uNC0uMi0uMyAwLS43LS4xLTEuMWwuMS0xLjF6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzAiIHdpZHRoPSIxMDQiIHZpZXdCb3g9IjAgMCAxMDQgMzAiPjxwYXRoIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI0FCQjZDNSIgZD0iTTEwLjQgMjkuNUE4MSA4MSAwIDAgMSAwIDI5YzAtLjUgNDAuMy0uOSA3Mi41LS42IDE2LjcuMSAzMC41LjMgMzAuNi40cy4xLjMgMCAuNGMtLjIuMi03Ni43LjUtOTIuNy4zem0tMS4zLTYuNmwuNy0xYy40LS40IDItNCAzLjUtNy45IDMuMS04LjEgNC05LjcgNS45LTExLjNsMS4zLTEuMi0zLjQuMmMtNCAuMy02LjMgMS03LjcgMi40LTEuMSAxLTEuOCAyLjktMS41IDQuMS4yIDEtLjUuOS0xLjYtLjItMS4zLTEuNC0xLTMuMiAxLTVDOS41LjcgMTEuMi40IDIyIC4ybDkuNi0uMi0xIC43Yy0uNy41LTEuOC43LTQuNC44LTMuMi4xLTMuNi4yLTQuNSAxLjEtMSAxLTMgNS42LTUuNyAxMi45LTEuNSA0LjEtMi43IDYuMi00IDYuOS0uOS40LTMgLjgtMyAuNXpNNDAgMjNsLjYtMS4zIDEtMS41LjktMi40LjctMS45LTEuNiAxLjJjLTIuOCAyLjEtNS44IDIuNi03LjMgMS4xcy0xLTUgMS41LTguM2MyLjgtMy44IDcuOC01LjIgNy44LTIuMiAwIDEuNC0yIDMuOC00LjcgNS40LTIuMiAxLjQtMi45IDIuNi0yLjIgMy45LjUuOCAxLjMuOCAzIDBhMTIgMTIgMCAwIDAgNS41LTYuNGwxLTIuNi0uOS0uM2MtLjctLjEtLjctLjIuNC0uNi42LS4zIDEuNC0xIDEuNy0xLjZDNDkuNCAyIDUyIC40IDU2LjIuMmMyLjgtLjEgMy0uMSA0IC44LjQuNS44IDEuMS44IDEuMyAwIC42LTIgMi42LTIuNSAyLjYtLjQgMC0uNC0uMSAwLS41LjItLjIuNC0uOS40LTEuNEM1OC45LjggNTUuNS4yIDUzIDJhMTIgMTIgMCAwIDAtMy4yIDQuNGgzLjZjMy45LS4yIDQuNi4yIDIuNiAxLjItMyAxLjUtNS43IDkuNy0zLjQgMTAgMS43LjIgNC44LTUuMyA0LjgtOC43IDAtMSAuMS0xIDMuMy0xLjggNC0uOSA0LjUtLjggNC4yIDFhOCA4IDAgMCAxLS40IDJjLS4yLjQuNS0uMSAxLjQtMS4xIDItMi4xIDMuNC0yLjkgNC43LTIuNSAxLjguNCAxLjcgMS40LTEuMyA4LjFDNjguNCAxNi40IDY4IDE4IDY4IDE5YzAgMS44LS40IDItMS43LjYtMS4zLTEuMi0xLTIuOS45LTcuM2EyOCAyOCAwIDAgMCAxLjUtMy43YzAtMS43LTMuNyAyLjYtNiA2LjktMS43IDMuMi0yIDMuNC0zIDMuNi0uNyAwLTEuMi0uMS0xLjItLjJsMS44LTVjMi4yLTUuNSAyLjMtNi4yLjgtNS45LTEuNC40LTEuNS41LTEuNSAxLjQgMCAxLTEuOSA1LTMuMSA2LjYtMiAyLjYtNS4yIDMuOC03IDIuNi0xLjgtMS4zLS41LTYuOCAyLjQtOS42bDEuNC0xLjQtMiAuMS0yLjIuMi0xLjUgNC4yYTMwIDMwIDAgMCAxLTQuOCAxMC4xYy0xIC42LTIuOCAxLjEtMi44Ljh6bTAtMTIuMmMxLjQtMS40IDItMyAxLjItMy4yLTEtLjQtMy4xIDIuMi00IDQuOWwtLjIuOSAxLS44Yy42LS40IDEuNS0xLjIgMi0xLjh6bS0xMSA5Yy0uOC0uNi0xLTEuMS0xLTIuMnYtMS41bC0xLjMgMWMtMi45IDIuMi01LjQgMi42LTcgMS4xLS44LS45LS45LTEuMS0uNy0yLjguNi00LjQgNC04LjQgNy44LTkuMi45LS4yIDEuMy0uMSAxLjkuNS42LjYuNi45LjMgMS44LS40IDEuMy0zLjMgNC4xLTUuMyA1LjEtMS40LjctMS41LjktMS41IDIuMiAwIC44LjEgMS41LjMgMS43LjkuNSAyLjgtLjQgNC42LTIuMiAxLjUtMS41IDIuMy0yLjkgNC4zLTcuNSAyLjQtNS4zIDIuNy01LjYgMy44LTUuOS43LS4yIDEuMy0uMyAxLjUtLjIuMiAwLS45IDIuOC0yLjMgNi4yLTMuMiA3LjItNCA5LjQtNCAxMS4zIDAgMS42LS4xIDEuNy0xLjUuNnpNMjUgMTEuM2MxLjctMS42IDIuNC0zIDEuOC0zLjYtLjMtLjMtLjYtLjMtMSAwLTEuNC45LTQuMSA2LTIuOCA1LjNsMi0xLjd6bTY4LjEgOC41Yy0uOC0uNy0xLTEtLjgtMi4yIDAtLjggMC0xLjQtLjItMS40LS4xIDAtLjMuMi0uMy40IDAgLjctMyAyLjUtNC4xIDIuNS0xLjMgMC0yLjQtLjktMi40LTIgMC0uNiAwLS42LS44LjEtMi4zIDIuMS01LjIgMi41LTYuNyAxbC0uOS0uOS0xLjMuOWMtMS41IDEuMS0zLjQgMS4yLTQuMy4zLS45LS45LS41LTIuNCAxLjctNy4yIDEuOC00LjIgMS44LTQuMiAzLjMtNC41LjktLjIgMS42LS4zIDEuNy0uMiAwIDAtLjggMi4xLTIgNC42LTIgNC43LTIuNCA2LjEtMS40IDYuMS45IDAgMi43LTEuNSAyLjctMi4yYTE0IDE0IDAgMCAxIDIuNy01LjdBOC4zIDguMyAwIDAgMSA4NiA2LjNjMi40IDAgMy4xIDEuNiAxLjMgMi45LTEuMSAxLTEuNyAxLTEuNC4yLjktMi0uNC0yLjYtMi0xLTMuMSAzLTQuNiA5LjgtMiA5LjFhOC41IDguNSAwIDAgMCA0LjYtNC4zYzIuNS00LjcgNS4xLTYuNiA5LjEtNi42IDEuNC0uMSAyLjYgMCAyLjcuMi4yLjEtLjEgMS4yLS43IDIuNGEzNC44IDM0LjggMCAwIDAtMy4yIDExLjRsLTEuMi0uOHpNOTEgMTZjMS4yLTEuMiA0LjgtOC4xIDQuNC04LjUtLjQtLjQtMi4yLjQtMy4zIDEuNS0xLjQgMS42LTMgNC40LTMuNCA2LjQtLjUgMi40LjMgMi42IDIuMy42ek03Ny45IDQuM2MtLjctLjMtLjYtMS44IDAtMi4zLjktLjcgMS45LS4zIDEuOS43IDAgLjktMS4yIDEuOC0yIDEuNnoiLz48L3N2Zz4="
 
 /***/ }),
 /* 1645 */
 /***/ (function(module, exports) {
 
-module.exports = "##### 2.1 **RESSOURCE GROUP**\n\n > \n\n![rg](http://res.cloudinary.com/samcogan/image/upload/v1493930941/arm_ejo0aw.png)\n- Jeder Service gehört zu einer *Ressource group*\n    - dient als *logischer Ordner*\n    - trennt Projekte oder Abteilungen\n- Erlaubt Gruppenfunktionen (bspw. löschen)\n- Kostenüberblick pro Gruppe"
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjUiIHdpZHRoPSIxMTIiIHZpZXdCb3g9IjAgMCAxMTIgMjUiPjxwYXRoIGZpbGw9IiNBQkI2QzUiIGQ9Ik05LjYuMmgxMS45YzEgMCAyIC41IDIuNSAxLjMuNC42LjcgMS4zLjcgMi4xdjExLjljLS44IDAtMS42LS4yLTIuMi0uN2EzLjIgMy4yIDAgMCAxLTEuNC0yLjV2LTdjMC0uNy0uMy0xLjMtLjktMS42bC0uOC0uMWgtNS45bC0xLjEtLjFBMy40IDMuNCAwIDAgMSA5LjcuMnptMTAxLjcgMTEuNmExOSAxOSAwIDAgMS0uMyA4LjRjLS40IDEuMi0xLjEgMi4zLTIgM2E2LjQgNi40IDAgMCAxLTQuNCAxLjNjLTEuNC4xLTIuOC0uMS00LS44LS45LS42LTEuNi0xLjQtMi4xLTIuNC0uNi0xLS45LTIuMS0xLTMuMmwtLjItMi41YzAtMS40LjEtMi44LjUtNC4xLjMtMS4yLjktMi40IDEuOC0zLjMuOS0xIDIuMS0xLjUgMy40LTEuNiAxLjMtLjIgMi41LS4yIDMuOC4xIDEgLjMgMi4xLjkgMyAxLjguNyAxIDEuMiAyLjEgMS41IDMuM3ptLTMuNSA2LjhjLjItMS4zLjItMi42LjItMy45di0uMWwtLjItMi4zYy0uMS0uNi0uMy0xLjItLjYtMS42LS40LS42LTEuMS0xLTEuOC0xLjEtMS0uMi0xLjktLjItMi43LjMtLjYuMi0xIC44LTEuMiAxLjQtLjMuNy0uNCAxLjQtLjQgMi4yYTI4LjEgMjguMSAwIDAgMCAuMyA2LjFjLjIuNS41IDEgMSAxLjMuMy4zLjcuNCAxIC41LjkuMiAxLjcuMiAyLjQtLjFhMiAyIDAgMCAwIDEuMy0uOWMuNC0uNS42LTEuMi43LTEuOHpNMS40IDYuM2gxNS40Yy42IDAgMS4xLjUgMS4xIDEuMXYxNC45YzAgLjYtLjUgMS4xLTEgMS4xSDEuM2MtLjYgMC0xLjEtLjUtMS4xLTEuMVY3LjRjMC0uNi41LTEuMSAxLTEuMXptMzggLjZjLjUgMCAxIDAgMS40LjIuMi4xLjQuMy40LjV2MWwtLjEuOWMtLjEuMi0uNC4zLS42LjRsLTItLjEtMi42LS4xYy0uNCAwLTEgMC0xLjIuNC0uMy40LS4yLjktLjIgMS40djFjLjIuMy41LjQuOC42bDMuOSAxLjdjLjcuNCAxLjQuNyAxLjggMS40LjUuNy41IDEuNS41IDIuMyAwIDEuMSAwIDIuMi0uMiAzLjMtLjIuOC0uOCAxLjUtMS42IDEuOC0xLjIuNi0yLjUuNi0zLjguN2wtNC0uM2MtLjMgMC0uNy0uMS0xLS4zVjIzdi0xLjFjMC0uMyAwLS42LjMtLjcuMy0uMi43LS4xIDEtLjFsMy4xLjFjLjUuMSAxIC4xIDEuNiAwIC4zIDAgLjcgMCAxLS40LjItLjMuMi0uOC4yLTEuMmwtLjEtMS41YzAtLjItLjItLjQtLjQtLjVsLTEtLjUtMy4zLTEuNGMtLjYtLjMtMS4zLS43LTEuNy0xLjMtLjUtLjctLjUtMS42LS42LTIuNCAwLTEuMiAwLTIuNC41LTMuNEMzMiA3LjcgMzMgNy4zIDM0IDdsMS40LS4yYzEuNC0uMSAyLjggMCA0LjIuMXpNODUuNiAyM2MuMS4yIDAgLjYtLjEuOC0uMi4yLS41LjItLjguMmgtMS40Yy0uMyAwLS43IDAtLjktLjJsLS40LS43YTkyIDkyIDAgMCAxLTEtMy4ybC01LjYuMS0uNyAyLjItLjYgMS40Yy0uMi40LS43LjQtMS4xLjRoLTEuN2wtLjUtLjQuMi0xTDc2IDcuOWMuMS0uMy4zLS43LjctLjkuNC0uMiAxLS4xIDEuNC0uMS41IDAgMS0uMSAxLjQuMS4zLjIuNS42LjYgMWw1LjQgMTV6bS05LjMtNS43aDMuN0w3OCAxMS42bC0xLjggNS43em0tMzMtMTAuMmMuMi0uMi42LS4yIDEtLjFoMTAuNGMuMyAwIC43IDAgLjkuMy4yLjQuMS44LjEgMS4yIDAgLjQgMCAuOC0uMiAxLjEtLjMuMy0uNy4zLTEgLjNINTFWMjNjMCAuMy0uMi43LS41LjktLjQuMi0uOC4xLTEuMy4xLS40IDAtLjkuMS0xLjMtLjEtLjMtLjEtLjUtLjUtLjUtLjlWOS45aC0zLjZjLS4zIDAtLjYgMC0uOC0uMy0uMy0uMi0uMy0uNi0uMy0uOXYtLjljMC0uMy4yLS42LjQtLjd6TTY5LjQgMjNjMCAuMyAwIC42LS4yLjgtLjIuMi0uNS4yLS44LjJoLTEuOWMtLjQgMC0uOS0uMy0xLjEtLjZsLTQuMy01LjZoLS41djUuNWMwIC4yLS4yLjUtLjQuNmwtMSAuMWgtMWMtLjMgMC0uNiAwLS44LS4yLS4yLS4xLS4yLS4zLS4zLS40VjguMWMwLS4zIDAtLjYuMi0uOS4yLS4yLjUtLjIuOC0uMmg1LjZjMSAwIDIgMCAyLjguNS42LjQgMS4yIDEgMS41IDEuNy41IDEuMy42IDIuOC41IDQuMiAwIC44LS4xIDEuNy0uNSAyLjQtLjMuNi0uNyAxLTEuMiAxLjMtLjQuMy0xIC41LTEuNS42bDMuMyA0LjIuOCAxLjF6TTY1IDEzLjJsLS4xLTIuNGMtLjEtLjMtLjMtLjYtLjYtLjctLjQtLjItLjgtLjItMS4yLS4yaC0yLjV2NWgyLjhjLjQgMCAxLS4xIDEuMy0uNC4zLS4zLjMtLjguMy0xLjN6bTE5LTUuOWMuMi0uMi41LS4zLjctLjNoMTFjLjQgMCAuNyAwIDEgLjN2Mi4yYy0uMi4zLS42LjQtMSAuNGgtMy42VjIzYzAgLjMtLjEuNy0uNC45LS40LjItLjkuMS0xLjMuMS0uNSAwLTEgLjEtMS40LS4xLS4zLS4yLS40LS42LS40LS45VjkuOUg4NWMtLjMgMC0uNy0uMS0uOS0uNC0uMi0uMyAwLS43LS4xLTEuMWwuMS0xLjF6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="
 
 /***/ }),
 /* 1646 */
 /***/ (function(module, exports) {
 
-module.exports = "#### 2.2 **App Service**\n\n![logo-appService](data:image/png;base64,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)\n* Container für alle typischen Webanwendungen\n\t* Statische Webseite mit HTML, CSS\n\t* Webanwendungen (Frontend) \n\t* Backend Server (API)\n* Betriebssystem Windows / Linux \n\n--- \n##### Info:\n\n- Name wird auch für URL verwendet\n- benötigt *App Service Plan*\n- Subscription -> payment\n- Ressourcengruppe angeben\n"
+module.exports = "<ul>\n<li>Jeder Service gehört zu einer <em>Ressource group</em><ul>\n<li>dient als <em>logischer Ordner</em></li>\n<li>trennt Projekte oder Abteilungen</li>\n</ul>\n</li>\n<li>Erlaubt Gruppenfunktionen (bspw. löschen)</li>\n<li>Kostenüberblick pro Gruppe</li>\n</ul>\n";
 
 /***/ }),
 /* 1647 */
 /***/ (function(module, exports) {
 
-module.exports = "#### 2.3 App Service Plan \n(ASP / ASE):\n>\n![logo-asp](data:image/png;base64,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)\n- PaaS: Plattform as a Service\n- bestimmt die Hardware, die für App Services zur Verfügung steht\n- kann an spezifische Orte \"gebunden\" werden\n    - verringert Latenzzeiten\n- ist jederzeit skalierbar (horizontal, vertikal)\n--- \n\n- Lizenz Basic 1 (B1) ist kostenlos\n- Application Insights ≈ Google Analytics\n"
+module.exports = "<ul>\n<li>Container für alle typischen Webanwendungen<ul>\n<li>Statische Webseite mit HTML, CSS</li>\n<li>Webanwendungen (Frontend) </li>\n<li>Backend Server (API)</li>\n</ul>\n</li>\n<li>Betriebssystem Windows / Linux </li>\n</ul>\n<hr>\n<ul>\n<li>Name wird auch für URL verwendet</li>\n<li>Subscription -&gt; payment</li>\n<li>benötigt <ul>\n<li><em>App Service Plan</em> </li>\n<li><em>Ressourcengruppe</em></li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1648 */
 /***/ (function(module, exports) {
 
-module.exports = "#### 2.3 App Service Plan: Tipps\n>\n- Plan kann mehrere App Services beinhalten\n\t- die Ressourcen werden dann geteilt\n\t- auf *Performance-Diebe* achten\n- Anspruchsvolle Apps sollten so konfiguriert sein\n\t- *auto-scale based on CPU and memory*\n\t- *Per-Plan Scaling* oder *Per-App-Scaling* \n\n--- \n- per plan: kontrolliert auf wievielen Servern die App gleichzeitig läuft\n- per app : kontrolliert **maximale** für die App zugewiesene Server\n"
+module.exports = "<ul>\n<li>PaaS: Plattform as a Service</li>\n<li>bestimmt die Hardware, die für App Services zur Verfügung steht</li>\n<li>Standort ist wählbar <ul>\n<li>Westeuropa, Nordamerika, etc.</li>\n<li>gute Wahl verringert Latenzzeiten</li>\n</ul>\n</li>\n<li>ist jederzeit skalierbar (horizontal, vertikal)</li>\n</ul>\n<hr>\n<ul>\n<li>Bezahlung erfolgt per ASP<ul>\n<li>Option Basic 1 (B1) ist kostenlos</li>\n<li>Option Standard 1 (S1) ab etwa 30 € / Monat</li>\n</ul>\n</li>\n<li>Application Insights ≈ Google Analytics</li>\n</ul>\n";
 
 /***/ }),
 /* 1649 */
 /***/ (function(module, exports) {
 
-module.exports = "##### 2.6 Deployment Methoden\n\n>\n\n| **Build**        | **Upload**           \n:-----:| ------------- |:-------------:|\n**Manuell** | manuell      | manuell |\n**Tools** | manuell      | semi-auto      |   \n**CI** | auto      | mannuell      |  \n**CI & CD** | auto      | auto      |   \n\n--- \n\n- für den manuellen Upload sind extra Credentials notwendig\n- Tools: Einmaliger Login mit Azure Account üblich\n- CI / CD : Konfiguration notwendig "
+module.exports = "<ul>\n<li>Plan kann mehrere App Services beinhalten<ul>\n<li>die Ressourcen werden dann geteilt</li>\n<li>auf <em>Performance-Diebe</em> achten</li>\n</ul>\n</li>\n<li>Anspruchsvolle Apps sollten so konfiguriert sein<ul>\n<li><em>auto-scale based on CPU and memory</em></li>\n<li><em>Per-Plan Scaling</em> oder <em>Per-App-Scaling</em> </li>\n</ul>\n</li>\n</ul>\n<hr>\n<ul>\n<li>per plan: kontrolliert auf wievielen Servern die App gleichzeitig läuft</li>\n<li>per app : kontrolliert <strong>maximale</strong> für die App zugewiesene Server</li>\n</ul>\n";
 
 /***/ }),
 /* 1650 */
 /***/ (function(module, exports) {
 
-module.exports = "##### 2.6 Deployment : Zero-Downtime\n\n> \nProbleme beim Deployment:\n\n- Server kurzzeitig nicht verfügbar\n- Neuer Code könnte neue Bugs verursachen\n- Tests beim Buildvorgang helfen\n- manche Apps benötigen *Warmup*\n\n>\n\nVorgehen\n\n- App Services verfügen über Slots\n- Bspw. für Production, Staging, Develop\n- Deploy Slot B -> Test B -> Swap A & B\n- Falls notwendig: Warmup auf Slot B vor Swap\n\n\n<!-- warmup: (fill cache with data)  -->\n"
+module.exports = "<ul>\n<li>Optionen des Deployments<ul>\n<li>Manueller Build</li>\n<li>Build mit Tools vereinfacht Upload</li>\n<li>Continuous Integration automatisiert Build-Schritte</li>\n<li>Continuous Deployment automatisiert Upload</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li>CI &amp; CD erlauben eine vollautomatisierten Ablauf</li>\n<li>Manuellen Upload benötigt Credentials</li>\n<li>Tools: Einmaliger Login mit Azure Account üblich</li>\n<li>CI / CD : Konfiguration notwendig </li>\n</ul>\n";
 
 /***/ }),
 /* 1651 */
 /***/ (function(module, exports) {
 
-module.exports = "##### 2.6 Deployment : Umgebungen\n\n- Lokale Umgebung: zum Entwickeln\n- **Development**: CI & CD: _develop-Branch_\n- **Staging** CI & CD: _master-Branch_\n- **Production**:   nach Verifizieren von Stage\n\n"
+module.exports = "<ul>\n<li><p>Probleme beim Deployment:</p>\n<ul>\n<li>Server kurzzeitig nicht verfügbar</li>\n<li>Neuer Code könnte neue Bugs verursachen<ul>\n<li>Tests beim Buildvorgang helfen</li>\n</ul>\n</li>\n<li>manche Apps benötigen <em>Warmup</em></li>\n</ul>\n</li>\n<li><p>Vorgehen</p>\n<ul>\n<li>App Services verfügen über Slots</li>\n<li>Bspw. für Production, Staging, Develop</li>\n<li>Deploy Slot B -&gt; Test B -&gt; Swap A &amp; B</li>\n<li>Falls notwendig: Warmup auf Slot B vor Swap</li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1652 */
+/***/ (function(module, exports) {
+
+module.exports = "<ul>\n<li>Häufig genutzte Umgebungen<ul>\n<li>Lokale Umgebung: zum Entwickeln</li>\n<li><strong>Development</strong>: CI &amp; CD: <em>develop-Branch</em></li>\n<li><strong>Staging</strong> CI &amp; CD: <em>master-Branch</em></li>\n<li><strong>Production</strong>:   nach Verifizieren von Stage</li>\n</ul>\n</li>\n</ul>\n";
+
+/***/ }),
+/* 1653 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "a6a7fb05dc5c1dd2e9fcdaebe62fda1a.png";
 
 /***/ }),
-/* 1653 */
-/***/ (function(module, exports) {
-
-module.exports = "##### 2.4 Datenbanken: SQL\n>\n![](https://azurecomcdn.azureedge.net/cvt-91f2ad75d65b94588ca876d6df21005ea3acc52dcbf2d67a7d490211b5f7d8f3/images/page/services/sql-database/sql-db.svg)\n\n- besteht aus SQL Server + SQL Datenbank\n- basiert auf _Microsoft SQL Server Datenbank Engine_\n- zuverlässig und sicher\n- _Standardlösung_"
-
-/***/ }),
 /* 1654 */
 /***/ (function(module, exports) {
 
-module.exports = "##### 2.4 Datenbanken: Cosmos DB\n>\n![cosmos-db](https://azure.microsoft.com/svghandler/cosmos-db?width=120)\n- beste Option für NoSQL \n- global verteilt\n- Mehrere Api´s verfügbar (ua. SQL, MongoDB)\n- flexibel nutzbar, einfach skalierbar in andere Regionen\n- Geschwindigkeit & Zuverlässigkeit\n  - 99.99%   \n  - read: > 10ms \n  - write: > 15ms "
+module.exports = "<ul>\n<li>besteht aus SQL Server + SQL Datenbank</li>\n<li>basiert auf <em>Microsoft SQL Server Datenbank Engine</em></li>\n<li>zuverlässig und sicher</li>\n<li><em>Standardlösung</em></li>\n</ul>\n";
 
 /***/ }),
 /* 1655 */
 /***/ (function(module, exports) {
 
-module.exports = "##### 2.5 Blob Storage\n>\n![logo-blob](data:image/png;base64,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)\n\n- Objektspeicherlösung von Microsoft\n- optimiert für das Speichern großer Mengen von unstrukturierten Daten\n  - Bilder oder Dokumente\n  - Dateien für verteilten Zugriff\n  - Audio- und Video-Streaming\n  - Speichern von Daten für Sicherung / Wiederherstellung\n- Zugriff über REST-API, CLI, Bibliotheken\n\n--- \n- CLI: Command Line Interface"
+module.exports = "<ul>\n<li>beste Option für NoSQL </li>\n<li>global verteilt</li>\n<li>Mehrere Api´s verfügbar (ua. SQL, MongoDB)</li>\n<li>flexibel nutzbar, einfach skalierbar in andere Regionen</li>\n<li>Geschwindigkeit &amp; Zuverlässigkeit<ul>\n<li>99.99%   </li>\n<li>read: &gt; 10ms </li>\n<li>write: &gt; 15ms </li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1656 */
 /***/ (function(module, exports) {
 
-module.exports = "##### Azure Search Engine\n\n![search-logo](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8AedYActTW6fgAd9UAdNUAddUAcNQAbtMAetf8///1+/7s9fzn8vvf7voAfNjJ4PW92PPE3PQriNvS5vey0vFZneGgxu2myu7j7/popuQXgdny+f08jt2TvutJld55r+ZeoOKWv+qqxuxop+OFtehOl951puKAsOYGgNmgwOojhdpBkd01i9yTuelemt+zy48SAAAKXElEQVR4nO2d6ZaiOhCANVYABXdt96UdsdtR77z/212wtQcChISqDPY5+X4rpExSqTU2GhaLxWKxWCwWi8VisVgsFovFYrFYLBaLxWKxWKrgB37dQzBDZzL/b7lpswjOncvlbTud1D0mOrrD/cZ1GXMAmncggjHXu30Og7oHh2dx2DVd/hBNALjbvG57dQ8RxXQHDPLFe04nc3bTuodZlWALrlS8byHd8Ceu1iB0WLl4z+UKYbfuAWvSOfSV5XvK+KOOkZGefF8y9od1D1uZYOnpyneX0Xv/IUt12OcV5Ivh7R+hVkPtBZqYRrave/ilBBtWWb4YdnvxldrqOygBm02nOapbCBmjZvUV+gT4C+vUKWILJkR0X1bfDCsdEjkierO6RclnSDKDdxFfcxYHCla2sohsULc4Wbp9OgEjEZ1/6DZ2Iso/5Y8pBYxEPP+Lc7E3mO///Nlcr9c/f5bbUWst+ex7VUutCL4zLd4ovAFjHB443OXn07xo7cxwlkwe7takeK19JFBGc0TeuHc+5Lnjk4JIDArPnLYZXr3CEUfzeszEATsXAwI2YSXbFhj5NvJzDThbLtJfCenXaAzfm5AveHPL54Pzz6R67XlGBIwcDQNR4xlT8g2ArRIvv5pYo/fXbKjl89+VLUtwD89vDc2s0Rh3Titgb6xzqLnvX9/qbExNYfQ7NhWMDXVGmiqfX+/xv6mpXRjDDmWj1kDf9+GX+Gw0clI8gRXdJFbxffjGbwxdA4L9hZHtxGpWCT81DO7CGLgRTWK3onPHDQsY2W5EUZvKm8m0gE3nnUTAvbkjDY1LkbExeGbjodA167PxtYYACFzhV16jccgGHc8w5hoQwdDa9IRNNRgG7SZOXnqNNgl8qKXhKYzjWMgHLMqlkLAwEUR6jIwz5rpsdT67cU0UdyqK6uI24pY60PkFOKy/2U8HTz0YTIaH5Vi9ACUJx8UVb0bCZKy9nOYo+d7sxPTXjPOBEbBl4KgAdzwrLHJq7bmujLgz/z/yRQrsJt83fsj1Xgp9jGlKvkj5uTz3F+z19qOHKHvziRcpsL1SoHq00gp6tapLSByDcLhqIYV/1AgLuYgMxoF0G/KdRqZhrr5SMQfikdKgYUutmMpAOWvMEGl9yjCLu9d8eUtVRIQT3FnRSagtYGQAKIZ5WPXqk4CuvKBSzV1LIdGFk7DbppLQ2VWKa86VTiuEhD2qGhjoF2jR1vAQHk/H/XaYnwv8VPFOEfuwRaVK83Puo2P/3iMDDo8cqfY+p86ho2JUIXQp1RyyHP/Gn41dJ/l44N5bdiIHCpOIOPGJJMxLLgwvOVrEYfuMEX0sNzq86k4+kaZhGVvNXxZYLHwlTqPvlI4BEfb2SWLBzlvmlzsXTgx4otqYltnGcEHkn0jSm55o+rekP1ymenRXMgjI/IIaUJRRZKawV7L2XUHEUYmyQQVM9wS+hXhSlFZIgRjFLjkxULmZX/hwMIyFZ5aXKQKknfapfBQcEy8d4D1gsVyiVHE0Yxsv9ZWONDaFTHTjoxgsrWc6SqW0Qu5aGneHDaZeeIR2LuCWfuJcad0LB8BIOu/g3ubVyhSD7QrfP8DD1DNVCzHTpman5NQH5nzqT2QQ6jcJ5g01vd5UNzacUl87lY0krvnUlDEEmpSMUFQfKh4/wLu6X+NcLVL5xRSI2j/gnH6wenQpdcgp1UoA56puVPeNqH8neus19eSFsm5OGyqK3wP3pHQ2Ttt0UVLnmHq0eoQ5bSh0yx2Mx/uaCtMYqoV/1GD/pZ6tbiOBk/xeoOzkQGlMz9+RBvLZr/Svp24FekmnT6flhu2k7mJwo02nCRJqWPJeUjFqNRXxsSQX1b0Q1yXUIWHTuRSKGJypCy8QEibtNs3GMGdVUCe1pp7BjKZR738CnhqZZnoBVvl78UpfdyH43yWeXnKMKYtdu4I3v7XNRIWeEENRL3xIF1h0tRV8Xp5ELUegiWi1KRuDgtWmf4R5maPfTPGTGJB4U3wJ8NT3KpSEAIjaZmemfk3ovlKJYdzHl/aeVH+YJI5Q0Tc31BfB02GadbWkZ6XYe7orak3aap1ALFhSs9sEbV8tIAb9QPvF6NeopkKEKVT1mwX4Z+K9qt6JPmJyb6YwH9BPf6di+iRZAv5ppsby/pq0zojsilKVBoJ6KgvrF/I3DLY2ViYbwQStXW6fiHn596pqHvhzOxtol/+LEE8sb2Rky/TnF9XztN92A/GVDmmAiVH3kXTXu4KAGGvyGQsxXI6fvf1gIcuQ7sUPY7bQY0cbquV+AKusPxrsCoJBvJlJlVXehffnff26xtrJY+Cc53B3tnl3eoL3lnFdByiH4KsZA7GTFV5R5G4Hx3RBd9yccMqWnyJvnAAnDqCabNUtFDD+ZcPxV5dFXDHkwiavYkil2ETK/cKlijaRCtCWNpZ1etPw43Q6fXyGec0JDZ2gQAF3y62Ka6IGtJGXHbXQpkhsUtEUzeQ+/YwUMMBriLhVwTe1DQGQAnYpynm8wFgHJQCiSeAu4Jgi7OBNSpLklYEmUsAeTXg68t7Q6ioXAOT1OLoXjRQRGd9q1RGaoG/Fw1zkmoLPjLhOWAF7yItcE/Dfjd/0Bz44KAH9kCzLHq3S340ZfQOetL1pepSrIP/Qp1xVkYTk+xCyNcEJhoyz3bQwTdsLV2S3gN6J9iG1LgVXJuDdvwfWX+Z1Y3XnV+0O0jIiXUp8r4f8nt/RY4LAcflyO52s134c4/D9YDLfXzza6bsTnYcEFZYJQNoqN0i49pHPxFzWvIx3u+vl7LoVepxVYMNGQCkhZJNaSQGzlvTz8kzCMaTxeg2fMGUB0vYVyot2lUcUh0zLauE1HicVcGJgl5UPaRzt8w+yzKF0ibZqmMFHmp3KbJPfs90i6/TT4h5x79FICNKugHpm8NH15dNc/CftcyzrIjHFI1qLiio/yXY3JQU0lWIu45GCJrHbPElQplvbbWGPheUT7BGhGDjFojYBv7PABDclSa7Bob1wXovvOokRQWtMoSINjN5gKufvnyjgB1HoMgWr+m5DA+c7OataqlRM0RzWKWCyq0ypKVxKwT5ck0R1KwLtROoSPYn5unR9q/PCPpaqkUDfYpJ3HhooOtZAuMhhglWnOTaNT1z4r4l4nzk22Zq9g9Lf1Cpg5j5FtKsvJtPqFjDTJI//mw1oJ5/Zu9QqYK6rg/aEof298jsz89dAS+FiZdWdJVpEdjsMgvViQB241h9JQcPFDr2w4hs74z9mrvlu5WwZ+1M54EV8CdIaIcW6Xv1HBHBJcs+/vvq1weWAI0+wF92N82PgkkKzL8gy6PXAduV3fQ7g525G8JQuFV6r/KnTKwK8r1pAML38xKXq8E/1WxX8LdGtEf8O8E56VVjdkP2geQTHu+r/UXDnsKrd/FICgMF7tSq6zmB/yfmjw5cCHMZ3c8R/XPijcMfjKoLXEzOuD2fe6mOO++eAu5SDX+HpHHkM7KVwbsvfBeXhFQnWrdehG1D8R5DFYrFYLBaLxWKxWCwWi8VisVgsFovFYrFYLC/G/3Y1vnrKSkd9AAAAAElFTkSuQmCC)\n- KI basierter Cloudsuchdienst\n  - Suchfeatures integriert aus Office, Bing\n  - mit Vorschlägen bei falscher Eingabe\n  - Standortbezogene Suche \n- zentral skalierbar\n- stellt viele Funktionen zur Verfügung\n- kognitive Suche mit integrierten Skills\n  - Zeichenerkennung in Scans\n  - Entitätserkennung\n  - Schlüsselbegriffserkennung\n--- \n- Beispiel DPDHL"
+module.exports = "<ul>\n<li>Objektspeicherlösung von Microsoft</li>\n<li>optimiert für das Speichern großer Mengen von unstrukturierten Daten<ul>\n<li>Bilder oder Dokumente</li>\n<li>Dateien für verteilten Zugriff</li>\n<li>Audio- und Video-Streaming</li>\n<li>Speichern von Daten für Sicherung / Wiederherstellung</li>\n</ul>\n</li>\n<li>Zugriff über REST-API, CLI, Bibliotheken</li>\n</ul>\n<hr>\n<ul>\n<li>CLI: Command Line Interface</li>\n</ul>\n";
 
 /***/ }),
 /* 1657 */
 /***/ (function(module, exports) {
 
-module.exports = "##### Artificial Intelligence"
+module.exports = "data:image/jpeg;base64,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"
 
 /***/ }),
 /* 1658 */
 /***/ (function(module, exports) {
 
-module.exports = "##### Authentifizierung: Active Directory\n>\n![ad-logo](data:image/png;base64,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)\n>\n\n- IDaaS: Identity as a Service\n- Verwaltung von Benutzeridentitäten\n- viele Konfigurationen für Zugriff, Sicherheit\n- Multi Faktor Authentifizierung\n- ermöglicht interne Geschäftsanwendungen\n\n"
+module.exports = "data:image/jpeg;base64,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"
 
 /***/ }),
 /* 1659 */
 /***/ (function(module, exports) {
 
-module.exports = "##### Authentifizierung: Active Directory B2DC\n\n>\n\n- ähnlich Azure AD\n- simple Authentifizierung\n- integration in alle Technologien\n- unterstützt Social Authentication Providers (Facebook, Twitter, etc.)\n- Login kann als _White-Label_ konfiguriert werden\n\n---\n- B2C: Business to Customers"
+module.exports = "data:image/jpeg;base64,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"
 
 /***/ }),
 /* 1660 */
 /***/ (function(module, exports) {
 
-module.exports = "##### Azure Container Service\n\n>\n![container-logo](data:image/png;base64,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)\n\n- unterstützt Kubernets, DC / OS, Swarm\n- "
+module.exports = "<ul>\n<li>KI basierter Cloudsuchdienst<ul>\n<li>Suchfeatures integriert aus Office, Bing</li>\n<li>mit Vorschlägen bei falscher Eingabe</li>\n<li>Standortbezogene Suche </li>\n</ul>\n</li>\n<li>zentral skalierbar</li>\n<li>stellt viele Funktionen zur Verfügung</li>\n<li>kognitive Suche mit integrierten Skills<ul>\n<li>Zeichenerkennung in Scans</li>\n<li>Entitätserkennung</li>\n<li>Schlüsselbegriffserkennung</li>\n</ul>\n</li>\n</ul>\n<hr>\n<ul>\n<li>Beispiel DPDHL</li>\n</ul>\n";
 
 /***/ }),
 /* 1661 */
 /***/ (function(module, exports) {
 
-module.exports = "##### Azure Functions\n> \n![afunc-logo](data:image/png;base64,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)\n\n- serverlose Architektur\n- skaliert nach Anforderung\n- bezahlt nach Uptime \n- Unterstützt C#, JavaScript, F#, ...\n\n\n- arbeitet mit Triggern (bspw. HTTPTrigger, BlobTrigger, etc.)\n- besitzen Warmup Zeit\n- keine Ressourcen zugeteilt\n- Ressourcen sind dynamisch verwaltet"
+module.exports = "<ul>\n<li><p>Cognitive Services</p>\n<ul>\n<li>Bildanalyse (Emotionen, Personenerkennung)</li>\n<li>Natural Language Processing (NLP) </li>\n<li>Language Understanding Intelligent Service für Bots</li>\n<li>Empfehlungen und semantisches Suchen</li>\n<li>etc.</li>\n</ul>\n</li>\n<li><p>speziell eingerichtete Virtuelle Machinen</p>\n<ul>\n<li>GPU bspw. Nvidia Tesla</li>\n<li>GPU Cluster verfügbar</li>\n</ul>\n</li>\n<li><p><a href=\"https://azure.microsoft.com/de-de/services/machine-learning-studio/\">Azure Machine Learning Studio</a></p>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1662 */
 /***/ (function(module, exports) {
 
-module.exports = "##### chat bots"
+module.exports = "<ul>\n<li><p>Active Directory</p>\n<ul>\n<li>IDaaS: Identity as a Service</li>\n<li>Verwaltung von Benutzeridentitäten</li>\n<li>viele Konfigurationen für Zugriff, Sicherheit</li>\n<li>Multi Faktor Authentifizierung</li>\n<li>ermöglicht interne Geschäftsanwendungen</li>\n</ul>\n</li>\n<li><p>Active Directory B2C: Business to Customer</p>\n<ul>\n<li>simple Authentifizierung</li>\n<li>integration in alle Technologien</li>\n<li>unterstützt Social Authentication Providers (Facebook, Twitter, etc.)</li>\n<li>Login kann als <em>White-Label</em> konfiguriert werden</li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1663 */
 /***/ (function(module, exports) {
 
-module.exports = "##### IoT Hub"
+module.exports = "<ul>\n<li>zwischen IaaS (bspw. Virtual Machine) &amp; PaaS (bspw. App Service)</li>\n</ul>\n<ul>\n<li>für Container-basierte Anwendungen</li>\n<li>unterstützt Kubernetes, DC / OS, Swarm</li>\n<li>schnelles Deployment (production-ready)</li>\n</ul>\n<ul>\n<li>keine Serververwaltung notwendig</li>\n<li>Point &amp; Click Veröffentlichungen </li>\n<li>Sicherheitsfunktionen (bspw. Azure AD)</li>\n</ul>\n";
 
 /***/ }),
 /* 1664 */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAuCAMAAABpjHt/AAACFlBMVEUAAAD////M///////d7v/f7//S8P/V8f/j8f/X8v/Z8vLn8//o8//I6f/e9P/p9P/K6vTr9f/i6/XQ4/bI5Pbt9v/n///3///W7vPP5fbI5PPJ6PNYerdWeLjm9Pvg8fjr+P/V6/je7/jb7/zv/P/Z7/nY7fnb7fnP6vTk8vzq9//s+v/Y7frh8vru+P/u+P/J5PPY7fhad7ZZd7bL5/bh8/3c7/rJ5/Xu+P/Y7vjo9f3u+v/I5PTR6ffX7Pnm9v3r9/3t+f/u+f/a7/va7/tYd7bZ7flZd7XZ7vjZ7fjZ7fjZ7/rZ7/rY7/rp9vzt+P/u+v/R6fbU6/fs9/5Zd7VZd7bS6/ju+f/f8flZd7VZd7XL5/be8frU6/fv+f/S6vbl9fzp9v7r9/7G5PPv+f/O6PXa7vnd8Pvj8/3M6PTa7vnj8/zo9v3u+f9Zd7bg8vvu+f9Zd7Z0ksV3k8bG5PPI5vPJ5vPJ5vTK5vTL5vTM5vTM5/XN5/XO6PXP6PXP6PbP6fbQ6fbS6fbS6vbS6vfT6vfT6/fU6/fV6/fV7PfW7PfW7PjX7PjX7fjY7fjZ7fjZ7vjZ7vna7vnc7/nd7/ne7/ne8fnf8fnf8fvg8fvg8vvh8vvi8vvi8/vj8/vj8/zk8/zk9Pzm9Pzm9fzm9f3n9f3o9v3p9v3p9v7p9/7q9/7r9/7r+P7s+P7s+P/t+P/t+f/u+f9HFMIjAAAAsnRSTlMAAQUFDxAREhITFBUWFxcXGBkaGxwdICAsOkFCQ0RISUtOTk9PUVZWX19fYGNlZmdob3R2io+Qk5OWmZmeoqSlpqanqqyurq+wvL29vr/BwcHDw8bMztTU1dbX19na2tvb29vc3OLj4+Pk5OTk5OXl5ebm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubmHKW5PwAAAAFiS0dEAf8CLd4AAAH6SURBVDjLY2DAAlycGYgFEycOHaUebrhkmNVY8GtlVWOCslQnerLjU8npNVEZymTznejNCRPn13YKCA/3d9DigYlweU/0YcXkiFvnbty4ccPaNatW5FiJYRqEsEIhBahw4/q1q1ctX7Z0SYIcNudBHK5fgKRy0aIF2bq4PK1SALZ89aoVQCMXLZw/d3a+EnaPCsYhjFwMVDln9szpMXxYlVoAjVy3ZtVKmJGzZkybMtkMm0rRXLh/wCpnTp86ZfLkNCEsSvUQli8AWw5SOWmCDhaljqDAhFs+fRpI4cS+XjukFD8RCECpPhjDcpDK7iCEGg8QBUpJSdDAnAe3vL+vp6sjFpTSYGqgIBHT8u7O9rZ4LG71gwcm3PKO9tbmQCxK7UFGoloOVNlki0WpJsTyqUiWNzc11mtgUcqdgQhMqOVNjXWpwtiiyxQck3AjW5obG2prTLCmAY4IJMvBRtbWRAtgz2jy6WDLe2CW19ZkSmMkWGguUM+C+ae5sb62prrSHCMbwPOWJbLl1ZUVBuiZC8E2hAYmSGVVZUWZFHqWRdigiGR5RXlpiQh6QYBwt0R7cSECFCUzYhQviCIprBAZ2OArcyRRlPLiLclQlDJQS6k7kkpXBqqBKLihkYSUGudBVeYZMVATEOV9kpWGglWGEKNUFqQ2VAZDHAC1amO0T7fb7AAAAABJRU5ErkJggg=="
+module.exports = "<ul>\n<li>serverlose Architektur</li>\n<li>skaliert nach Anforderung</li>\n<li>bezahlt nach Uptime </li>\n<li>Unterstützt C#, JavaScript, F#, ...</li>\n</ul>\n<ul>\n<li>arbeitet mit Triggern (bspw. HTTPTrigger, BlobTrigger, etc.)</li>\n<li>besitzen Warmup Zeit</li>\n<li>keine Ressourcen zugeteilt</li>\n<li>Ressourcen sind dynamisch verwaltet</li>\n</ul>\n";
 
 /***/ }),
 /* 1665 */
+/***/ (function(module, exports) {
+
+module.exports = "<ul>\n<li>Erstellen und Verwalten von Chat Bots</li>\n<li>besonders geeignet für Microsoft Bot Framework</li>\n<li>mit <em>Cognitive Services</em> können Bots den <em>Intent</em> der Nachricht auslesen</li>\n<li>Verfügbarkeit in vielen Kanälen<ul>\n<li>Email oder SMS</li>\n<li>Facebook Messenger</li>\n<li>Slack, MS Teams</li>\n<li>Skype</li>\n<li>Telegram</li>\n</ul>\n</li>\n</ul>\n<hr>\n<ul>\n<li>Beispiel timeout</li>\n</ul>\n";
+
+/***/ }),
+/* 1666 */
+/***/ (function(module, exports) {
+
+module.exports = "<ol>\n<li><p><strong>IoT Hub</strong></p>\n<ul>\n<li>sichere Kommunikation: Backend &lt;-&gt; IoT Geräten</li>\n<li>Empfängt den Datenfluss der Sensordaten (reagiert nicht)</li>\n<li>skalierbar an Hand Ereignisse pro Sekunde</li>\n<li>Monitoring Tools</li>\n</ul>\n</li>\n<li><p><strong>Stream Analytics</strong></p>\n<ul>\n<li>Überwacht den IoT Hub und führt Aktionen aus</li>\n<li>Formatierung, Datentransfer, Pattern-Überwachung </li>\n</ul>\n</li>\n<li><p><strong>Machine Learning Integration</strong></p>\n<ul>\n<li>Patterns sind häufig komplex</li>\n<li>Integration mit ML Studio </li>\n<li>trainiertes Model kann direkt genutzt werden</li>\n</ul>\n</li>\n<li><p><strong>Datenspeicher und Visualisierung</strong></p>\n<ul>\n<li>übliche Lösungen wie SQL Datenbank</li>\n<li>PowerBI als Visualisierung</li>\n</ul>\n</li>\n</ol>\n";
+
+/***/ }),
+/* 1667 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAn1BMVEX///9ZtNlctdmayuO41DK51DhRsdis0+hOsNegzuVTstez1+qUyOJHrtaSx+Km1elmuNqGw+COyuSXz+a10iH3+/36/Pa43e2u2eu20ibi7vbH3+6QzOXX6fO/2+zz+Pvk7sR2vd281k7M34N5wuDK3nvd7PXc6bHt89rh7Lnp8c/2+e7x9uPY5qbD2l/D2mXT45jP4Y7I3XO71Ui+11U27bcLAAAKHUlEQVR4nO3da3eiOhQGYOMFMaLFFm3R8UIvdjpjWzvt//9tB0jABPYOgc4ckfCu8+GUi8s8E0gCBDudWma7url+fJzd3G7P/U0uKOvAoqRLwv+o5a7O/W0uJPtH2j2F0GB97m90CVmFtUwKobfn/k71zx3NqIWhV+f+VnXPFc2htW6FgdVaN3XuLFit27VaNzS4WuuG587G1bpdu3UDo1Zr3eAUqbVuUIrVWrd8dNRat2z01Fo3ObpqrZsYVX8tm7b/lqSMWuuW5A4Zh2Jpx6dRyqq1blHKq7Vu1dRat2pqprcLeBtKCA2Tva3QukVBe7mUutPxZjN2XIJVR3P7vbeIGqHX6znfZu9gNc5UN0wtc2N0+QhXODIx0g1Vm80zWzqgGzHSDVWb5rcdAW6EmOiGqXWDbF2LMsu5EWKiG9qGWku+xe7j7e1hx//YgpXNODe0v0YdtsHhy++H8e9/sr+HmepGkpjUnuK9XJtVtsOgP4jT7/+KF2xlNkIMdMNHVCSIN1i8cbXQ7fN3vGhGEDZj3BTjUDqKt3jxB2n813jRLUXUCDFjnKUavdNNvMmf/omt/x4vWluYmhluymseVjw+EI7RkO0+PkqXQtObZTPATX2liLN9CWyDzyxbTq3557db9d0Wiz3f/C7Wtq9FtGifsgFqTXdDxwY8dBxvdhSahP5DvGiV1lKQrdFuRWpdwgakB6G2+azDmw5LYbUmjxcK1UIUNn3j1UvVjmxfl6jVmuumoda1WA+kc/TiCtf3Ptjf62RfnI1M7s5Xtn8XHTXijvgFkJ/vnu9777/4zkN+DUSh1kw3PbVeb5zssDgcFsn/b5zelBapNfE41VXrTYE5VmsnXBHWtwK15rkV9NdOamFyU6z2bPmUFrI1rB9SRq3nbOQLvBuHr5gZ5narce89VQur1UbceTVNV5jlVlKt15PZnF4pt6aM60ur4Wy9WTFbQ9zKqynYjHGroKZi03K7/PNbFbUMW2alCW6leh5pSzoSP2I4q+J20eMs7bGBpEZlNjrNumm0p5c8Pq2m1s2ydc1yq6iWZyMmuVVScwjERhxj3Cqr5dgiA1PcqquBbIa4Vep5MLUsm0Uqu11aP+Q7agibAW6VxgaJGsbWeLdKatN0FcZWqR9iXYzbN9VwtrxbMdvFuH1XTcHWYDeFWlyKQjUVWyW3Szi/oWqEUjcIArcbnpCUako2wI3aJPxg16UWwnYBbljPg1B3tI4e8NguNzO1mpot7xbcLqNbXdv90MXg6u6Gzj7rjoW7eMuho1ArYJPdnOFS2HbTRdrWeo8XVujss8yLYIW7eDm1IjbRLXsPfztDKtykxu+3XKKzz3Kb7tOyO/nNC9hO/d5p/iWpDua2/3fl/ma68NRPAs2jWjuYWjFb4gY9L9IJkOOU/qNCfzvoQDQ5Qhe755dDsvWGqQHSxWzMzRkm2xxennfJ40lb5Ambut4GnCOVjfLSLR48P8z9jv25dRA1HbbYbcr/OX59eVGe2HyZztiG3ex6vmgbaQ+Iy77u4ZM9yNz3+HOlKwdW02IL3Rx+X/DVi6e19f0+e8x37iJs9WwVbuCOLr2J1y7u0+eY/ed4ydaB1fTYiOOwrsfO6/P4A1bfRvDZDWiYapC5CyPwuQavp4fmk+lnPeTlAXps/Knyxb2fsPU99jD+GjlKKTTD99yZI70PNtdRqGxhdXuJ94DnwOuy0cd49amyRYn/PbYI26SObFinjbWjB++klkzRgKbAl2Bjte0osnnx2Q07udWSbY21CPGX/SmxsVl72SnJJdnYVg++yBY/WT4PLoitTG17ivf4JlsvXi3XNsZ2SbUNPbfFbItPgY03pb3vsbGG8UVk89m5DRvP15IN6e2yyY6dD2H62YANFQJkLKbZkrLR0u9PQY3V4v0E3sGuI1vnWtkL+z049dvYPO4tcjLUZZuwftvzqbr5B9UevOmtW5AhKW8TOr/63I3Xic4YeXeRdm3jm31wN9/bxX9jLUJN7ynMkVNVMv3s8BaPSfuvfHO4e0y02YjFB5nP/XhM+snfGbJCjtGJeEGzRkEmdCfVLYR7PR5fkisV6wmips02Sa+A7I7HI0dD21E+yKthgF+/iYIMBseQWwk2G/7YKXadsp4XQDpojzfTo0gzzm9O9NkQtSE2sqrxz4yVebtYB3Aj+myI2gi72FbTi5QsN8gFXuSn0bJu+mwWqLYOsKp5/S9K+/eCuYWd+hU7uWzXQq9zbOXVdNgktT3/4NWMIuODuquhFytDE8sNZiMncC1H2FzsvCWFLGazRIah7QbT3ixwbewBJOvH/1P27wR1i3uyYSHSl7TFEdy02axpdj3F6lkOubZRuPHAbmkxi9jyaspchlpVt1M5C9gaqlbRTZdNUhs3SK2Sm1BSJZvEgN0SFTa/gNbglLJuEo2KTep5aKhdUF2LgvXfBDfpYBMBFGwl1erfX8tGw0063ISrPTibrIZcILpktdCtcPaQhbihbHbz1XTc5OM0ZcDYjFDTcpPahQQCYTNETev8BrnBbHbTW4NTqrmBbI1vQ8VouPWEzRkHxNbw/lo2xf1e+TqSDbPJao0aUcEpdCOWWN+iWwF5NuPUCt2iUkpuVp7NmkkXhE1QK3Bj5ZTrmzUWd99Q20Q1tRsvqXh+22Tu1ixHRqqp3JKy2k7xp0RpfhsqBnM7lVbPzSw1rP8mllfHzTS1TucH5CaV2Jbu3C9eHp6ePnbSZzR5HIoFcMuWWXA7evFDXV7/+bTMRDXgOM2XOnH7/ZU+Iek9JfubqZZ3y5ebP7i3+BIemuczWzpbQ9WybkDBu2y7D2lii8emzHQCQ9Xk8xtQcD6oOvTlsB+DKbqRjDy41YgIblDJ2UO+z57MxuZooBPQWOAHt5qSH6qfdLHZqOqPn2Fjz0gvVSe3ZqulbmDZeYvwlmHz2Q+bqNqEpvVy8/lB/z5b89WYG1x6fpA+ZQ9S1uXFD1IT1CI3pPi8SXjJNglsxgHaJJihFrWncPn53ZjDQD5GCzogpqjhboStPsrd3R1bikxuaXobKuYaPuAm/Lruu+CW/EAY0iKYU9eiwG7JLKPF22koz4ekHQc8IzZ5bAAFdkuqW+fVjy4ced5gxxfA7ahpauH5DXQL0vW7j6eHj5/pn+ALn8xTQ9wseHIWPJXKRDXEzQYnA4I3EcxUQ85v1jT/IoAR1GExVQ1zy04G3D8WTlYzLNcQCKWz0yTA+f4anE5lshriRqjl9lbr5XK9GgUW2F8zWw1zC+VsezKxsamOpqvhbqq0alXcWrUoZd1aNZZybq1aEuQ6UqtWEH03q56vxTpTdN3MHVHB0XNr1bLRcWvV8il2a9WgFLm1bSgctVurhkXV7217Hnhwt7auqYK5tWrqwG6tWlEgN2liZBswdzk3+CZgGzkr+TflrG49f8OlfrkjNrvzQqlNr9oDVDvrq0eXEPfxCnyB6vnzH7gkyrnaq4DuAAAAAElFTkSuQmCC"
+
+/***/ }),
+/* 1668 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/jpeg;base64,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"
+
+/***/ }),
+/* 1669 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/jpeg;base64,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"
+
+/***/ }),
+/* 1670 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/jpeg;base64,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"
+
+/***/ }),
+/* 1671 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+/* 1672 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAuCAMAAABpjHt/AAACFlBMVEUAAAD////M///////d7v/f7//S8P/V8f/j8f/X8v/Z8vLn8//o8//I6f/e9P/p9P/K6vTr9f/i6/XQ4/bI5Pbt9v/n///3///W7vPP5fbI5PPJ6PNYerdWeLjm9Pvg8fjr+P/V6/je7/jb7/zv/P/Z7/nY7fnb7fnP6vTk8vzq9//s+v/Y7frh8vru+P/u+P/J5PPY7fhad7ZZd7bL5/bh8/3c7/rJ5/Xu+P/Y7vjo9f3u+v/I5PTR6ffX7Pnm9v3r9/3t+f/u+f/a7/va7/tYd7bZ7flZd7XZ7vjZ7fjZ7fjZ7/rZ7/rY7/rp9vzt+P/u+v/R6fbU6/fs9/5Zd7VZd7bS6/ju+f/f8flZd7VZd7XL5/be8frU6/fv+f/S6vbl9fzp9v7r9/7G5PPv+f/O6PXa7vnd8Pvj8/3M6PTa7vnj8/zo9v3u+f9Zd7bg8vvu+f9Zd7Z0ksV3k8bG5PPI5vPJ5vPJ5vTK5vTL5vTM5vTM5/XN5/XO6PXP6PXP6PbP6fbQ6fbS6fbS6vbS6vfT6vfT6/fU6/fV6/fV7PfW7PfW7PjX7PjX7fjY7fjZ7fjZ7vjZ7vna7vnc7/nd7/ne7/ne8fnf8fnf8fvg8fvg8vvh8vvi8vvi8/vj8/vj8/zk8/zk9Pzm9Pzm9fzm9f3n9f3o9v3p9v3p9v7p9/7q9/7r9/7r+P7s+P7s+P/t+P/t+f/u+f9HFMIjAAAAsnRSTlMAAQUFDxAREhITFBUWFxcXGBkaGxwdICAsOkFCQ0RISUtOTk9PUVZWX19fYGNlZmdob3R2io+Qk5OWmZmeoqSlpqanqqyurq+wvL29vr/BwcHDw8bMztTU1dbX19na2tvb29vc3OLj4+Pk5OTk5OXl5ebm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubmHKW5PwAAAAFiS0dEAf8CLd4AAAH6SURBVDjLY2DAAlycGYgFEycOHaUebrhkmNVY8GtlVWOCslQnerLjU8npNVEZymTznejNCRPn13YKCA/3d9DigYlweU/0YcXkiFvnbty4ccPaNatW5FiJYRqEsEIhBahw4/q1q1ctX7Z0SYIcNudBHK5fgKRy0aIF2bq4PK1SALZ89aoVQCMXLZw/d3a+EnaPCsYhjFwMVDln9szpMXxYlVoAjVy3ZtVKmJGzZkybMtkMm0rRXLh/wCpnTp86ZfLkNCEsSvUQli8AWw5SOWmCDhaljqDAhFs+fRpI4cS+XjukFD8RCECpPhjDcpDK7iCEGg8QBUpJSdDAnAe3vL+vp6sjFpTSYGqgIBHT8u7O9rZ4LG71gwcm3PKO9tbmQCxK7UFGoloOVNlki0WpJsTyqUiWNzc11mtgUcqdgQhMqOVNjXWpwtiiyxQck3AjW5obG2prTLCmAY4IJMvBRtbWRAtgz2jy6WDLe2CW19ZkSmMkWGguUM+C+ae5sb62prrSHCMbwPOWJbLl1ZUVBuiZC8E2hAYmSGVVZUWZFHqWRdigiGR5RXlpiQh6QYBwt0R7cSECFCUzYhQviCIprBAZ2OArcyRRlPLiLclQlDJQS6k7kkpXBqqBKLihkYSUGudBVeYZMVATEOV9kpWGglWGEKNUFqQ2VAZDHAC1amO0T7fb7AAAAABJRU5ErkJggg=="
+
+/***/ }),
+/* 1673 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "39c387fed7e860d7528551be68d9dca9.png";
 
 /***/ }),
-/* 1666 */
+/* 1674 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fb508727d250566c7119afdb63d3f91f.png";
 
 /***/ }),
-/* 1667 */
+/* 1675 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "b50f7fb7daeed74a77cc50b4f19e9046.png";
 
 /***/ }),
-/* 1668 */
+/* 1676 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(1669);
+var content = __webpack_require__(1677);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -87741,7 +87852,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(1671)(content, options);
+var update = __webpack_require__(1679)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -87758,10 +87869,10 @@ if(false) {
 }
 
 /***/ }),
-/* 1669 */
+/* 1677 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1670)(undefined);
+exports = module.exports = __webpack_require__(1678)(undefined);
 // imports
 
 
@@ -87772,7 +87883,7 @@ exports.push([module.i, "/*! normalize.css v7.0.0 | MIT License | github.com/nec
 
 
 /***/ }),
-/* 1670 */
+/* 1678 */
 /***/ (function(module, exports) {
 
 /*
@@ -87854,7 +87965,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 1671 */
+/* 1679 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -87910,7 +88021,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(1672);
+var	fixUrls = __webpack_require__(1680);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -88226,7 +88337,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 1672 */
+/* 1680 */
 /***/ (function(module, exports) {
 
 
