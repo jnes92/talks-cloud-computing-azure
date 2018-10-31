@@ -54,22 +54,21 @@ const azureRessourceGroupLogo = "http://res.cloudinary.com/samcogan/image/upload
 import appServiceLogo from '../assets/02_appService_logo.jpg'
 import appServicePlanLogo from '../assets/02_appServicePlan.jpg'
 import blobStorageLogo from '../assets/02_blobStorage.jpg'
-// const azureRessourceGroupLogo = "http://res.cloudinary.com/samcogan/image/upload/v1493930941/arm_ejo0aw.png";
-// const azureRessourceGroupLogo = "http://res.cloudinary.com/samcogan/image/upload/v1493930941/arm_ejo0aw.png";
-// const azureRessourceGroupLogo = "http://res.cloudinary.com/samcogan/image/upload/v1493930941/arm_ejo0aw.png";
-// const azureRessourceGroupLogo = "http://res.cloudinary.com/samcogan/image/upload/v1493930941/arm_ejo0aw.png";
-
-
 
 // Chapter 4 Slide Markdowns
 import azureSearch from "./azure-services/search.md"
 import azureAI from "./azure-services/artificialIntelligence.md"
 import azureAuth from "./azure-services/authentifizierung.md"
-import azureAuthB2c from "./azure-services/azure-adb2c.md"
 import azureContainer from "./azure-services/azureContainer.md"
 import azureFunctions from "./azure-services/azureFunctions.md"
 import azureChatBots from "./azure-services/chatBots.md"
 import azureIoT from "./azure-services/IoTHub.md"
+
+import azureAuthLogo from '../assets/04_activedirectory.jpg'
+import azureSearchLogo from '../assets/04_search.jpg'
+import azureFunctionsLogo from '../assets/04_functions.jpg'
+import azureContainerLogo from '../assets/04_container.jpg'
+import azureChatBotsLogo from '../assets/04_bots.png'
 
 import teamIdeaLogo from '../assets/team-idea.png'
 import workshopWelcomeImage from '../assets/03_workshop_welcome.png'
@@ -127,25 +126,25 @@ export default class Presentation extends React.Component {
 
     let azureServicesExtendedMd = [
       {
-        md: [azureAuth, azureAuthB2c], title: "Authentifizierung"
+        md: [azureAuth], title: "Authentifizierung", logo: azureAuthLogo
       },
       {
-        md: [azureSearch,], title: "Azure Search Engine"
+        md: [azureSearch,], title: "Azure Search Engine", logo: azureSearchLogo
       },
       {
-        md: [azureFunctions,], title: "Azure Functions"
+        md: [azureFunctions,], title: "Azure Functions", logo: azureFunctionsLogo
       },
       {
-        md: [azureContainer,], title: "Azure Container Service"
+        md: [azureContainer,], title: "Azure Container Service", logo: azureContainerLogo
       },
       {
-        md: [azureAI,], title: "azureAI"
+        md: [azureAI,], title: "Artificial Intelligence"
       },
       {
-        md: [azureChatBots,], title: "azureChatBots"
+        md: [azureChatBots,], title: "Azure Bot Service", logo: azureChatBotsLogo
       },
       {
-        md: [azureIoT,], title: "azureIoT"
+        md: [azureIoT,], title: "Internet of Things - IoT Suite"
       },
     ]
 
@@ -363,17 +362,21 @@ export default class Presentation extends React.Component {
             )}
           </List>
         </Slide>
-        {azureServicesExtendedMd.map(definition =>
+        {azureServicesExtendedMd.map((definition, outIndex) =>
           definition.md.map((subslide, index) => (
             <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
-              <Heading size={6} caps lineHeight={1} textColor="secondary">
+              <Heading size={5} caps lineHeight={1} textColor="secondary">
                 4. {chapters[3].title}
               </Heading>
-              <Markdown textColor="tertiary" source={subslide} />
-              {definition.images && definition.images[index] && <Image src={definition.images[index]} />}
+              <Heading size={6}  lineHeight={1} textColor="tertiary">
+                4.{outIndex + 1} {definition.title}
+              </Heading>
+              {definition.logo && <Image src={definition.logo} />}
+              <Markdown margin="20" textColor="tertiary" source={subslide} style={{ "text-align": "left" }} />
             </Slide>
           ))
         )}
+
 
         {/* Fragen & Ende  */}
         <Slide bgColor="primary" >
