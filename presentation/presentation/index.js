@@ -3,7 +3,6 @@ import React from "react";
 
 // Import Spectacle Core tags
 import {
-
   Deck,
   Heading,
   ListItem,
@@ -131,26 +130,37 @@ export default class Presentation extends React.Component {
 
     let azureServicesExtendedMd = [
       {
-        md: [azureAuth], title: "Authentifizierung", logo: azureAuthLogo
-      },
-      {
-        md: [azureSearch,], title: "Azure Search Engine", logo: azureSearchLogo
+        md: [azureSearch,], title: "Azure Search Engine", logo: azureSearchLogo, multi: true,
+        images: [
+          require("../assets/05_search2.png"),
+          require("../assets/05_search3.png"),
+          require("../assets/05_search5.png"),
+        ]
+
       },
       {
         md: [azureFunctions,], title: "Azure Functions", logo: azureFunctionsLogo
       },
       {
-        md: [azureContainer,], title: "Azure Container Service", logo: azureContainerLogo
-      },
-      {
         md: [azureAI,], title: "Artificial Intelligence"
       },
       {
-        md: [azureChatBots,], title: "Azure Bot Service", logo: azureChatBotsLogo
+        md: [azureChatBots], title: "Azure Bot Service", logo: azureChatBotsLogo, images: [require("../assets/05_timeout.png")]
       },
       {
-        md: [azureIoT,], title: "Internet of Things - IoT Suite"
+        md: [azureIoT,], title: "Internet of Things - IoT Suite", images: [
+          require("../assets/05_iot1.png"),
+          require("../assets/05_iot2.png"),
+          require("../assets/05_iot3a.png"),
+          require("../assets/05_iot3b.png")
+        ]
       },
+      // {
+      //   md: [azureAuth], logo: azureAuthLogo
+      // }, 
+      // {
+      //   md : [azureContainer], logo: azureContainerLogo
+      // }
     ]
 
     const chapters = [
@@ -164,21 +174,7 @@ export default class Presentation extends React.Component {
       { title: "Azure Services", subslides: [] },
       { title: "Workshop & Hands-On", subslides: [] },
       { title: "Azure Services - Ausblick", subslides: [] },
-      {
-        title: "Azure Praxis Beispiele", subslides: [
-          { title: "Chat Bot - timeout", images: [require("../assets/05_timeout.png")]
-        },
-        { title: "IoT Hub - Temperatursensor Projekt", images: [
-          require("../assets/05_iot1.png"),
-          require("../assets/05_iot2.png"),
-          require("../assets/05_iot3a.png"),
-          require("../assets/05_iot3b.png")
-        ] },
-          // { title: "Azure Search - Immobiliensuche", images: [] },
-        ]
-      },
     ]
-
 
 
     return (
@@ -351,8 +347,8 @@ export default class Presentation extends React.Component {
             3.2 Systemüberblick
           </Heading>
 
-          <Image src={workshopWelcomeImage} />
-          <Image src={workshopAppImage} />
+          <Image src={workshopWelcomeImage} width="100vw" />
+          <Image src={workshopAppImage} width="100vw"  />
         </Slide>
         <Slide align="center flex-start" >
           <Heading size={6} caps lineHeight={1} textColor="secondary">
@@ -363,7 +359,7 @@ export default class Presentation extends React.Component {
             3.2 Systemüberblick
           </Heading>
 
-          <Image src={workshopArchitectureImage} />
+          <Image src={workshopArchitectureImage}  fit />
         </Slide>
         <Slide bgColor="tertiary" >
           <Notes>
@@ -401,8 +397,8 @@ export default class Presentation extends React.Component {
             )}
           </List>
         </Slide>
-        {azureServicesExtendedMd.map((definition, outIndex) =>
-          definition.md.map((subslide, index) => (
+        {azureServicesExtendedMd.map((definition, outIndex) => {
+          let imageSlides = definition.images && !definition.multi ? definition.images.map(imageSlide => (
             <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
               <Heading size={5} caps lineHeight={1} textColor="secondary">
                 4. {chapters[3].title}
@@ -410,45 +406,44 @@ export default class Presentation extends React.Component {
               <Heading size={6} lineHeight={1} textColor="tertiary">
                 4.{outIndex + 1} {definition.title}
               </Heading>
-              {definition.logo && <Image src={definition.logo} />}
-              <Markdown margin="20" textColor="tertiary" source={subslide} style={{ "text-align": "left" }} />
+              <Image src={imageSlide} />
             </Slide>
-          ))
-        )}
+          )) : [];
+          if (definition.multi)
+            imageSlides.push(
+              <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
+                <Heading size={5} caps lineHeight={1} textColor="secondary">
+                  4. {chapters[3].title}
+                </Heading>
+                <Heading size={6} lineHeight={1} textColor="tertiary">
+                  4.{outIndex + 1} {definition.title}
+                </Heading>
+                {definition.images.map(img => <Image src={img} width="30%" display="inline" margin="10px" />
+                )}
+              </Slide>
+            )
+          var markdownSlides = definition.md.map((subslide) => {
+            return (
+              <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
+                <Heading size={5} caps lineHeight={1} textColor="secondary">
+                  4. {chapters[3].title}
+                </Heading>
+                <Heading size={6} lineHeight={1} textColor="tertiary">
+                  4.{outIndex + 1} {definition.title}
+                </Heading>
+                {definition.logo && <Image src={definition.logo} />}
+                <Markdown margin="20" textColor="tertiary" source={subslide} style={{ "text-align": "left" }} />
+              </Slide>
+            )
+          })
+          return [...markdownSlides, ...imageSlides];
+
+        }
+
+        )
+        }
 
 
-        {/* Kapitel 5: Azure Praxis Beispiele  */}
-        <Slide bgColor="primary" bgImage={background} >
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Cloud Computing: Azure
-            </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
-            Kapitel 5: {chapters[4].title}
-          </Text>
-        </Slide>
-        <Slide bgColor="primary">
-          <Heading size={6} caps lineHeight={1} textColor="secondary">
-            Kapitel 5: {chapters[4].title}
-          </Heading>
-          <List ordered textColor="tertiary">
-            {chapters[4].subslides.map(section => <ListItem >{section.title}</ListItem>)}
-          </List>
-        </Slide>
-   
-        {chapters[4].subslides.map((slide,index) => 
-        slide.images.map(imageItem => (
-          <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
-          <Heading size={5} caps lineHeight={1} textColor="secondary">
-            5. {chapters[4].title}
-          </Heading>
-          <Heading  size={6} lineHeight={1} textColor="tertiary">
-            5.{index + 1} {slide.title}
-          </Heading>
-          <Image src={imageItem}  />
-        </Slide>
-        ))
-  
-        )}
 
         {/* Fragen & Ende  */}
         <Slide bgColor="primary" >

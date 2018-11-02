@@ -8,6 +8,6 @@
 --- 
 
 - Bezahlung erfolgt per ASP
-    - Option Basic 1 (B1) ist kostenlos
+    - Option Free 1 (F1) ist kostenlos
     - Option Standard 1 (S1) ab etwa 30 € / Monat
 - Application Insights ≈ Google Analytics

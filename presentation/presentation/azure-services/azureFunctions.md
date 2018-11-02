@@ -1,10 +1,11 @@
-- serverlose Architektur
+- serverlose Architektur (App Service ohne ASP)
+- keine Ressourcen zugeteilt
+- Ressourcen sind dynamisch verwaltet
+
+
 - skaliert nach Anforderung
-- bezahlt nach Uptime 
-- Unterstützt C#, JavaScript, F#, ...
+- Unterstützt C#, JavaScript, ...
 
 
 - arbeitet mit Triggern (bspw. HTTPTrigger, BlobTrigger, etc.)
 - besitzen Warmup Zeit
-- keine Ressourcen zugeteilt
-- Ressourcen sind dynamisch verwaltet

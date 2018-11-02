@@ -12,3 +12,7 @@
 - IaaS: Infrastructure as a Service
 - PaaS: Platform as a Service
 - SaaS: Software as a Service
+
+- Fortune 500: 
+    - (US) Fortune Wirtschaftsmagazin 
+    - 500 Umsatz stärkste Unternehmen

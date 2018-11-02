@@ -6,8 +6,8 @@
     3. Blob Storage
     4. Search
     5. Functions
-    6. API 
-    7. App
+    6. API - Gateway
+    7. Xamarin App
     8. uvm.
 
 ---
