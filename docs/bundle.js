@@ -39244,11 +39244,13 @@ var _ref12 = (0, _jsx3.default)(_spectacle.Heading, {
 }, void 0, "3.2 System\xFCberblick");
 
 var _ref13 = (0, _jsx3.default)(_spectacle.Image, {
-  src: _workshop_welcome2.default
+  src: _workshop_welcome2.default,
+  width: "100vw"
 });
 
 var _ref14 = (0, _jsx3.default)(_spectacle.Image, {
-  src: _workshop_app2.default
+  src: _workshop_app2.default,
+  width: "100vw"
 });
 
 var _ref15 = (0, _jsx3.default)(_spectacle.Heading, {
@@ -39259,7 +39261,8 @@ var _ref15 = (0, _jsx3.default)(_spectacle.Heading, {
 }, void 0, "3.2 System\xFCberblick");
 
 var _ref16 = (0, _jsx3.default)(_spectacle.Image, {
-  src: _workshop_Architecture2.default
+  src: _workshop_Architecture2.default,
+  fit: true
 });
 
 var _ref17 = (0, _jsx3.default)(_spectacle.Text, {
@@ -39278,15 +39281,7 @@ var _ref18 = (0, _jsx3.default)(_spectacle.Heading, {
   textColor: "secondary"
 }, void 0, "Cloud Computing: Azure");
 
-var _ref19 = (0, _jsx3.default)(_spectacle.Heading, {
-  size: 1,
-  fit: true,
-  caps: true,
-  lineHeight: 1,
-  textColor: "secondary"
-}, void 0, "Cloud Computing: Azure");
-
-var _ref20 = (0, _jsx3.default)(_spectacle.Slide, {
+var _ref19 = (0, _jsx3.default)(_spectacle.Slide, {
   bgColor: "primary"
 }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
   size: 1,
@@ -39325,27 +39320,22 @@ var Presentation = function (_React$Component) {
     }];
 
     var azureServicesExtendedMd = [{
-      md: [_authentifizierung2.default], title: "Authentifizierung", logo: _activedirectory2.default
-    }, {
-      md: [_search2.default], title: "Azure Search Engine", logo: _search4.default
+      md: [_search2.default], title: "Azure Search Engine", logo: _search4.default, multi: true,
+      images: [__webpack_require__(1682), __webpack_require__(1683), __webpack_require__(1684)]
+
     }, {
       md: [_azureFunctions2.default], title: "Azure Functions", logo: _functions2.default
     }, {
-      md: [_azureContainer2.default], title: "Azure Container Service", logo: _container2.default
-    }, {
       md: [_artificialIntelligence2.default], title: "Artificial Intelligence"
     }, {
-      md: [_chatBots2.default], title: "Azure Bot Service", logo: _bots2.default
+      md: [_chatBots2.default], title: "Azure Bot Service", logo: _bots2.default, images: [__webpack_require__(1685)]
     }, {
-      md: [_IoTHub2.default], title: "Internet of Things - IoT Suite"
+      md: [_IoTHub2.default], title: "Internet of Things - IoT Suite", images: [__webpack_require__(1686), __webpack_require__(1687), __webpack_require__(1688), __webpack_require__(1689)]
     }];
 
     var chapters = [{
       title: "Einführung", subslides: [{ title: "BRICKMAKERS GmbH" }, { title: "Über mich" }, { title: "Was ist Azure?" }]
-    }, { title: "Azure Services", subslides: [] }, { title: "Workshop & Hands-On", subslides: [] }, { title: "Azure Services - Ausblick", subslides: [] }, {
-      title: "Azure Praxis Beispiele", subslides: [{ title: "Chat Bot - timeout", images: [__webpack_require__(1682)]
-      }, { title: "IoT Hub - Temperatursensor Projekt", images: [__webpack_require__(1683), __webpack_require__(1684), __webpack_require__(1685), __webpack_require__(1686)] }]
-    }];
+    }, { title: "Azure Services", subslides: [] }, { title: "Workshop & Hands-On", subslides: [] }, { title: "Azure Services - Ausblick", subslides: [] }];
 
     return (0, _jsx3.default)(_spectacle.Deck, {
       transition: ["slide", "fade"],
@@ -39564,7 +39554,46 @@ var Presentation = function (_React$Component) {
     }, void 0, azureServicesExtendedMd.map(function (def) {
       return (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, " ", def.title, " ");
     }))), azureServicesExtendedMd.map(function (definition, outIndex) {
-      return definition.md.map(function (subslide, index) {
+      var imageSlides = definition.images && !definition.multi ? definition.images.map(function (imageSlide) {
+        return (0, _jsx3.default)(_spectacle.Slide, {
+          align: "center flex-start",
+          bgColor: "primary",
+          maxWidth: "100%"
+        }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
+          size: 5,
+          caps: true,
+          lineHeight: 1,
+          textColor: "secondary"
+        }, void 0, "4. ", chapters[3].title), (0, _jsx3.default)(_spectacle.Heading, {
+          size: 6,
+          lineHeight: 1,
+          textColor: "tertiary"
+        }, void 0, "4.", outIndex + 1, " ", definition.title), (0, _jsx3.default)(_spectacle.Image, {
+          src: imageSlide
+        }));
+      }) : [];
+      if (definition.multi) imageSlides.push((0, _jsx3.default)(_spectacle.Slide, {
+        align: "center flex-start",
+        bgColor: "primary",
+        maxWidth: "100%"
+      }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
+        size: 5,
+        caps: true,
+        lineHeight: 1,
+        textColor: "secondary"
+      }, void 0, "4. ", chapters[3].title), (0, _jsx3.default)(_spectacle.Heading, {
+        size: 6,
+        lineHeight: 1,
+        textColor: "tertiary"
+      }, void 0, "4.", outIndex + 1, " ", definition.title), definition.images.map(function (img) {
+        return (0, _jsx3.default)(_spectacle.Image, {
+          src: img,
+          width: "30%",
+          display: "inline",
+          margin: "10px"
+        });
+      })));
+      var markdownSlides = definition.md.map(function (subslide) {
         return (0, _jsx3.default)(_spectacle.Slide, {
           align: "center flex-start",
           bgColor: "primary",
@@ -39587,47 +39616,8 @@ var Presentation = function (_React$Component) {
           style: { "text-align": "left" }
         }));
       });
-    }), (0, _jsx3.default)(_spectacle.Slide, {
-      bgColor: "primary",
-      bgImage: _brickmakersHeroBackground2.default
-    }, void 0, _ref19, (0, _jsx3.default)(_spectacle.Text, {
-      margin: "10px 0 0",
-      textColor: "tertiary",
-      size: 3,
-      fit: true,
-      bold: true
-    }, void 0, "Kapitel 5: ", chapters[4].title)), (0, _jsx3.default)(_spectacle.Slide, {
-      bgColor: "primary"
-    }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
-      size: 6,
-      caps: true,
-      lineHeight: 1,
-      textColor: "secondary"
-    }, void 0, "Kapitel 5: ", chapters[4].title), (0, _jsx3.default)(_spectacle.List, {
-      ordered: true,
-      textColor: "tertiary"
-    }, void 0, chapters[4].subslides.map(function (section) {
-      return (0, _jsx3.default)(_spectacle.ListItem, {}, void 0, section.title);
-    }))), chapters[4].subslides.map(function (slide, index) {
-      return slide.images.map(function (imageItem) {
-        return (0, _jsx3.default)(_spectacle.Slide, {
-          align: "center flex-start",
-          bgColor: "primary",
-          maxWidth: "100%"
-        }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
-          size: 5,
-          caps: true,
-          lineHeight: 1,
-          textColor: "secondary"
-        }, void 0, "5. ", chapters[4].title), (0, _jsx3.default)(_spectacle.Heading, {
-          size: 6,
-          lineHeight: 1,
-          textColor: "tertiary"
-        }, void 0, "5.", index + 1, " ", slide.title), (0, _jsx3.default)(_spectacle.Image, {
-          src: imageItem
-        }));
-      });
-    }), _ref20);
+      return [].concat(markdownSlides, imageSlides);
+    }), _ref19);
   };
 
   return Presentation;
@@ -87708,7 +87698,7 @@ module.exports = "<ul>\n<li>hoch skalierbare Cloud-Computing Plattform<ul>\n<li>
 /* 1641 */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 id=\"1-3-was-ist-azure\">1.3 Was ist Azure</h2>\n<ul>\n<li><p>Hybrid Cloud</p>\n<ul>\n<li>kombiniert öffentliche &amp; private Cloud</li>\n<li>ermöglicht Freigabe zwischen beiden</li>\n<li>lokale Infrastruktur kann nahtlos bis zur öffentlichen Cloud skaliert werden</li>\n<li>ohne Zugriff auf lokale Daten</li>\n<li>Flexibilität &amp; Leistung der public Cloud</li>\n<li>Sicherheit durch Firewall des Unternehmens</li>\n<li>Kapitalaufwand verringern (Spitzen der Nachfrage)</li>\n</ul>\n</li>\n<li><p>IaaS: Infrastructure as a Service</p>\n</li>\n<li>PaaS: Platform as a Service</li>\n<li>SaaS: Software as a Service</li>\n</ul>\n";
+module.exports = "<h2 id=\"1-3-was-ist-azure\">1.3 Was ist Azure</h2>\n<ul>\n<li><p>Hybrid Cloud</p>\n<ul>\n<li>kombiniert öffentliche &amp; private Cloud</li>\n<li>ermöglicht Freigabe zwischen beiden</li>\n<li>lokale Infrastruktur kann nahtlos bis zur öffentlichen Cloud skaliert werden</li>\n<li>ohne Zugriff auf lokale Daten</li>\n<li>Flexibilität &amp; Leistung der public Cloud</li>\n<li>Sicherheit durch Firewall des Unternehmens</li>\n<li>Kapitalaufwand verringern (Spitzen der Nachfrage)</li>\n</ul>\n</li>\n<li><p>IaaS: Infrastructure as a Service</p>\n</li>\n<li>PaaS: Platform as a Service</li>\n<li><p>SaaS: Software as a Service</p>\n</li>\n<li><p>Fortune 500: </p>\n<ul>\n<li>(US) Fortune Wirtschaftsmagazin </li>\n<li>500 Umsatz stärkste Unternehmen</li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1642 */
@@ -87750,7 +87740,7 @@ module.exports = "<ul>\n<li>Container für alle typischen Webanwendungen<ul>\n<l
 /* 1648 */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n<li>PaaS: Plattform as a Service</li>\n<li>bestimmt die Hardware, die für App Services zur Verfügung steht</li>\n<li>Standort ist wählbar <ul>\n<li>Westeuropa, Nordamerika, etc.</li>\n<li>gute Wahl verringert Latenzzeiten</li>\n</ul>\n</li>\n<li>ist jederzeit skalierbar (horizontal, vertikal)</li>\n</ul>\n<hr>\n<ul>\n<li>Bezahlung erfolgt per ASP<ul>\n<li>Option Basic 1 (B1) ist kostenlos</li>\n<li>Option Standard 1 (S1) ab etwa 30 € / Monat</li>\n</ul>\n</li>\n<li>Application Insights ≈ Google Analytics</li>\n</ul>\n";
+module.exports = "<ul>\n<li>PaaS: Plattform as a Service</li>\n<li>bestimmt die Hardware, die für App Services zur Verfügung steht</li>\n<li>Standort ist wählbar <ul>\n<li>Westeuropa, Nordamerika, etc.</li>\n<li>gute Wahl verringert Latenzzeiten</li>\n</ul>\n</li>\n<li>ist jederzeit skalierbar (horizontal, vertikal)</li>\n</ul>\n<hr>\n<ul>\n<li>Bezahlung erfolgt per ASP<ul>\n<li>Option Free 1 (F1) ist kostenlos</li>\n<li>Option Standard 1 (S1) ab etwa 30 € / Monat</li>\n</ul>\n</li>\n<li>Application Insights ≈ Google Analytics</li>\n</ul>\n";
 
 /***/ }),
 /* 1649 */
@@ -87822,19 +87812,19 @@ module.exports = "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAA
 /* 1660 */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n<li>Theoretisches Wissen anwenden</li>\n<li>Erste praktische Erfahrungen und Eindruck in Azure</li>\n<li>Einrichten von verschiedenen Azure Services<ol>\n<li>API</li>\n<li>Datenbank</li>\n<li>Blob Storage</li>\n<li>Search</li>\n<li>Functions</li>\n<li>API </li>\n<li>App</li>\n<li>uvm.</li>\n</ol>\n</li>\n</ul>\n<hr>\n<ul>\n<li>Alle Unterlagen zum Workshop findet man auf <a href=\"https://github.com/jnes92/talks-cloud-computing-azure\">GitHub</a></li>\n<li>Die Vorlage zum Workshop ist von Microsoft auch auf <a href=\"https://github.com/Microsoft/app-innovation-workshop\">GitHub</a> bereitgestellt </li>\n</ul>\n";
+module.exports = "<ul>\n<li>Theoretisches Wissen anwenden</li>\n<li>Erste praktische Erfahrungen und Eindruck in Azure</li>\n<li>Einrichten von verschiedenen Azure Services<ol>\n<li>API</li>\n<li>Datenbank</li>\n<li>Blob Storage</li>\n<li>Search</li>\n<li>Functions</li>\n<li>API - Gateway</li>\n<li>Xamarin App</li>\n<li>uvm.</li>\n</ol>\n</li>\n</ul>\n<hr>\n<ul>\n<li>Alle Unterlagen zum Workshop findet man auf <a href=\"https://github.com/jnes92/talks-cloud-computing-azure\">GitHub</a></li>\n<li>Die Vorlage zum Workshop ist von Microsoft auch auf <a href=\"https://github.com/Microsoft/app-innovation-workshop\">GitHub</a> bereitgestellt </li>\n</ul>\n";
 
 /***/ }),
 /* 1661 */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n<li>KI basierter Cloudsuchdienst<ul>\n<li>Suchfeatures integriert aus Office, Bing</li>\n<li>mit Vorschlägen bei falscher Eingabe</li>\n<li>Standortbezogene Suche </li>\n</ul>\n</li>\n<li>zentral skalierbar</li>\n<li>stellt viele Funktionen zur Verfügung</li>\n<li>kognitive Suche mit integrierten Skills<ul>\n<li>Zeichenerkennung in Scans</li>\n<li>Entitätserkennung</li>\n<li>Schlüsselbegriffserkennung</li>\n</ul>\n</li>\n</ul>\n";
+module.exports = "<ul>\n<li><p>KI basierter Cloudsuchdienst</p>\n<ul>\n<li>Suchfeatures integriert aus Office, Bing</li>\n<li>mit Vorschlägen bei falscher Eingabe</li>\n<li>Standortbezogene Suche </li>\n</ul>\n</li>\n<li><p>stellt viele Funktionen zur Verfügung</p>\n</li>\n<li><p>wird direkt mit <em>Datenbank</em> verknüpft </p>\n</li>\n<li>kognitive Suche mit integrierten Skills<ul>\n<li>Zeichenerkennung in Scans</li>\n<li>Entitätserkennung</li>\n<li>Schlüsselbegriffserkennung</li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1662 */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n<li><p>Cognitive Services</p>\n<ul>\n<li>Bildanalyse (Emotionen, Personenerkennung)</li>\n<li>Natural Language Processing (NLP) </li>\n<li>Language Understanding Intelligent Service für Bots</li>\n<li>Empfehlungen und semantisches Suchen</li>\n<li>etc.</li>\n</ul>\n</li>\n<li><p>speziell eingerichtete Virtuelle Machinen</p>\n<ul>\n<li>GPU bspw. Nvidia Tesla</li>\n<li>GPU Cluster verfügbar</li>\n</ul>\n</li>\n<li><p><a href=\"https://azure.microsoft.com/de-de/services/machine-learning-studio/\">Azure Machine Learning Studio</a></p>\n</li>\n</ul>\n";
+module.exports = "<ul>\n<li><p>Cognitive Services</p>\n<ul>\n<li>Bildanalyse (Emotionen, Personenerkennung)</li>\n<li>Language Understanding Intelligent Service (allg. NLP) für Bots</li>\n<li>Empfehlungen und semantisches Suchen</li>\n<li>etc.</li>\n</ul>\n</li>\n<li><p>speziell eingerichtete Virtuelle Machinen</p>\n<ul>\n<li>GPU bspw. Nvidia Tesla</li>\n<li>GPU Cluster verfügbar</li>\n</ul>\n</li>\n<li><p><a href=\"https://azure.microsoft.com/de-de/services/machine-learning-studio/\">Azure Machine Learning Studio</a></p>\n</li>\n</ul>\n<hr>\n<ul>\n<li>NLP: Natural Language Processing</li>\n</ul>\n";
 
 /***/ }),
 /* 1663 */
@@ -87852,13 +87842,13 @@ module.exports = "<ul>\n<li>zwischen IaaS (bspw. Virtual Machine) &amp; PaaS (bs
 /* 1665 */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n<li>serverlose Architektur</li>\n<li>skaliert nach Anforderung</li>\n<li>bezahlt nach Uptime </li>\n<li>Unterstützt C#, JavaScript, F#, ...</li>\n</ul>\n<ul>\n<li>arbeitet mit Triggern (bspw. HTTPTrigger, BlobTrigger, etc.)</li>\n<li>besitzen Warmup Zeit</li>\n<li>keine Ressourcen zugeteilt</li>\n<li>Ressourcen sind dynamisch verwaltet</li>\n</ul>\n";
+module.exports = "<ul>\n<li>serverlose Architektur (App Service ohne ASP)</li>\n<li>keine Ressourcen zugeteilt</li>\n<li>Ressourcen sind dynamisch verwaltet</li>\n</ul>\n<ul>\n<li>skaliert nach Anforderung</li>\n<li>Unterstützt C#, JavaScript, ...</li>\n</ul>\n<ul>\n<li>arbeitet mit Triggern (bspw. HTTPTrigger, BlobTrigger, etc.)</li>\n<li>besitzen Warmup Zeit</li>\n</ul>\n";
 
 /***/ }),
 /* 1666 */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n<li>Erstellen und Verwalten von Chat Bots</li>\n<li>besonders geeignet für Microsoft Bot Framework</li>\n<li>mit <em>Cognitive Services</em> können Bots den <em>Intent</em> der Nachricht auslesen</li>\n<li>Verfügbarkeit in vielen Kanälen<ul>\n<li>Email oder SMS</li>\n<li>Facebook Messenger</li>\n<li>Slack, MS Teams</li>\n<li>Skype</li>\n<li>Telegram</li>\n</ul>\n</li>\n</ul>\n";
+module.exports = "<ul>\n<li>Erstellen und Verwalten von Chat Bots</li>\n<li>mit <em>Cognitive Services</em> können Bots den <em>Intent</em> der Nachricht auslesen</li>\n<li>Verfügbarkeit in vielen Kanälen<ul>\n<li>Email oder SMS</li>\n<li>Facebook Messenger</li>\n<li>Slack, MS Teams</li>\n<li>Skype</li>\n<li>Telegram</li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1667 */
@@ -88518,28 +88508,46 @@ module.exports = function (css) {
 /* 1682 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "3c3f37c44b84a998cbdb9e93c643f125.png";
+module.exports = __webpack_require__.p + "0e218fa1823d7412fcf9ed4911e47460.png";
 
 /***/ }),
 /* 1683 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "0051f0e9984b0f3bb2074299990ad0c9.png";
+module.exports = __webpack_require__.p + "2aea32b6128d7498a94a3a65859ca1dd.png";
 
 /***/ }),
 /* 1684 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "3c3317bab5ef7e0ee4b5f95cddb3ba9a.png";
+module.exports = __webpack_require__.p + "742b893560f185b399492adc3e7de01a.png";
 
 /***/ }),
 /* 1685 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "d4fba2d17a1ca525747fd3b8381daee4.png";
+module.exports = __webpack_require__.p + "3c3f37c44b84a998cbdb9e93c643f125.png";
 
 /***/ }),
 /* 1686 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "0051f0e9984b0f3bb2074299990ad0c9.png";
+
+/***/ }),
+/* 1687 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "3c3317bab5ef7e0ee4b5f95cddb3ba9a.png";
+
+/***/ }),
+/* 1688 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "d4fba2d17a1ca525747fd3b8381daee4.png";
+
+/***/ }),
+/* 1689 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "9793fd4fe4636b51b2c08c7542c441d6.png";
