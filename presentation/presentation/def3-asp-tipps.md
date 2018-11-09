@@ -3,9 +3,8 @@
 	- auf *Performance-Diebe* achten
 - Anspruchsvolle Apps sollten so konfiguriert sein
 	- *auto-scale based on CPU and memory*
-	- *Per-Plan Scaling* oder *Per-App-Scaling* 
 
---- 
 
-- per plan: kontrolliert auf wievielen Servern die App gleichzeitig läuft
-- per app : kontrolliert **maximale** für die App zugewiesene Server
+- Zwei Optionen zur Skalierung von ASP:
+	- **Per-Plan**: kontrolliert auf wievielen Servern alle Apps gleichzeitig laufen
+	- **Per-App**: kontrolliert **maximale** für die App zugewiesene Server

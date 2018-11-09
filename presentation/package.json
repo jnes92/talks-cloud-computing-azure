@@ -17,6 +17,7 @@
     "normalize.css": "7.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-google-maps": "^9.4.5",
     "spectacle": "^4.0.4",
     "spectacle-renderer": "^0.0.3"
   },

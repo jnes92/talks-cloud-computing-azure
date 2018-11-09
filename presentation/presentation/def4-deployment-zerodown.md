@@ -6,6 +6,5 @@
 
 - Vorgehen
     - App Services verfügen über Slots
-    - Bspw. für Production, Staging, Develop
     - Deploy Slot B -> Test B -> Swap A & B
     - Falls notwendig: Warmup auf Slot B vor Swap

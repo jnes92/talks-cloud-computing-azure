@@ -7,7 +7,7 @@
 - ist jederzeit skalierbar (horizontal, vertikal)
 --- 
 
-- Bezahlung erfolgt per ASP
+- Bezahlung erfolgt per App Service Plan (ASP)
+    - viele verschiedene Preisoptionen
     - Option Free 1 (F1) ist kostenlos
     - Option Standard 1 (S1) ab etwa 30 € / Monat
-- Application Insights ≈ Google Analytics

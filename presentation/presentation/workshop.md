@@ -13,4 +13,5 @@
 ---
 
 - Alle Unterlagen zum Workshop findet man auf [GitHub](https://github.com/jnes92/talks-cloud-computing-azure)
-- Die Vorlage zum Workshop ist von Microsoft auch auf [GitHub](https://github.com/Microsoft/app-innovation-workshop) bereitgestellt 
+    - Präsentation & Workshop  [<sub><sup>https://github.com/jnes92/talks-cloud-computing-azure</sub></sup>](https://github.com/jnes92/talks-cloud-computing-azure)
+    - Microsoft Workshop [<sub><sup>https://github.com/Microsoft/app-innovation-workshop</sub></sup>](https://github.com/Microsoft/app-innovation-workshop)

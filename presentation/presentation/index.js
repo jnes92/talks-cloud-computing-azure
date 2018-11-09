@@ -1,5 +1,6 @@
 // Import React
 import React from "react";
+import MyMapComponent from './map'
 
 // Import Spectacle Core tags
 import {
@@ -119,8 +120,8 @@ export default class Presentation extends React.Component {
       { md: [azureBlob], title: "Blob Storage", logo: blobStorageLogo },
       {
         md: [
-          def5env,
           def5,
+          def5env,
           def5zd
         ],
         logo: deploymentEnvImage,
@@ -225,13 +226,7 @@ export default class Presentation extends React.Component {
             1.1 {chapters[0].subslides[0].title}
           </Heading>
           <Markdown textColor="tertiary" source={aboutBrickmakers} style={{ "text-align": "left" }} />
-          <Appear>
-            <div>
-              <Image src={teamIdeaLogo} />
-              <Text> Kommt gerne auf einen Kaffee vorbei </Text>
-              <Text> oder besucht uns bei einem Meetup! </Text>
-            </div>
-          </Appear>
+   
           <Appear>
             <div>
               {[bmKunde1, bmKunde2, bmKunde3, bmKunde4].map(kunde =>
@@ -241,6 +236,29 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
 
+       <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
+          <Notes>
+            <Markdown source={aboutBrickmakersNotes} />
+          </Notes>
+          <Heading size={5} caps lineHeight={1} textColor="secondary">
+            Kapitel 1: {chapters[0].title}
+          </Heading>
+          <Heading size={6} caps lineHeight={1} textColor="tertiary">
+            1.1 {chapters[0].subslides[0].title}
+          </Heading>
+              <Image src={teamIdeaLogo} />
+              <Text> Kommt gerne auf einen Kaffee vorbei </Text>
+              <Text margin="50"> oder besucht uns bei einem Meetup! </Text>
+            <div >
+            <MyMapComponent
+                  isMarkerShown
+                  googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyCmQLxuBeBlxM8kh8J6V5EX1nx6ggAw4Vo"
+                  loadingElement={<div style={{ height: `100%` }} />}
+                  containerElement={<div style={{ height: `400px` }} />}
+                  mapElement={<div style={{ height: `100%` }} />}
+                />
+            </div>
+</Slide>
 
 
         <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"}>
@@ -348,7 +366,7 @@ export default class Presentation extends React.Component {
           </Heading>
 
           <Image src={workshopWelcomeImage} width="100vw" />
-          <Image src={workshopAppImage} width="100vw"  />
+          <Image src={workshopAppImage} width="100vw" />
         </Slide>
         <Slide align="center flex-start" >
           <Heading size={6} caps lineHeight={1} textColor="secondary">
@@ -359,7 +377,7 @@ export default class Presentation extends React.Component {
             3.2 Systemüberblick
           </Heading>
 
-          <Image src={workshopArchitectureImage}  fit />
+          <Image src={workshopArchitectureImage} fit />
         </Slide>
         <Slide bgColor="tertiary" >
           <Notes>
