@@ -43037,21 +43037,11 @@ var _ref11 = (0, _jsx3.default)(_spectacle.Heading, {
 }, void 0, "Cloud Computing: Azure");
 
 var _ref12 = (0, _jsx3.default)(_spectacle.Image, {
-  src: _workshop_welcome2.default,
-  width: "100vw"
-});
-
-var _ref13 = (0, _jsx3.default)(_spectacle.Image, {
-  src: _workshop_app2.default,
-  width: "100vw"
-});
-
-var _ref14 = (0, _jsx3.default)(_spectacle.Image, {
   src: _workshop_Architecture2.default,
   fit: true
 });
 
-var _ref15 = (0, _jsx3.default)(_spectacle.Slide, {
+var _ref13 = (0, _jsx3.default)(_spectacle.Slide, {
   bgColor: "primary"
 }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
   size: 6,
@@ -43060,7 +43050,7 @@ var _ref15 = (0, _jsx3.default)(_spectacle.Slide, {
   textColor: "secondary"
 }, void 0, "Pause"));
 
-var _ref16 = (0, _jsx3.default)(_spectacle.Text, {
+var _ref14 = (0, _jsx3.default)(_spectacle.Text, {
   margin: "10px 0 0",
   textColor: "primary",
   size: 3,
@@ -43068,7 +43058,7 @@ var _ref16 = (0, _jsx3.default)(_spectacle.Text, {
   bold: true
 }, void 0, "Hands-On");
 
-var _ref17 = (0, _jsx3.default)(_spectacle.Heading, {
+var _ref15 = (0, _jsx3.default)(_spectacle.Heading, {
   size: 1,
   fit: true,
   caps: true,
@@ -43076,7 +43066,7 @@ var _ref17 = (0, _jsx3.default)(_spectacle.Heading, {
   textColor: "secondary"
 }, void 0, "Cloud Computing: Azure");
 
-var _ref18 = (0, _jsx3.default)(_spectacle.Slide, {
+var _ref16 = (0, _jsx3.default)(_spectacle.Slide, {
   bgColor: "primary"
 }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
   size: 1,
@@ -43102,7 +43092,7 @@ var Presentation = function (_React$Component) {
 
   Presentation.prototype.render = function render() {
 
-    var azureServicesBasicMd = [{ md: [_workshop2.default], title: "Überblick", index: "2.1" }, { pause: true }, { md: [_def2AppService2.default], title: "App Service", logo: _appService_logo2.default, index: "2.2" }, { md: [_def3Asp2.default, _def3AspTipps2.default], title: "App Service Plan", logo: _appServicePlan2.default, index: "2.3" }, { md: [_ressourceGroup2.default], title: "Ressource Group", logo: azureRessourceGroupLogo, index: "2.4" }, { md: [_ex4.default], title: "Übung 2", notes: _ex2Solution2.default }, { workshop: true }, {
+    var azureServicesBasicMd = [{ md: [_workshop2.default], title: "Überblick", index: "2.1" }, { pause: true }, { md: [_def2AppService2.default], title: "Web App", logo: _appService_logo2.default, index: "2.2" }, { md: [_def3Asp2.default, _def3AspTipps2.default], title: "App Service Plan", logo: _appServicePlan2.default, index: "2.3" }, { md: [_ressourceGroup2.default], title: "Ressource Group", logo: azureRessourceGroupLogo, index: "2.4" }, { md: [_ex4.default, _ex2Solution2.default], title: "Übung 2", notes: _ex2Solution2.default }, { workshop: true }, {
       md: [_databaseSql2.default], title: "Datenbanken: SQL",
       logo: "https://azurecomcdn.azureedge.net/cvt-91f2ad75d65b94588ca876d6df21005ea3acc52dcbf2d67a7d490211b5f7d8f3/images/page/services/sql-database/sql-db.svg",
       index: "2.5"
@@ -43115,7 +43105,7 @@ var Presentation = function (_React$Component) {
       logo: _deployment_stages2.default,
       title: "Deployment",
       index: "2.8"
-    }, { md: [_ex6.default], title: "Übung 3", notes: _ex3Solution2.default }, { pause: true }];
+    }, { md: [_ex6.default, _ex3Solution2.default], title: "Übung 3", notes: _ex3Solution2.default }, { pause: true }];
 
     var azureServicesExtendedMd = [{
       md: [_search2.default], title: "Azure Search Engine", logo: _search4.default, multi: true,
@@ -43310,22 +43300,10 @@ var Presentation = function (_React$Component) {
       caps: true,
       lineHeight: 1,
       textColor: "tertiary"
-    }, void 0, "2.1 ", azureServicesBasicMd[0].title), _ref12, _ref13), (0, _jsx3.default)(_spectacle.Slide, {
-      align: "center flex-start"
-    }, void 0, (0, _jsx3.default)(_spectacle.Heading, {
-      size: 6,
-      caps: true,
-      lineHeight: 1,
-      textColor: "secondary"
-    }, void 0, "Kapitel 2: ", chapters[1].title), (0, _jsx3.default)(_spectacle.Heading, {
-      size: 6,
-      caps: true,
-      lineHeight: 1,
-      textColor: "tertiary"
-    }, void 0, "2.1 ", azureServicesBasicMd[0].title), _ref14), azureServicesBasicMd.map(function (definition, outIndex) {
+    }, void 0, "2.1 ", azureServicesBasicMd[0].title), _ref12), azureServicesBasicMd.map(function (definition, outIndex) {
 
       if (definition.pause) {
-        return _ref15;
+        return _ref13;
       }
       if (definition.workshop) {
         return (0, _jsx3.default)(_spectacle.Slide, {
@@ -43335,7 +43313,7 @@ var Presentation = function (_React$Component) {
           caps: true,
           lineHeight: 1,
           textColor: "secondary"
-        }, void 0, "Kapitel 2: ", chapters[1].title), _ref16);
+        }, void 0, "Kapitel 2: ", chapters[1].title), _ref14);
       } else return definition.md.map(function (subslide, index) {
 
         return (0, _jsx3.default)(_spectacle.Slide, {
@@ -43350,12 +43328,15 @@ var Presentation = function (_React$Component) {
           lineHeight: 1,
           textColor: "secondary"
         }, void 0, "2. ", chapters[1].title), (0, _jsx3.default)(_spectacle.Heading, {
+          margin: "10",
           size: 6,
           lineHeight: 1,
           textColor: "tertiary"
-        }, void 0, definition.index, " ", definition.title), definition.logo && (0, _jsx3.default)(_spectacle.Image, {
+        }, void 0, definition.index, " ", definition.title), definition.logo && (0, _jsx3.default)("div", {
+          style: { "margin": "10px" }
+        }, void 0, (0, _jsx3.default)(_spectacle.Image, {
           src: definition.logo
-        }), (0, _jsx3.default)(_spectacle.Markdown, {
+        })), (0, _jsx3.default)(_spectacle.Markdown, {
           margin: "20",
           textColor: "tertiary",
           source: subslide,
@@ -43365,7 +43346,7 @@ var Presentation = function (_React$Component) {
     }), (0, _jsx3.default)(_spectacle.Slide, {
       bgColor: "primary",
       bgImage: _brickmakersHeroBackground2.default
-    }, void 0, _ref17, (0, _jsx3.default)(_spectacle.Text, {
+    }, void 0, _ref15, (0, _jsx3.default)(_spectacle.Text, {
       margin: "10px 0 0",
       textColor: "tertiary",
       size: 3,
@@ -43448,7 +43429,7 @@ var Presentation = function (_React$Component) {
         }));
       });
       return [].concat(markdownSlides, imageSlides);
-    }), _ref18);
+    }), _ref16);
   };
 
   return Presentation;
@@ -102259,7 +102240,7 @@ module.exports = __webpack_require__.p + "fdba6cf12a263623c453368512c659d8.png";
 /* 1884 */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n<li>Entwicklungsagentur aus Koblenz</li>\n<li>ca. 50 Mitarbeiter</li>\n<li>Services:<ul>\n<li>App-Entwicklung (mobile, Web, Windows)</li>\n<li>UI / UX Design</li>\n<li>Cloud Services</li>\n<li>Online Marketing</li>\n</ul>\n</li>\n</ul>\n";
+module.exports = "<ul>\n<li>Entwicklungsagentur aus Koblenz</li>\n<li>ca. 50 Mitarbeiter</li>\n<li>darunter 10 Werkstudenten</li>\n<li>Services:<ul>\n<li>App-Entwicklung (mobile, Web, Windows)</li>\n<li>UI / UX Design</li>\n<li>Cloud Services</li>\n<li>Online Marketing</li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1885 */
@@ -102319,7 +102300,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 /* 1894 */
 /***/ (function(module, exports) {
 
-module.exports = "<ol>\n<li>Nenne alle bekannten Azure Dienste</li>\n<li>Wenn du keine kennst, so überlege welche Dienste Azure deiner Meinung nach mindestens besitzen sollte?</li>\n<li>Nenne alle bekannten Programmiersprachen / Frameworks</li>\n</ol>\n";
+module.exports = "<p>Aufgabe:</p>\n<ul>\n<li>Nenne alle <strong>dir</strong> bekannten Frameworks und deren Programmiersprache (max. 5)</li>\n<li>Nenne alle <strong>dir</strong> bekannten Azure Dienste (max. 5)</li>\n<li>Wenn du keine kennst, so überlege welche Dienste Azure deiner Meinung nach mindestens besitzen sollte?</li>\n</ul>\n<h2 id=\"-br-br-\"><br><br></h2>\n<p>Die Antwort : Keine ist auch in Ordnung !</p>\n";
 
 /***/ }),
 /* 1895 */
@@ -102331,7 +102312,7 @@ module.exports = "<p>Ausgangslage: </p>\n<ul>\n<li>leeres Azure</li>\n<li>Quellc
 /* 1896 */
 /***/ (function(module, exports) {
 
-module.exports = "<ol>\n<li><p>Anlegen der Azure Dienste</p>\n<ul>\n<li>Ressourcengruppe</li>\n<li>App Service Plan</li>\n<li>App Service</li>\n</ul>\n</li>\n<li><p>App Deployment</p>\n<ul>\n<li>Quellcode kompilieren</li>\n<li>Artefakt hochladen</li>\n<li>Verifizieren\n<a href=\"http://myawesomestartupapi.azurewebsites.net/api/ping\">http://myawesomestartupapi.azurewebsites.net/api/ping</a></li>\n</ul>\n</li>\n</ol>\n";
+module.exports = "<ol>\n<li><p>Anlegen der Azure Dienste</p>\n<ul>\n<li>Ressourcengruppe</li>\n<li>App Service Plan</li>\n<li>Web App</li>\n</ul>\n</li>\n<li><p>App Deployment</p>\n<ul>\n<li>Quellcode kompilieren</li>\n<li>Artefakt hochladen</li>\n<li>Verifizieren<!-- http://myawesomestartupapi.azurewebsites.net/api/ping --></li>\n</ul>\n</li>\n</ol>\n";
 
 /***/ }),
 /* 1897 */
@@ -102343,7 +102324,7 @@ module.exports = "<h3> Wann sollte man Continuous Integration & Deployment in ei
 /* 1898 */
 /***/ (function(module, exports) {
 
-module.exports = "<p>test</p>\n<h2 id=\"positiv-\">Positiv:</h2>\n<ul>\n<li>bei vielen Umgebungen (&gt;1)</li>\n<li>falls Umgebungen abhängig voneinander sind</li>\n<li>je größer das Projekt, desto mehr rentiert sich die Konfiguration</li>\n<li>Buildzeit kann produktiv genutzt werden</li>\n<li>gute Qualitätskontrolle mit Interaktion durch Menschen möglich</li>\n</ul>\n<h2 id=\"negativ-\">Negativ:</h2>\n<ul>\n<li>bei kleinen Projekten -&gt; Tools sind schneller</li>\n<li>fehlendes Wissen von CI -&gt; besser für alle verständlich &amp; einheitlich</li>\n</ul>\n<h2 id=\"l-sung-der-szenarien\">Lösung der Szenarien</h2>\n<ul>\n<li>nicht notwendig, außer man hat Bock</li>\n<li>sollte getestet werden, agil entspricht alle 2 Wochen Review</li>\n<li>DEFINITIV &amp; wird auch so gemacht</li>\n<li>eher nicht, evtl. nach Schulung <strong>ALLER</strong> Mitarbeiter</li>\n<li>NA KLAR !</li>\n</ul>\n";
+module.exports = "<h4>Positiv</h4>\n\n<ul>\n<li>bei vielen abhängigen Umgebungen (&gt;1)</li>\n<li>je größer das Projekt, desto mehr rentiert sich die Konfiguration</li>\n<li>Buildzeit kann produktiv genutzt werden</li>\n<li>Qualitätskontrolle im CD Prozess</li>\n</ul>\n<h4>Negativ</h4>\n\n<ul>\n<li>bei kleinen Projekten </li>\n<li>fehlendes Wissen von CI </li>\n</ul>\n<h4>Szenarien</h4>\n\n<ul>\n<li>nicht notwendig, außer man möchte</li>\n<li>einen Versuch wert</li>\n<li>Ja &amp; wird auch so gemacht</li>\n<li>eher nicht, evtl. nach Schulung <strong>ALLER</strong> Mitarbeiter</li>\n<li>Ja</li>\n</ul>\n";
 
 /***/ }),
 /* 1899 */
@@ -102355,13 +102336,13 @@ module.exports = "<ul>\n<li>Jeder Service gehört zu einer <em>Ressource group</
 /* 1900 */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n<li>Plattform für alle typischen Webanwendungen<ul>\n<li>Statische Webseite mit HTML, CSS</li>\n<li>Webanwendungen (Frontend) </li>\n<li>Backend Server (API)</li>\n</ul>\n</li>\n<li>Betriebssystem Windows / Linux </li>\n<li>benötigt <ul>\n<li><em>App Service Plan</em> </li>\n<li><em>Ressourcengruppe</em></li>\n</ul>\n</li>\n</ul>\n<hr>\n<ul>\n<li>Name wird auch für URL verwendet  <!-- - Beispiel Name: myawesomestartup\n  - Standard URL: myawesomestartup.azurewebsites.net -->\n<ul>\n<li>Benutzerdefinierte URL´s möglich</li>\n</ul>\n</li>\n<li>Bezahlung über Abonnement / Subscription</li>\n</ul>\n";
+module.exports = "<ul>\n<li>Plattform für alle typischen Webanwendungen<ul>\n<li>Statische Webseite mit HTML, CSS</li>\n<li>Webanwendungen (Frontend) </li>\n<li>Backend Server (API)</li>\n</ul>\n</li>\n<li>Betriebssystem Windows / Linux </li>\n<li>benötigt <ul>\n<li><em>App Service Plan</em> </li>\n<li><em>Ressource Group</em></li>\n</ul>\n</li>\n</ul>\n<hr>\n<ul>\n<li>Name wird auch für URL verwendet  <!-- - Beispiel Name: myawesomestartup\n  - Standard URL: myawesomestartup.azurewebsites.net -->\n<ul>\n<li>Benutzerdefinierte URLs möglich</li>\n</ul>\n</li>\n<li>Bezahlung über Abonnement / Subscription</li>\n</ul>\n";
 
 /***/ }),
 /* 1901 */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n<li>PaaS: Plattform as a Service</li>\n<li>bestimmt die Hardware, die für App Services zur Verfügung steht</li>\n<li>Standort ist wählbar <ul>\n<li>Westeuropa, Nordamerika, etc.</li>\n<li>gute Wahl verringert Latenzzeiten</li>\n</ul>\n</li>\n<li>ist jederzeit skalierbar (horizontal, vertikal)</li>\n</ul>\n<hr>\n<ul>\n<li>Bezahlung erfolgt per App Service Plan (ASP)<ul>\n<li>viele verschiedene Preisoptionen</li>\n<li>Option Free 1 (F1) ist kostenlos</li>\n<li>Option Standard 1 (S1) ab etwa 30 € / Monat</li>\n</ul>\n</li>\n</ul>\n";
+module.exports = "<ul>\n<li>PaaS: Plattform as a Service</li>\n<li>bestimmt die Hardware, die für App Services zur Verfügung steht</li>\n<li>Standort ist wählbar <ul>\n<li>Westeuropa, Nordamerika, etc.</li>\n<li>gute Wahl verringert Latenzzeiten</li>\n</ul>\n</li>\n<li>ist jederzeit skalierbar (horizontal, vertikal)</li>\n</ul>\n<hr>\n<ul>\n<li>Bezahlung erfolgt per App Service Plan (ASP)<ul>\n<li>viele verschiedene Preisoptionen</li>\n<li>Rechnung pro Stunde </li>\n<li>Option Free 1 (F1) ist kostenlos</li>\n<li>Option Standard 1 (S1) ab etwa 30 € / Monat</li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1902 */
@@ -102403,7 +102384,7 @@ module.exports = "<ul>\n<li>besteht aus SQL Server + SQL Datenbank</li>\n<li>bas
 /* 1908 */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n<li>beste Option für NoSQL </li>\n<li>global verteilt</li>\n<li>Mehrere Api´s verfügbar (ua. SQL, MongoDB)</li>\n<li>flexibel nutzbar, einfach skalierbar in andere Regionen</li>\n<li>Geschwindigkeit &amp; Zuverlässigkeit<ul>\n<li>99.99%   </li>\n<li>read: &gt; 10ms </li>\n<li>write: &gt; 15ms </li>\n</ul>\n</li>\n</ul>\n";
+module.exports = "<ul>\n<li>beste Option für NoSQL </li>\n<li>global verteilt</li>\n<li>Mehrere APIs verfügbar (ua. SQL, MongoDB)</li>\n<li>flexibel nutzbar, einfach skalierbar in andere Regionen</li>\n<li>Geschwindigkeit &amp; Zuverlässigkeit<ul>\n<li>99.99%   </li>\n<li>read &lt; 10ms </li>\n<li>write &lt; 15ms </li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1909 */
@@ -102433,7 +102414,7 @@ module.exports = "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAA
 /* 1913 */
 /***/ (function(module, exports) {
 
-module.exports = "<ul>\n<li>Theoretisches Wissen anwenden</li>\n<li>Erste praktische Erfahrungen und Eindruck in Azure</li>\n<li>Einrichten von verschiedenen Azure Services<ol>\n<li>API</li>\n<li>Datenbank</li>\n<li>Blob Storage</li>\n<li>Search</li>\n<li>Functions</li>\n<li>API - Gateway</li>\n<li>Xamarin App</li>\n<li>uvm.</li>\n</ol>\n</li>\n</ul>\n<hr>\n<ul>\n<li>Alle Unterlagen zum Workshop findet man auf <a href=\"https://github.com/jnes92/talks-cloud-computing-azure\">GitHub</a><ul>\n<li>Präsentation &amp; Workshop  <a href=\"https://github.com/jnes92/talks-cloud-computing-azure\"><sub><sup>https://github.com/jnes92/talks-cloud-computing-azure</sub></sup></a></li>\n<li>Microsoft Workshop <a href=\"https://github.com/Microsoft/app-innovation-workshop\"><sub><sup>https://github.com/Microsoft/app-innovation-workshop</sub></sup></a></li>\n</ul>\n</li>\n</ul>\n";
+module.exports = "<ul>\n<li>Theoretisches Wissen anwenden</li>\n<li>Erste praktische Erfahrungen und Eindruck in Azure</li>\n<li>Einrichten von verschiedenen Azure Services<ol>\n<li>API</li>\n<li>Datenbank</li>\n<li>Blob Storage</li>\n<li>Search</li>\n<li>uvm.</li>\n</ol>\n</li>\n</ul>\n<hr>\n<ul>\n<li>Alle Unterlagen zum Workshop findet man auf <a href=\"https://github.com/jnes92/talks-cloud-computing-azure\">GitHub</a><ul>\n<li>Präsentation &amp; Workshop  <a href=\"https://github.com/jnes92/talks-cloud-computing-azure\"><sub><sup>https://github.com/jnes92/talks-cloud-computing-azure</sub></sup></a></li>\n<li>Microsoft Workshop <a href=\"https://github.com/Microsoft/app-innovation-workshop\"><sub><sup>https://github.com/Microsoft/app-innovation-workshop</sub></sup></a></li>\n</ul>\n</li>\n</ul>\n";
 
 /***/ }),
 /* 1914 */

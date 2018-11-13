@@ -6,12 +6,12 @@
 * Betriebssystem Windows / Linux 
 * benötigt 
 	- *App Service Plan* 
-	- *Ressourcengruppe*
+	- *Ressource Group*
 --- 
 
 - Name wird auch für URL verwendet
 	<!-- - Beispiel Name: myawesomestartup
 	- Standard URL: myawesomestartup.azurewebsites.net -->
-	- Benutzerdefinierte URL´s möglich
+	- Benutzerdefinierte URLs möglich
 - Bezahlung über Abonnement / Subscription
 

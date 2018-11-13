@@ -9,5 +9,6 @@
 
 - Bezahlung erfolgt per App Service Plan (ASP)
     - viele verschiedene Preisoptionen
+    - Rechnung pro Stunde 
     - Option Free 1 (F1) ist kostenlos
     - Option Standard 1 (S1) ab etwa 30 € / Monat

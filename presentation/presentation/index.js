@@ -108,12 +108,12 @@ export default class Presentation extends React.Component {
     let azureServicesBasicMd = [
 
       { md: [workshopMd], title: "Überblick", index: "2.1" },
-      { pause : true},
+      { pause: true },
 
-      { md: [def2], title: "App Service", logo: appServiceLogo, index:"2.2"},
-      { md: [def3, def4], title: "App Service Plan", logo: appServicePlanLogo, index:"2.3" },
-      { md: [azureRessourceGroup], title: "Ressource Group", logo: azureRessourceGroupLogo, index:"2.4" },
-      { md: [exercise2], title: "Übung 2", notes: exercise2Solution },
+      { md: [def2], title: "Web App", logo: appServiceLogo, index: "2.2" },
+      { md: [def3, def4], title: "App Service Plan", logo: appServicePlanLogo, index: "2.3" },
+      { md: [azureRessourceGroup], title: "Ressource Group", logo: azureRessourceGroupLogo, index: "2.4" },
+      { md: [exercise2, exercise2Solution], title: "Übung 2", notes: exercise2Solution },
       { workshop: true },
 
       {
@@ -142,8 +142,8 @@ export default class Presentation extends React.Component {
         title: "Deployment",
         index: "2.8"
       },
-      { md: [exercise3], title: "Übung 3", notes: exercise3Solution },
-      { pause : true},
+      { md: [exercise3, exercise3Solution], title: "Übung 3", notes: exercise3Solution },
+      { pause: true },
     ];
 
     let azureServicesExtendedMd = [
@@ -213,7 +213,7 @@ export default class Presentation extends React.Component {
             {chapters.map(chapter => {
               if (chapter.title) return <ListItem> {chapter.title} </ListItem>
             })
-          }
+            }
           </List>
         </Slide>
 
@@ -307,7 +307,7 @@ export default class Presentation extends React.Component {
           <Markdown fit textColor="tertiary" source={aboutAzure} style={{ "text-align": "left" }} />
         </Slide>
 
-        <Slide  align="center flex-start" bgColor="primary" maxWidth={"100%"} >
+        <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
           <Heading size={6} caps lineHeight={1} textColor="secondary">
             Kapitel 1: {chapters[0].title}
           </Heading>
@@ -332,11 +332,11 @@ export default class Presentation extends React.Component {
             Kapitel 2: {chapters[1].title}
           </Heading>
           <List ordered textColor="tertiary" >
-          {azureServicesBasicMd.map(def => {
+            {azureServicesBasicMd.map(def => {
               if (def.title) return <ListItem> {def.title} </ListItem>
             })
-          }
-       
+            }
+
           </List>
         </Slide>
         <Slide align="center flex-start" >
@@ -345,19 +345,7 @@ export default class Presentation extends React.Component {
           </Heading>
 
           <Heading size={6} caps lineHeight={1} textColor="tertiary">
-          2.1 {azureServicesBasicMd[0].title}
-          </Heading>
-
-          <Image src={workshopWelcomeImage} width="100vw" />
-          <Image src={workshopAppImage} width="100vw" />
-        </Slide>
-        <Slide align="center flex-start" >
-          <Heading size={6} caps lineHeight={1} textColor="secondary">
-          Kapitel 2: {chapters[1].title}
-          </Heading>
-
-          <Heading size={6} caps lineHeight={1} textColor="tertiary">
-          2.1 {azureServicesBasicMd[0].title}
+            2.1 {azureServicesBasicMd[0].title}
           </Heading>
 
           <Image src={workshopArchitectureImage} fit />
@@ -387,23 +375,28 @@ export default class Presentation extends React.Component {
             )
           }
           else return definition.md.map((subslide, index) => {
-  
-            return(
-            <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
-              {definition.notes && <Notes>
-                <Markdown source={definition.notes} />
-              </Notes>}
-              
-              <Heading size={5} caps lineHeight={1} textColor="secondary">
-                2. {chapters[1].title}
-              </Heading>
-              <Heading size={6} lineHeight={1} textColor="tertiary">
-                {definition.index} {definition.title}
-              </Heading>
-              {definition.logo && <Image src={definition.logo} />}
-              <Markdown margin="20" textColor="tertiary" source={subslide} style={{ "text-align": "left" }} />
-            </Slide>
-          )})
+
+            return (
+              <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
+                {definition.notes && <Notes>
+                  <Markdown source={definition.notes} />
+                </Notes>}
+
+                <Heading size={5} caps lineHeight={1} textColor="secondary">
+                  2. {chapters[1].title}
+                </Heading>
+                <Heading margin="10" size={6} lineHeight={1} textColor="tertiary">
+                  {definition.index} {definition.title}
+                </Heading>
+                {definition.logo &&
+                  <div style={{ "margin": "10px" }}>
+                    <Image src={definition.logo} />
+                  </div>
+                }
+                <Markdown margin="20" textColor="tertiary" source={subslide} style={{ "text-align": "left" }} />
+              </Slide>
+            )
+          })
         })}
 
         {/* Kapitel 3: Azure Services - Ausblick */}
