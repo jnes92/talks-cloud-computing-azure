@@ -43199,7 +43199,7 @@ var Presentation = function (_React$Component) {
       textColor: "tertiary"
     }, void 0, "1.1 ", chapters[0].subslides[0].title), _ref6, _ref7, _ref8, (0, _jsx3.default)("div", {}, void 0, (0, _jsx3.default)(_map2.default, {
       isMarkerShown: true,
-      googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyCmQLxuBeBlxM8kh8J6V5EX1nx6ggAw4Vo",
+      googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyCQfDQM3GUeTbsPhWAYCo40kdNWsB3m2mI",
       loadingElement: (0, _jsx3.default)("div", {
         style: { height: "100%" }
       }),
