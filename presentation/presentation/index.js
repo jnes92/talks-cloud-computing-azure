@@ -272,7 +272,7 @@ export default class Presentation extends React.Component {
           <div >
             <MyMapComponent
               isMarkerShown
-              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyCmQLxuBeBlxM8kh8J6V5EX1nx6ggAw4Vo"
+              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyCQfDQM3GUeTbsPhWAYCo40kdNWsB3m2mI"
               loadingElement={<div style={{ height: `100%` }} />}
               containerElement={<div style={{ height: `400px` }} />}
               mapElement={<div style={{ height: `100%` }} />}
