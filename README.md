@@ -1,4 +1,7 @@
 # BRICKMAKERs
+
+https://brickmakers-workshop.now.sh/#/
+
 ## Azure - Grundlagen
 
 ### Vorbereitung
