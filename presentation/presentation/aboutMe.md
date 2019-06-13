@@ -3,7 +3,7 @@
 - B. Eng. Elektrotechnik, HS Koblenz
 
 
-- 2 Jahre bei BRICKMAKERS
+- BRICKMAKER seit 09/16
 - Mitglied im Team Mobile
 
 
