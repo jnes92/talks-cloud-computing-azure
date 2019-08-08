@@ -1,5 +1,6 @@
-# BRICKMAKERs
+# BRICKMAKER'S Azure Workshop 2019
 
+Direkt zur Online Präsentation
 https://brickmakers-workshop.now.sh/#/
 
 ## Azure - Grundlagen
@@ -7,13 +8,28 @@ https://brickmakers-workshop.now.sh/#/
 ### Vorbereitung
 #### Für die Teilnehmer
 
+BRICKMAKERS - Azure Workshop - August 2019
+
+Hey Hey, 
+später wird der Azure Workshop losgehen. Dafür solltet einige von euch einen Laptop mitbringen, damit ihr auch fleißig mitwerkeln könnt ! 
+Ihr könnt mit 1-2 Personen pro Laptop arbeiten, also sprecht euch kurz ab, wer einen mitbringt.
+
+Hier sind schonmal die ersten Schritte für den Workshop und die wichtigsten Links zum nachlesen für später:
+
+**WICHTIG:**
+_Ihr müsst jetzt noch nichts machen :) Wir beginnen alle zusammen im Termin mit den Schritten !_
+
 Tools vorinstallieren:
-- Visual Studio: Code
-- .NET Core SDK
+- [Visual Studio: Code](https://code.visualstudio.com/download)
+- [.NET Core SDK](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.107-macos-x64-installer)
+
 
 Sonstiges:
-- Workshop klonen, damit man alle Dateien schon hat
-https://github.com/microsoft/app-innovation-workshop
+- [Workshop klonen](https://github.com/microsoft/app-innovation-workshop), damit man alle Dateien schon hat
+
+Wichtige Links fürs "nachschlagen":
+- https://brickmakers-workshop.now.sh/
+- https://github.com/jnes92/talks-cloud-computing-azure/tree/BRICKMAKERS-v2019
 
 #### Für mich
 
@@ -51,5 +67,12 @@ https://github.com/microsoft/app-innovation-workshop
 - aber auch für "erfahrene" nicht langweilig
 - insgesamt schon gut gelaufen, kleinere Anpassungen von HS -> BM wären aber notwendig
 
+
+#### 2019-06 Feedback zum 2. BM Workshop
+- fortgeschrittener WS gewünscht
+- gut, Praxis Theorie schön verteil
+- etwas weniger über HS reden
+- gemeinsames Erarbeiten und dummes Vorführen ist gut
+- viele Fragen
 
 cloudhsk18
