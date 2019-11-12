@@ -13,7 +13,6 @@ import {
   Text,
   Markdown,
   Image,
-  Appear,
 } from "spectacle";
 
 
@@ -24,10 +23,15 @@ import background from '../assets/brickmakers-hero-background.png'
 // Chapter 1 Slide Markdown Files
 import aboutMe from "./aboutMe.md"
 import aboutMeNotes from "./aboutMe.notes.md"
+import aboutBricks from "./aboutBrickmakers.md"
 import aboutAzure from "./aboutAzure.md"
 import aboutAzureNotes from "./aboutAzure.notes.md"
 
 // Chapter 1 Assets
+import bmKunde1 from "../assets/01_bm_kunden_cornelsen.svg"
+import bmKunde2 from "../assets/01_bm_kunden_allianz.svg"
+import bmKunde3 from "../assets/01_bm_kunden_telefonica.svg"
+import bmKunde4 from "../assets/01_bm_kunden_strato.svg"
 import pizzaAsAService from "../assets/pizza-aaS.png"
 import exercise1 from "./exercises/ex1.md"
 import exercise2 from "./exercises/ex2.md"
@@ -55,6 +59,8 @@ const azureRessourceGroupLogo = "http://res.cloudinary.com/samcogan/image/upload
 import appServiceLogo from '../assets/02_appService_logo.jpg'
 import appServicePlanLogo from '../assets/02_appServicePlan.jpg'
 import blobStorageLogo from '../assets/02_blobStorage.jpg'
+import sqldbLogo from '../assets/02_db-sql.png'
+import db_cosmosLogo from '../assets/02_db-cosmos.jpg'
 
 
 import workshopMd from './workshop.md'
@@ -90,17 +96,17 @@ const theme = createTheme({
   tertiary: "#34495E",
   quaternary: "#CECECE"
 }, {
-    primary: "Montserrat",
-    secondary: "Helvetica"
-  });
+  primary: "Montserrat",
+  secondary: "Helvetica"
+});
 
 
 export default class Presentation extends React.Component {
   render() {
 
     let config = {
-      title: "Azure Grundlagen",
-      subtitle: "BRICKMAKERS GmbH"
+      title: "Cloud Computing: Azure",
+      subtitle: "Hochschule Koblenz - BRICKMAKERS GmbH"
     }
     let azureServicesBasicMd = [
 
@@ -117,14 +123,14 @@ export default class Presentation extends React.Component {
         md: [
           azureDbSql
         ], title: "Datenbanken: SQL",
-        logo: "https://azurecomcdn.azureedge.net/cvt-91f2ad75d65b94588ca876d6df21005ea3acc52dcbf2d67a7d490211b5f7d8f3/images/page/services/sql-database/sql-db.svg",
-        index: "2.5"
+        logo: sqldbLogo,
+         index: "2.5"
       },
       {
         md: [
           azureDbCosmos
         ], title: "Datenbanken: Cosmos DB",
-        logo: "https://azure.microsoft.com/svghandler/cosmos-db?width=120",
+        logo: db_cosmosLogo,
         index: "2.6"
       },
       { md: [azureBlob], title: "Blob Storage", logo: blobStorageLogo, index: "2.7" },
@@ -170,18 +176,13 @@ export default class Presentation extends React.Component {
           require("../assets/05_iot3b.png")
         ]
       },
-      // {
-      //   md: [azureAuth], logo: azureAuthLogo
-      // }, 
-      // {
-      //   md : [azureContainer], logo: azureContainerLogo
-      // }
     ]
 
     const chapters = [
       {
         title: "Einführung", subslides: [
           { title: "Über mich" },
+          { title: "BRICKMAKERS" },
           { title: "Was ist Azure?" },
           { title: "Übung 1" }
         ]
@@ -196,7 +197,7 @@ export default class Presentation extends React.Component {
         <Slide bgColor="primary" bgImage={background} >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             {config.title}
-            </Heading>
+          </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
             {config.subtitle}
           </Text>
@@ -216,8 +217,8 @@ export default class Presentation extends React.Component {
         {/* Kapitel 1: Einführung */}
         <Slide bgColor="primary" bgImage={background} >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-          {config.title}
-            </Heading>
+            {config.title}
+          </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
             Kapitel 1: {chapters[0].title}
           </Text>
@@ -244,6 +245,46 @@ export default class Presentation extends React.Component {
           <Markdown source={aboutMe} fit textColor="tertiary" style={{ "text-align": "left" }} />
         </Slide>
 
+          <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"}>
+            <Notes>
+              <Markdown source={aboutMeNotes} />
+            </Notes>
+            <Heading size={6} caps lineHeight={1} textColor="secondary">
+              Kapitel 1: {chapters[0].title}
+            </Heading>
+            <Heading size={6} caps lineHeight={1} textColor="tertiary">
+              1.2 {chapters[0].subslides[1].title}
+            </Heading>
+            <Markdown source={aboutBricks} fit textColor="tertiary" style={{ "text-align": "left" }} />
+            <div>
+              {[bmKunde1, bmKunde2, bmKunde3, bmKunde4].map(kunde =>
+                <Image width="10%" display="inline" src={kunde} margin="30" />
+              )}
+            </div>
+          </Slide>
+          <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
+  
+          <Heading size={5} caps lineHeight={1} textColor="secondary">
+            Kapitel 1: {chapters[0].title}
+          </Heading>
+          <Heading size={6} caps lineHeight={1} textColor="tertiary">
+            1.1 {chapters[0].subslides[1].title}
+          </Heading>
+          <Image src={teamIdeaLogo} />
+          <Text> Kommt gerne auf einen Kaffee vorbei </Text>
+          <Text margin="50"> oder besucht uns bei einem Meetup! </Text>
+          <div >
+            <MyMapComponent
+              isMarkerShown
+              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyCQfDQM3GUeTbsPhWAYCo40kdNWsB3m2mI"
+              loadingElement={<div style={{ height: `100%` }} />}
+              containerElement={<div style={{ height: `400px` }} />}
+              mapElement={<div style={{ height: `100%` }} />}
+            />
+          </div>
+        </Slide>
+        
+
         <Slide align="center flex-start" bgColor="primary" maxWidth={"100%"} >
           <Notes>
             <Markdown source={aboutAzureNotes} />
@@ -252,7 +293,7 @@ export default class Presentation extends React.Component {
             Kapitel 1: {chapters[0].title}
           </Heading>
           <Heading size={6} caps lineHeight={1} textColor="tertiary">
-            1.2 {chapters[0].subslides[1].title}
+            1.3 {chapters[0].subslides[2].title}
           </Heading>
           <Markdown fit textColor="tertiary" source={aboutAzure} style={{ "text-align": "left" }} />
         </Slide>
@@ -265,7 +306,7 @@ export default class Presentation extends React.Component {
             Kapitel 1: {chapters[0].title}
           </Heading>
           <Heading size={6} caps lineHeight={1} textColor="tertiary">
-            1.2 {chapters[0].subslides[1].title}
+            1.3 {chapters[0].subslides[2].title}
           </Heading>
           <Image src={pizzaAsAService} fit />
 
@@ -276,7 +317,7 @@ export default class Presentation extends React.Component {
             Kapitel 1: {chapters[0].title}
           </Heading>
           <Heading size={6} caps lineHeight={1} textColor="tertiary">
-            1.3 {chapters[0].subslides[2].title}
+            1.4 {chapters[0].subslides[3].title}
           </Heading>
           <Markdown source={exercise1} fit textColor="tertiary" style={{ "text-align": "left" }} />
 
@@ -285,8 +326,8 @@ export default class Presentation extends React.Component {
         {/* Kapitel 2: Überblick in Azure */}
         <Slide bgColor="primary" bgImage={background} >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-          {config.title}
-            </Heading>
+            {config.title}
+          </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
             Kapitel 2: {chapters[1].title}
           </Text>
@@ -366,8 +407,8 @@ export default class Presentation extends React.Component {
         {/* Kapitel 3: Azure Services - Ausblick */}
         <Slide bgColor="primary" bgImage={background} >
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-          {config.title}
-            </Heading>
+            {config.title}
+          </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={3} fit bold>
             Kapitel 3: {chapters[2].title}
           </Text>

@@ -1,7 +1,13 @@
 # BRICKMAKER'S Azure Workshop 2019
 
 Direkt zur Online Präsentation
-https://brickmakers-workshop.now.sh/#/
+
+BRICKMAKERS Version:
+- https://brickmakers-workshop.now.sh/#/
+
+Cloud Computing - Hochschule Koblenz
+- https://brickmakers-hsko-azure.now.sh
+
 
 ## Azure - Grundlagen
 
