@@ -86,7 +86,6 @@ import workshopWelcomeImage from '../assets/03_workshop_welcome.png'
 import workshopArchitectureImage from '../assets/03_workshop_Architecture.png'
 import workshopAppImage from '../assets/03_workshop_app.png'
 
-
 // Require CSS
 require("normalize.css");
 
@@ -163,7 +162,11 @@ export default class Presentation extends React.Component {
         md: [azureFunctions,], title: "Azure Functions", logo: azureFunctionsLogo
       },
       {
-        md: [azureAI,], title: "Artificial Intelligence"
+        md: [azureAI,], title: "Artificial Intelligence", images: [
+          require('../assets/03_obot_2.jpg'),
+          require('../assets/03_obot_4.png'),
+          require('../assets/03_obot_3.png'),
+        ]
       },
       {
         md: [azureChatBots], title: "Azure Bot Service", logo: azureChatBotsLogo, images: [require("../assets/05_timeout.png")]
