@@ -1,10 +1,13 @@
 
-- Entwicklungsagentur aus Koblenz
-- ca. 50 Mitarbeiter
-- darunter 10 Werkstudenten
+- Entwicklungsagentur
+    - Koblenz
+    - Köln
+- ca. 70 Mitarbeiter
+- etwa 15 Werkstudenten von Uni & Hochschule
 - Services:
-    - App-Entwicklung (mobile, Web, Windows)
-    - UI / UX Design
-    - Cloud Services
+    - Web Apps
+    - Mobile Apps
+    - UI UX Design
     - Online Marketing
- 
+    - Cloud Services
+    - IoT & Digitalisierung
