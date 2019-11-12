@@ -6,6 +6,6 @@ groups=$(az group list --query "[?!contains(name, 'vt') && !contains(name, 'clou
 for name in $groups 
 do 
     echo Going to delete: $name
-	az group delete -n $name -y
+	az group delete -n $name -y --no-wait
     echo Deleted.
 done
